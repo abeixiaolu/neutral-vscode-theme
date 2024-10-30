@@ -2,7 +2,9 @@
   "name": "xiaoluabei-vscode-theme",
   "displayName": "Xiaolu Abei",
   "description": "A dark theme with a focus on readability and minimalism.",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "publisher": "xiaoluabei",
+  "license": "MIT",
   "scripts": {
     "pack": "vsce pack --no-dependencies",
     "publish": "vsce publish --no-dependencies"
@@ -12,7 +14,7 @@
     "url": "https://github.com/abeixiaolu/xiaoluabei-vscode-theme.git"
   },
   "engines": {
-    "vscode": "^1.94.0"
+    "vscode": "^1.43.0"
   },
   "categories": [
     "Themes"
