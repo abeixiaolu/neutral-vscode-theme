@@ -1930,7 +1930,7 @@
     "editorMarkerNavigationWarning.background": "#cca700",
     "editorMarkerNavigationInfo.background": "#75beff",
     "editorSuggestWidget.background": "#1a1a1a",
-    "editorSuggestWidget.selectedBackground": "#222222",
+    "editorSuggestWidget.selectedBackground": "#663399",
     "editorSuggestWidget.foreground": "#ffffffaa",
     "editorSuggestWidget.selectedForeground": "#ffffffde",
     "editorSuggestWidget.focusHighlightForeground": "#ffffff",
