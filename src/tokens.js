@@ -1,0 +1,191 @@
+import { base, theme, semantic, status } from "./color.js";
+
+// 按照颜色和用途分类的代码高亮配置
+const tokenColors = [
+  // 主要语法元素 - 使用 theme.primary (蓝色 #90aed3)
+  {
+    scope: [
+      "entity.name.function",
+      "support.function",
+      "meta.function-call",
+      "support.function.console",
+      "string",
+      "support.constant.font-name",
+      "support.constant.json",
+      "entity.other.attribute-name.id",
+    ],
+    settings: {
+      foreground: theme.primary,
+    },
+  },
+
+  // 常量和数字 - 使用 theme.brown (棕色 #d4ba9b)
+  {
+    scope: [
+      "constant",
+      "constant.numeric",
+      "constant.language",
+      "constant.character",
+      "constant.other",
+      "variable.other.constant",
+      "support.constant",
+      "meta.property-value",
+      "support.constant.property-value",
+      "support.constant.font-name",
+      "support.constant.media",
+      "support.constant.color",
+      "entity.name.type.class",
+      "support.class",
+    ],
+    settings: {
+      foreground: theme.brown,
+    },
+  },
+
+  // 关键字和控制流 - 使用 theme.secondary (绿色 #9bd4b2)
+  {
+    scope: [
+      "keyword.control",
+      "storage.type",
+      "support.type",
+      "entity.name.type",
+      "support.class",
+      "entity.name.namespace",
+      "entity.other.inherited-class",
+      "entity.name.tag",
+      "support.type.property-name.css",
+      "support.type.primitive",
+      "support.type.builtin",
+    ],
+    settings: {
+      foreground: theme.secondary,
+    },
+  },
+
+  // 存储类型和修饰符 - 使用 theme.accent (紫色 #ceb0d3)
+  {
+    scope: [
+      "storage",
+      "storage.modifier",
+      "keyword.operator.new",
+      "keyword.operator.expression",
+      "keyword.operator.logical",
+      "keyword.operator.sizeof",
+      "keyword.operator.instanceof",
+      "entity.name.class",
+      "entity.other.attribute-name",
+    ],
+    settings: {
+      foreground: theme.accent,
+    },
+  },
+
+  // 变量和参数 - 使用 semantic.foreground
+  {
+    scope: [
+      "variable",
+      "variable.parameter",
+      "variable.other.readwrite",
+      "variable.other.object",
+      "variable.other.property",
+      "meta.definition.variable",
+      "support.variable.property",
+      "support.variable.object",
+      "punctuation.definition",
+      "punctuation.separator",
+      "punctuation.terminator",
+    ],
+    settings: {
+      foreground: semantic.foreground,
+    },
+  },
+
+  // 注释 - 使用 semantic.comment (灰色 #6a6a6a)
+  {
+    scope: ["comment", "punctuation.definition.comment"],
+    settings: {
+      foreground: semantic.comment,
+      fontStyle: "italic",
+    },
+  },
+
+  // 特殊样式
+  {
+    scope: [
+      "entity.other.attribute-name.id",
+      "entity.other.attribute-name.class.css",
+    ],
+    settings: {
+      fontStyle: "italic",
+    },
+  },
+
+  // 无效和废弃的代码
+  {
+    scope: ["invalid.illegal", "invalid.deprecated"],
+    settings: {
+      foreground: base.white,
+    },
+  },
+
+  // Markdown 特殊样式
+  {
+    scope: ["markup.heading", "markup.bold", "markup.italic"],
+    settings: {
+      foreground: theme.primary,
+      fontStyle: "bold",
+    },
+  },
+
+  // 模板字符串
+  {
+    scope: ["string.template", "punctuation.definition.template-expression"],
+    settings: {
+      foreground: theme.primary,
+    },
+  },
+
+  // 正则表达式
+  {
+    scope: ["string.regexp", "constant.character.escape"],
+    settings: {
+      foreground: theme.secondary,
+    },
+  },
+
+  // JSON 特殊处理
+  {
+    scope: ["support.type.property-name.json"],
+    settings: {
+      foreground: semantic.foreground,
+    },
+  },
+  {
+    scope: ["meta.structure.dictionary.json string.quoted.double"],
+    settings: {
+      foreground: theme.primary,
+    },
+  },
+
+  // Git 装饰器颜色
+  {
+    scope: ["gitDecoration.modifiedResourceForeground"],
+    settings: {
+      foreground: theme.brown,
+    },
+  },
+  {
+    scope: ["gitDecoration.untrackedResourceForeground"],
+    settings: {
+      foreground: theme.secondary,
+    },
+  },
+  {
+    scope: ["gitDecoration.deletedResourceForeground"],
+    settings: {
+      foreground: status.error,
+    },
+  },
+];
+
+export default tokenColors;

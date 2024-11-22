@@ -2,12 +2,19 @@
   "name": "xiaoluabei-vscode-theme",
   "displayName": "Xiaolu Abei",
   "description": "A dark theme with a focus on readability and minimalism.",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "publisher": "xiaoluabei",
+  "type": "module",
+  "author": {
+    "name": "Xiaolu Abei",
+    "email": "xiaoluabei@gmail.com"
+  },
   "license": "MIT",
   "scripts": {
-    "pack": "vsce pack --no-dependencies",
-    "publish": "vsce publish --no-dependencies"
+    "build": "node scripts/build.js",
+    "dev": "nodemon --watch src --ext js --exec 'npm run build'",
+    "pack": "npm run build && vsce pack --no-dependencies",
+    "publish": "npm run build && vsce publish --no-dependencies"
   },
   "repository": {
     "type": "git",
@@ -29,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.2.1"
+    "@vscode/vsce": "^3.2.1",
+    "nodemon": "^3.1.0"
   }
 }
