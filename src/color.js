@@ -28,13 +28,13 @@ export const alpha = {
   white10: `${base.white}1a`,
   white25: `${base.white}40`,
   white88: `${base.white}bb`,
-  selection: `${theme.primary}30`,
-  highlight: `${theme.primary}60`,
+  selection: `${theme.primary}20`,
+  highlight: `${theme.primary}40`,
 };
 
 // 语义化颜色
 export const semantic = {
-  foreground: "#b0b0b0",
+  foreground: "#d1cdc2",
   background: base.gray[900],
   border: "#ff000000",
   comment: base.gray[600],

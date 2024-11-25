@@ -1,9 +1,13 @@
 # Change Log
 
-All notable changes to the "xiaoluabei" extension will be documented in this file.
+All notable changes to this project will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.1.1] - 2024-11-25
 
-## [Unreleased]
+### Fixed
 
-- Initial release
+- Fixed editor inactive selection background color
+
+### Changed
+
+- Changed editor foreground color

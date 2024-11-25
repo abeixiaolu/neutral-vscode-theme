@@ -100,7 +100,7 @@ export const editorColors = {
 
   // 编辑器选择与高亮
   "editor.selectionBackground": semantic.selection,
-  "editor.inactiveSelectionBackground": `${semantic.selection}aa`,
+  "editor.inactiveSelectionBackground": semantic.selection,
   "editor.selectionHighlightBackground": "#add6ff26",
   "editor.selectionHighlightBorder": "#495F77",
   "editor.findMatchBackground": "#515c6a",
