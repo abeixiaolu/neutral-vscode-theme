@@ -114,8 +114,8 @@ export const editorColors = {
   "editor.wordHighlightBackground": "#575757b8",
 
   // 编辑器行相关
-  "editor.lineHighlightBackground": semantic.selection,
-  // "editor.lineHighlightBorder": "#282828",
+  "editor.lineHighlightBackground": "#ffffff10",
+  "editor.lineHighlightBorder": "#ffffff00",
   "editorLineNumber.activeForeground": semantic.foreground,
   "editorWhitespace.foreground": "#e3e4e229",
 
