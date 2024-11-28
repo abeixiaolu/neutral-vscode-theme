@@ -15,7 +15,7 @@ const tokenColors = [
       "entity.other.attribute-name.id",
     ],
     settings: {
-      foreground: theme.primary,
+      foreground: theme.blue,
     },
   },
 
@@ -38,7 +38,7 @@ const tokenColors = [
       "support.class",
     ],
     settings: {
-      foreground: theme.brown,
+      foreground: theme.yellow,
     },
   },
 
@@ -58,7 +58,7 @@ const tokenColors = [
       "support.type.builtin",
     ],
     settings: {
-      foreground: theme.secondary,
+      foreground: theme.green,
     },
   },
 
@@ -76,7 +76,7 @@ const tokenColors = [
       "entity.other.attribute-name",
     ],
     settings: {
-      foreground: theme.accent,
+      foreground: theme.magenta,
     },
   },
 
@@ -132,7 +132,7 @@ const tokenColors = [
   {
     scope: ["markup.heading", "markup.bold", "markup.italic"],
     settings: {
-      foreground: theme.primary,
+      foreground: theme.blue,
       fontStyle: "bold",
     },
   },
@@ -141,7 +141,7 @@ const tokenColors = [
   {
     scope: ["string.template", "punctuation.definition.template-expression"],
     settings: {
-      foreground: theme.primary,
+      foreground: theme.blue,
     },
   },
 
@@ -149,7 +149,7 @@ const tokenColors = [
   {
     scope: ["string.regexp", "constant.character.escape"],
     settings: {
-      foreground: theme.secondary,
+      foreground: theme.green,
     },
   },
 
@@ -163,7 +163,7 @@ const tokenColors = [
   {
     scope: ["meta.structure.dictionary.json string.quoted.double"],
     settings: {
-      foreground: theme.primary,
+      foreground: theme.blue,
     },
   },
 
@@ -171,13 +171,13 @@ const tokenColors = [
   {
     scope: ["gitDecoration.modifiedResourceForeground"],
     settings: {
-      foreground: theme.brown,
+      foreground: theme.yellow,
     },
   },
   {
     scope: ["gitDecoration.untrackedResourceForeground"],
     settings: {
-      foreground: theme.secondary,
+      foreground: theme.green,
     },
   },
   {

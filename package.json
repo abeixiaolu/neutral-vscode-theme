@@ -29,9 +29,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Xiaolu Abei",
+        "label": "Xiaolu Abei Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/Xiaolu Abei-color-theme.json"
+      },
+      {
+        "label": "Xiaolu Abei Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Xiaolu Abei Soft-color-theme.json"
       }
     ]
   },

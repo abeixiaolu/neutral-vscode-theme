@@ -17,10 +17,11 @@ export const base = {
 
 // 主题特色颜色
 export const theme = {
-  primary: "#90aed3",
-  secondary: "#9bd4b2",
-  accent: "#ceb0d3",
-  brown: "#d4ba9b",
+  blue: "#90aed3",
+  green: "#9bd4b2",
+  magenta: "#ceb0d3",
+  yellow: "#d4ba9b",
+  red: "#BF7A78",
 };
 
 // 透明度变体
@@ -28,21 +29,8 @@ export const alpha = {
   white10: `${base.white}1a`,
   white25: `${base.white}40`,
   white88: `${base.white}bb`,
-  selection: `${theme.primary}20`,
-  highlight: `${theme.primary}40`,
-};
-
-// 语义化颜色
-export const semantic = {
-  foreground: "#d1cdc2",
-  background: base.gray[900],
-  border: "#ff000000",
-  comment: base.gray[600],
-  link: "#3794ff",
-  selection: alpha.selection,
-  cursor: base.gray[100],
-  highlight: alpha.highlight,
-  inactiveForeground: base.gray[600],
+  selection: `${theme.blue}20`,
+  highlight: `${theme.blue}40`,
 };
 
 // 状态颜色
@@ -63,5 +51,23 @@ export const ui = {
   widgetBackground: "#282727",
   activeBackground: "#2d2d2d",
   inactiveBackground: base.gray[900],
-  selectedBackground: "#663399",
 };
+
+// 语义化颜色
+export const semantic = {
+  foreground: "#d1cdc2",
+  background: base.gray[900],
+  scrollbar: base.gray[800],
+  border: "#ff000000",
+  comment: base.gray[600],
+  link: "#3794ff",
+  selection: alpha.selection,
+  cursor: base.gray[100],
+  highlight: alpha.highlight,
+  inactiveForeground: base.gray[600],
+};
+
+export const softSemantic = Object.assign({}, semantic, {
+  background: base.gray[800],
+  scrollbar: base.gray[700],
+});
