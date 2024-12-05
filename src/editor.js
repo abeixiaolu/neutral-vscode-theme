@@ -1,6 +1,4 @@
-import { base, theme, semantic, status, ui, alpha } from "./color.js";
-
-export function genEditorColors(semantic) {
+export function genEditorColors({ semantic, ui, alpha, base, theme, status }) {
   return {
     // 基础界面颜色
     foreground: semantic.foreground,

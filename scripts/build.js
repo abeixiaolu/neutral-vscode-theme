@@ -3,7 +3,16 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { genEditorColors } from "../src/editor.js";
 import tokenColors from "../src/tokens.js";
-import { semantic, softSemantic } from "../src/color.js";
+import {
+  semantic,
+  softSemantic,
+  ui,
+  status,
+  alpha,
+  base,
+  theme,
+  softUI,
+} from "../src/color.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -12,14 +21,21 @@ async function build() {
     name: "Xiaolu Abei Dark",
     type: "dark",
     semanticHighlighting: true,
-    colors: genEditorColors(semantic),
+    colors: genEditorColors({ semantic, ui, alpha, base, theme, status }),
     tokenColors,
   };
   const softTheme = {
     name: "Xiaolu Abei Soft",
     type: "dark",
     semanticHighlighting: true,
-    colors: genEditorColors(softSemantic),
+    colors: genEditorColors({
+      semantic: softSemantic,
+      ui: softUI,
+      alpha,
+      base,
+      theme,
+      status,
+    }),
     tokenColors,
   };
 

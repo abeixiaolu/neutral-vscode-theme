@@ -48,8 +48,8 @@ export const ui = {
   border: `${base.gray[600]}88`,
   shadow: "#0000005c",
   focusBorder: "#007fd400",
-  widgetBackground: "#282727",
-  activeBackground: "#2d2d2d",
+  widgetBackground: base.gray[800],
+  activeBackground: base.gray[700],
   inactiveBackground: base.gray[900],
 };
 
@@ -71,3 +71,9 @@ export const softSemantic = Object.assign({}, semantic, {
   background: base.gray[800],
   scrollbar: base.gray[700],
 });
+
+export const softUI = Object.assign({}, ui, {
+  widgetBackground: base.gray[700],
+  activeBackground: base.gray[600],
+});
+console.log(softUI);
