@@ -76,4 +76,3 @@ export const softUI = Object.assign({}, ui, {
   widgetBackground: base.gray[700],
   activeBackground: base.gray[600],
 });
-console.log(softUI);
