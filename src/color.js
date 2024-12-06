@@ -1,78 +1,79 @@
-// 基础颜色
-export const base = {
+export const colors = {
+  black: "#121212",
   white: "#ffffff",
-  black: "#000000",
-  gray: {
-    100: "#d3d5d8", // 最浅
-    200: "#b7babe",
-    300: "#9c9fa4",
-    400: "#82858a",
-    500: "#686b71",
-    600: "#4f5157",
-    700: "#36383d",
-    800: "#1d1f23",
-    900: "#0e1116",
-  },
+  gray: [
+    "#d3d5d8",
+    "#b7babe",
+    "#9c9fa4",
+    "#82858a",
+    "#686b71",
+    "#4f5157",
+    "#36383d",
+    "#1d1f23",
+    "#0e1116",
+  ],
+  blue: ["#B5CAD5", "#90AED3", "#839EC0", "#7790AF", "#6C839F", "#627791"],
+  green: ["#9BD4B2", "#88C39D", "#78B28A", "#69A178", "#5C9067", "#517F57"],
+  magenta: ["#CEB0D3", "#C098C9", "#B385C0", "#A673B7", "#9A62AE", "#8F52A6"],
+  yellow: ["#D4BA9B", "#C7A984", "#BB9970", "#AF8A5D", "#A37C4C", "#986E3D"],
+  red: ["#BF7A78", "#B36D6B", "#A7615F", "#9C5553", "#914A47", "#863F3C"],
 };
 
 // 主题特色颜色
 export const theme = {
-  blue: "#90aed3",
-  green: "#9bd4b2",
-  magenta: "#ceb0d3",
-  yellow: "#d4ba9b",
-  red: "#BF7A78",
+  blue: colors.blue[2],
+  blueLight: colors.blue[1],
+  green: colors.green[2],
+  magenta: colors.magenta[2],
+  yellow: colors.yellow[2],
+  red: colors.red[2],
 };
 
 // 透明度变体
 export const alpha = {
-  white10: `${base.white}1a`,
-  white25: `${base.white}40`,
-  white88: `${base.white}bb`,
+  white10: `${colors.white}1a`,
+  white25: `${colors.white}40`,
+  white88: `${colors.white}bb`,
   selection: `${theme.blue}20`,
   highlight: `${theme.blue}40`,
 };
 
 // 状态颜色
 export const status = {
-  error: "#f48771",
-  warning: "#cca700",
-  info: "#75beff",
-  success: "#587c0c",
-  modified: "#0c7d9d",
-  deleted: "#94151b",
-};
-
-// UI 元素颜色
-export const ui = {
-  border: `${base.gray[600]}88`,
-  shadow: "#0000005c",
-  focusBorder: "#007fd400",
-  widgetBackground: base.gray[800],
-  activeBackground: base.gray[700],
-  inactiveBackground: base.gray[900],
+  error: colors.red[2],
+  warning: colors.yellow[2],
+  info: colors.blue[2],
+  success: colors.green[2],
+  modified: colors.blue[2],
+  deleted: colors.red[4],
 };
 
 // 语义化颜色
 export const semantic = {
-  foreground: "#d1cdc2",
-  background: base.gray[900],
-  scrollbar: base.gray[800],
+  shadow: "#00000066",
   border: "#ff000000",
-  comment: base.gray[600],
-  link: "#3794ff",
+  foreground: "#d1cdc2",
+  background: colors.gray[8],
+  widgetBackground: colors.gray[7],
+  activeBackground: colors.gray[6],
+  inactiveBackground: colors.gray[8],
+  buttonBackground: theme.blue,
+  buttonHoverBackground: theme.blueLight,
+  scrollbar: colors.gray[7],
+  comment: colors.gray[6],
+  link: theme.blue,
   selection: alpha.selection,
-  cursor: base.gray[100],
+  cursor: colors.gray[1],
   highlight: alpha.highlight,
-  inactiveForeground: base.gray[600],
+  inactiveForeground: colors.gray[5],
+  listHoverBackground: "#66666633",
+  listHoverForeground: colors.white,
 };
 
 export const softSemantic = Object.assign({}, semantic, {
-  background: base.gray[800],
-  scrollbar: base.gray[700],
-});
-
-export const softUI = Object.assign({}, ui, {
-  widgetBackground: base.gray[700],
-  activeBackground: base.gray[600],
+  background: colors.gray[7],
+  scrollbar: colors.gray[6],
+  widgetBackground: colors.gray[6],
+  activeBackground: colors.gray[5],
+  inactiveBackground: colors.gray[7],
 });

@@ -1,4 +1,4 @@
-import { base, theme, semantic, status } from "./color.js";
+import { theme, semantic } from "./color.js";
 
 // 按照颜色和用途分类的代码高亮配置
 const tokenColors = [
@@ -124,7 +124,7 @@ const tokenColors = [
   {
     scope: ["invalid.illegal", "invalid.deprecated"],
     settings: {
-      foreground: base.white,
+      foreground: semantic.foreground,
     },
   },
 
@@ -183,7 +183,7 @@ const tokenColors = [
   {
     scope: ["gitDecoration.deletedResourceForeground"],
     settings: {
-      foreground: status.error,
+      foreground: theme.red,
     },
   },
 ];

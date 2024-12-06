@@ -1,17 +1,15 @@
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
-import { genEditorColors } from "../src/editor.js";
+import { genEditorColors } from "../src/ui.js";
 import tokenColors from "../src/tokens.js";
 import {
   semantic,
   softSemantic,
-  ui,
   status,
   alpha,
-  base,
+  colors,
   theme,
-  softUI,
 } from "../src/color.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -21,7 +19,7 @@ async function build() {
     name: "Xiaolu Abei Dark",
     type: "dark",
     semanticHighlighting: true,
-    colors: genEditorColors({ semantic, ui, alpha, base, theme, status }),
+    colors: genEditorColors({ semantic, alpha, colors, theme, status }),
     tokenColors,
   };
   const softTheme = {
@@ -30,9 +28,8 @@ async function build() {
     semanticHighlighting: true,
     colors: genEditorColors({
       semantic: softSemantic,
-      ui: softUI,
       alpha,
-      base,
+      colors,
       theme,
       status,
     }),
