@@ -2,15 +2,15 @@ export const colors = {
   black: "#121212",
   white: "#ffffff",
   gray: [
-    "#d3d5d8",
-    "#b7babe",
-    "#9c9fa4",
-    "#82858a",
-    "#686b71",
-    "#4f5157",
-    "#36383d",
-    "#1d1f23",
-    "#0e1116",
+    "#E5E7EA", // 更亮的灰色,增强对比度
+    "#C8CBD0", // 调亮以提供更好的可读性
+    "#AAACB2", // 中性灰色
+    "#8D9095", // 适中的灰色
+    "#70737A", // 深灰色
+    "#545861", // 更深的灰色
+    "#393C43", // 暗灰色
+    "#21242A", // 近黑色
+    "#12151A", // 最深的灰色,接近黑色
   ],
   blue: ["#B5CAD5", "#90AED3", "#839EC0", "#7790AF", "#6C839F", "#627791"],
   green: ["#9BD4B2", "#88C39D", "#78B28A", "#69A178", "#5C9067", "#517F57"],
@@ -60,7 +60,7 @@ export const semantic = {
   buttonBackground: theme.blue,
   buttonHoverBackground: theme.blueLight,
   scrollbar: colors.gray[7],
-  comment: colors.gray[6],
+  comment: colors.gray[5],
   link: theme.blue,
   selection: alpha.selection,
   cursor: colors.gray[1],
