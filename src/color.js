@@ -22,11 +22,11 @@ export const colors = {
 // 主题特色颜色
 export const theme = {
   blue: colors.blue[2],
-  blueLight: colors.blue[1],
-  green: colors.green[2],
-  magenta: colors.magenta[2],
-  yellow: colors.yellow[2],
-  red: colors.red[2],
+  blueLight: colors.blue[0],
+  green: colors.green[0],
+  magenta: colors.magenta[0],
+  yellow: colors.yellow[0],
+  red: colors.red[0],
 };
 
 // 透明度变体
