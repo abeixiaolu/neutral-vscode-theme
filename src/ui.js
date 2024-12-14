@@ -18,20 +18,20 @@ export function genEditorColors({
     // 链接
     "textLink.foreground": semantic.link,
     // 活动栏 (左侧图标栏)
-    "activityBar.foreground": colors.white,
+    "activityBar.foreground": theme.foreground,
     "activityBar.background": semantic.background,
-    "activityBar.inactiveForeground": `${semantic.inactiveForeground}`,
-    "activityBarBadge.foreground": colors.white,
-    "activityBarBadge.background": "#007acc",
+    "activityBar.inactiveForeground": semantic.inactiveForeground,
+    "activityBarBadge.foreground": theme.foreground,
+    "activityBarBadge.background": theme.blue,
 
     // 侧边栏
     "sideBar.background": semantic.background,
-    "sideBar.foreground": colors.gray[1],
+    "sideBar.foreground": semantic.foreground,
     "sideBarSectionHeader.background": "#00000000",
-    "sideBarSectionHeader.foreground": colors.gray[1],
+    "sideBarSectionHeader.foreground": semantic.foreground,
     "sideBarSectionHeader.border": `${colors.gray[1]}33`,
-    "sideBarTitle.foreground": colors.gray[2],
-    "sideBar.dropBackground": "#383b3d",
+    // "sideBarTitle.foreground": "#f00",
+    // "sideBar.dropBackground": "#f00",
 
     // 列表样式
     "list.foreground": semantic.foreground,
@@ -48,58 +48,58 @@ export function genEditorColors({
     "listFilterWidget.noMatchesOutline": "#be10",
 
     // 状态栏
-    "statusBar.foreground": colors.white,
+    "statusBar.foreground": semantic.foreground,
     "statusBar.background": semantic.background,
     "statusBarItem.hoverBackground": alpha.white10,
     "statusBar.debuggingBackground": "#cc6633",
-    "statusBar.debuggingForeground": colors.white,
+    "statusBar.debuggingForeground": semantic.foreground,
     "statusBar.noFolderBackground": "#68217a",
-    "statusBar.noFolderForeground": colors.white,
-    "statusBarItem.remoteBackground": "#16825d",
-    "statusBarItem.remoteForeground": colors.white,
+    "statusBar.noFolderForeground": semantic.foreground,
+    "statusBarItem.remoteBackground": theme.blue,
+    "statusBarItem.remoteForeground": semantic.foreground,
     "statusBarItem.activeBackground": "#FFFFFF25",
 
     // 标题栏
-    "titleBar.activeBackground": colors.gray[7],
-    "titleBar.activeForeground": colors.gray[1],
-    "titleBar.inactiveBackground": `${colors.gray[7]}99`,
-    "titleBar.inactiveForeground": `${semantic.inactiveForeground}`,
+    "titleBar.activeBackground": semantic.background,
+    "titleBar.activeForeground": semantic.foreground,
+    "titleBar.inactiveBackground": `${semantic.background}99`,
+    "titleBar.inactiveForeground": semantic.inactiveForeground,
     "titleBar.border": "#00000000",
 
     // 菜单栏
-    "menubar.selectionForeground": colors.gray[1],
-    "menubar.selectionBackground": alpha.white10,
-    "menu.foreground": colors.gray[1],
-    "menu.background": semantic.background,
-    "menu.selectionForeground": colors.white,
-    "menu.selectionBackground": "#094771",
-    "menu.selectionBorder": "#00000000",
-    "menu.separatorBackground": colors.gray[2],
-    "menu.border": "#00000085",
+    // "menubar.selectionForeground": colors.gray[1],
+    // "menubar.selectionBackground": alpha.white10,
+    // "menu.foreground": colors.gray[1],
+    // "menu.background": semantic.background,
+    // "menu.selectionForeground": colors.white,
+    // "menu.selectionBackground": "#094771",
+    // "menu.selectionBorder": "#00000000",
+    // "menu.separatorBackground": colors.gray[2],
+    // "menu.border": "#00000085",
 
     // 按钮
     "button.background": semantic.buttonBackground,
     "button.foreground": colors.black,
     "button.hoverBackground": semantic.buttonHoverBackground,
-    "button.secondaryForeground": colors.white,
-    "button.secondaryBackground": "#3a3d41",
-    "button.secondaryHoverBackground": "#45494e",
+    "button.secondaryForeground": semantic.foreground,
+    "button.secondaryBackground": semantic.widgetBackground,
+    "button.secondaryHoverBackground": semantic.activeBackground,
 
     // 输入框 和 下拉框
     "input.background": semantic.widgetBackground,
     "input.border": "#00000000",
-    "input.foreground": colors.gray[1],
-    "inputOption.activeBackground": "#007fd466",
+    "input.foreground": semantic.foreground,
+    "inputOption.activeBackground": semantic.highlight2,
     "inputOption.activeBorder": "#007acc00",
-    "inputOption.activeForeground": colors.white,
-    "input.placeholderForeground": colors.gray[3],
+    "inputOption.activeForeground": semantic.foreground,
+    "input.placeholderForeground": semantic.inactiveForeground,
     "dropdown.background": semantic.widgetBackground,
     "dropdown.listBackground": semantic.widgetBackground,
 
     // 编辑器
-    "editor.background": semantic.background,
+    "editor.background": semantic.editorBackground,
     "editor.foreground": semantic.foreground,
-    "editorLineNumber.foreground": `${semantic.comment}66`,
+    "editorLineNumber.foreground": semantic.comment,
     "editorCursor.foreground": semantic.cursor,
     "editorCursor.background": colors.black,
     "editorStickyScroll.shadow": `${semantic.scrollbar}00`,
@@ -109,44 +109,44 @@ export function genEditorColors({
     // 编辑器选择与高亮
     "editor.selectionBackground": semantic.selection,
     "editor.inactiveSelectionBackground": semantic.selection,
-    "editor.selectionHighlightBackground": "#add6ff26",
-    "editor.selectionHighlightBorder": "#495F77",
-    "editor.findMatchBackground": "#515c6a",
-    "editor.findMatchBorder": "#74879f",
-    "editor.findMatchHighlightBackground": "#ea5c0055",
-    "editor.findMatchHighlightBorder": `${colors.white}00`,
-    "editor.findRangeHighlightBackground": "#3a3d4166",
-    "editor.findRangeHighlightBorder": `${colors.white}00`,
-    "editor.hoverHighlightBackground": `${semantic.highlight}`,
-    "editor.wordHighlightStrongBackground": "#004972b8",
-    "editor.wordHighlightBackground": "#575757b8",
+    "editor.selectionHighlightBackground": semantic.highlight,
+    "editor.selectionHighlightBorder": "#00000000",
+    "editor.findMatchBackground": semantic.highlight2,
+    "editor.findMatchBorder": "#00000000",
+    "editor.findMatchHighlightBackground": semantic.highlight,
+    "editor.findMatchHighlightBorder": "#00000000",
+    "editor.findRangeHighlightBackground": semantic.highlight,
+    "editor.findRangeHighlightBorder": "#00000000",
+    "editor.hoverHighlightBackground": semantic.highlight,
+    "editor.wordHighlightStrongBackground": semantic.highlight,
+    "editor.wordHighlightBackground": semantic.highlight,
 
     // 编辑器行相关
-    "editor.lineHighlightBackground": "#ffffff10",
-    "editor.lineHighlightBorder": "#ffffff00",
+    "editor.lineHighlightBackground": semantic.highlight,
+    "editor.lineHighlightBorder": "#00000000",
     "editorLineNumber.activeForeground": semantic.foreground,
-    "editorWhitespace.foreground": "#e3e4e229",
+    "editorWhitespace.foreground": semantic.highlight,
 
     // 编辑器缩进和标尺
-    "editorIndentGuide.background1": `${semantic.comment}33`,
-    "editorIndentGuide.activeBackground1": semantic.comment,
-    "editorRuler.foreground": semantic.comment,
+    "editorIndentGuide.background1": semantic.highlight,
+    "editorIndentGuide.activeBackground1": semantic.highlight2,
+    "editorRuler.foreground": semantic.highlight2,
 
     // 编辑器括号匹配和折叠
-    "editorBracketMatch.background": `${semantic.comment}66`,
+    "editorBracketMatch.background": semantic.highlight2,
     "editorBracketMatch.border": theme.blue,
-    "editor.foldBackground": `${semantic.comment}66`,
+    "editor.foldBackground": semantic.highlight,
 
     // 编辑器错误和警告
     "editorError.foreground": status.error,
-    "editorError.background": "#ff0c0000",
-    "editorError.border": `${colors.white}00`,
+    "editorError.background": `${status.error}33`,
+    "editorError.border": `#00000000`,
     "editorWarning.foreground": status.warning,
-    "editorWarning.background": `${colors.yellow[2]}66`,
-    "editorWarning.border": `${colors.white}00`,
+    "editorWarning.background": `${status.warning}33`,
+    "editorWarning.border": `#00000000`,
     "editorInfo.foreground": status.info,
-    "editorInfo.background": "#4490BF00",
-    "editorInfo.border": "#4490BF00",
+    "editorInfo.background": `${status.info}33`,
+    "editorInfo.border": `#00000000`,
 
     // 编辑器槽（左侧）
     "editorGutter.background": semantic.background,
@@ -160,21 +160,21 @@ export function genEditorColors({
     "editorCodeLens.foreground": semantic.comment,
 
     // 差异编辑器
-    "diffEditor.insertedTextBackground": "#9bb95533",
-    "diffEditor.removedTextBackground": "#ff000033",
-    "diffEditor.border": "#444444",
+    "diffEditor.insertedTextBackground": `${status.success}15`,
+    "diffEditor.removedTextBackground": `${status.error}88`,
+    "diffEditor.border": "#00000000",
 
     // 面板
     "panel.background": semantic.background,
     "panel.border": semantic.border,
-    "panelTitle.activeBorder": colors.gray[0],
-    "panelTitle.activeForeground": colors.gray[0],
+    "panelTitle.activeBorder": theme.blue,
+    "panelTitle.activeForeground": semantic.foreground,
     "panelTitle.inactiveForeground": `${semantic.inactiveForeground}`,
     "panelSection.border": semantic.border,
 
     // 徽章
     "badge.background": colors.gray[6],
-    "badge.foreground": colors.white,
+    "badge.foreground": semantic.foreground,
 
     // 终端
     "terminal.foreground": colors.gray[1],
@@ -204,18 +204,18 @@ export function genEditorColors({
 
     // 面包屑导航
     "breadcrumb.background": semantic.background,
-    "breadcrumb.foreground": `${colors.gray[5]}`,
-    "breadcrumb.focusForeground": "#e0e0e0",
-    "breadcrumb.activeSelectionForeground": "#e0e0e0",
+    "breadcrumb.foreground": semantic.inactiveForeground,
+    "breadcrumb.focusForeground": semantic.foreground,
+    "breadcrumb.activeSelectionForeground": semantic.foreground,
 
     // 标签页
     "editorGroupHeader.tabsBackground": semantic.background,
     "tab.activeForeground": colors.white,
     "tab.border": "#252526",
-    "tab.activeBackground": semantic.activeBackground,
-    "tab.activeBorder": "#00000000",
-    "tab.activeBorderTop": "#00000000",
-    "tab.inactiveBackground": semantic.inactiveBackground,
+    "tab.activeBackground": semantic.background,
+    // "tab.activeBorder": ,
+    "tab.activeBorderTop": theme.blue,
+    "tab.inactiveBackground": semantic.background,
     "tab.inactiveForeground": `${semantic.inactiveForeground}`,
 
     // 编辑器概览标尺
