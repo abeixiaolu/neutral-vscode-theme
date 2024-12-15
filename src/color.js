@@ -34,9 +34,9 @@ export const alpha = {
   white10: `${colors.white}1a`,
   white25: `${colors.white}40`,
   white88: `${colors.white}bb`,
-  selection: `${colors.blue[3]}88`,
+  selection: `${colors.blue[3]}33`,
   highlight: `${colors.blue[3]}22`,
-  highlight2: `${colors.blue[3]}44`,
+  highlight2: `${colors.blue[3]}33`,
 };
 
 // 状态颜色
@@ -63,7 +63,7 @@ export const semantic = {
   inactiveForeground: colors.gray[4],
   buttonBackground: theme.blue,
   buttonHoverBackground: theme.blueLight,
-  comment: colors.gray[5],
+  comment: colors.gray[4],
   link: theme.blue,
   selection: alpha.selection,
   cursor: colors.gray[1],
@@ -81,5 +81,5 @@ export const softSemantic = Object.assign({}, semantic, {
   widgetBackground: colors.gray[6],
   activeBackground: colors.gray[6],
   inactiveForeground: colors.gray[4],
-  comment: colors.gray[5],
+  comment: colors.gray[3],
 });
