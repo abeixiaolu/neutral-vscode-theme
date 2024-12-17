@@ -77,7 +77,7 @@ export function genEditorColors({ semantic, alpha, colors, theme, status }) {
     "button.background": semantic.buttonBackground,
     "button.foreground": semantic.buttonForeground,
     "button.hoverBackground": semantic.buttonHoverBackground,
-    "button.secondaryForeground": semantic.buttonForeground,
+    "button.secondaryForeground": semantic.foreground,
     "button.secondaryBackground": semantic.widgetBackground,
     "button.secondaryHoverBackground": semantic.activeBackground,
 

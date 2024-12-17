@@ -50,7 +50,7 @@
     "button.background": "#517F57",
     "button.foreground": "#fff",
     "button.hoverBackground": "#5C9067",
-    "button.secondaryForeground": "#fff",
+    "button.secondaryForeground": "#666",
     "button.secondaryBackground": "#F1F0E9",
     "button.secondaryHoverBackground": "#F1F0E9",
     "input.background": "#F1F0E9",
