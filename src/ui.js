@@ -1,18 +1,11 @@
-export function genEditorColors({
-  semantic,
-  ui,
-  alpha,
-  colors,
-  theme,
-  status,
-}) {
+export function genEditorColors({ semantic, alpha, colors, theme, status }) {
   return {
     // 基础界面颜色
     foreground: semantic.foreground,
-    focusBorder: semantic.border,
+    focusBorder: "#ffffff00",
     "widget.shadow": semantic.shadow,
+    "scrollbar.shadow": semantic.shadow,
     "selection.background": alpha.selection,
-    "scrollbar.shadow": colors.gray[8],
     "sash.hoverBorder": theme.blue,
     descriptionForeground: "#666",
     // 链接
@@ -27,6 +20,7 @@ export function genEditorColors({
     // 侧边栏
     "sideBar.background": semantic.background,
     "sideBar.foreground": semantic.foreground,
+    "sideBar.border": semantic.border,
     "sideBarSectionHeader.background": "#00000000",
     "sideBarSectionHeader.foreground": semantic.foreground,
     "sideBarSectionHeader.border": `${colors.gray[1]}33`,
@@ -35,12 +29,14 @@ export function genEditorColors({
 
     // 列表样式
     "list.foreground": semantic.foreground,
+    "list.focusForeground": semantic.foreground,
     "list.focusBackground": semantic.listHoverBackground,
     "list.hoverBackground": semantic.listHoverBackground,
     "list.inactiveSelectionBackground": semantic.listHoverBackground,
     "list.inactiveSelectionForeground": semantic.listHoverForeground,
     "list.activeSelectionBackground": semantic.listHoverBackground,
-    "list.highlightForeground": theme.blueLight,
+    "list.activeSelectionForeground": semantic.primary,
+    "list.highlightForeground": semantic.primary,
 
     // 列表过滤器
     "listFilterWidget.background": "#653723",
@@ -55,8 +51,8 @@ export function genEditorColors({
     "statusBar.debuggingForeground": semantic.foreground,
     "statusBar.noFolderBackground": "#68217a",
     "statusBar.noFolderForeground": semantic.foreground,
-    "statusBarItem.remoteBackground": theme.blue,
-    "statusBarItem.remoteForeground": semantic.foreground,
+    "statusBarItem.remoteBackground": semantic.buttonBackground,
+    "statusBarItem.remoteForeground": semantic.buttonForeground,
     "statusBarItem.activeBackground": "#FFFFFF25",
 
     // 标题栏
@@ -79,20 +75,22 @@ export function genEditorColors({
 
     // 按钮
     "button.background": semantic.buttonBackground,
-    "button.foreground": colors.black,
+    "button.foreground": semantic.buttonForeground,
     "button.hoverBackground": semantic.buttonHoverBackground,
-    "button.secondaryForeground": semantic.foreground,
+    "button.secondaryForeground": semantic.buttonForeground,
     "button.secondaryBackground": semantic.widgetBackground,
     "button.secondaryHoverBackground": semantic.activeBackground,
 
     // 输入框 和 下拉框
     "input.background": semantic.widgetBackground,
-    "input.border": "#00000000",
+    "input.border": semantic.border,
+    "input.focusBorder": "#f00",
     "input.foreground": semantic.foreground,
     "inputOption.activeBackground": semantic.highlight2,
-    "inputOption.activeBorder": "#007acc00",
+    "inputOption.activeBorder": "#00000000",
     "inputOption.activeForeground": semantic.foreground,
     "input.placeholderForeground": semantic.inactiveForeground,
+    "dropdown.border": semantic.border,
     "dropdown.background": semantic.widgetBackground,
     "dropdown.listBackground": semantic.widgetBackground,
 
@@ -102,7 +100,7 @@ export function genEditorColors({
     "editorLineNumber.foreground": semantic.comment,
     "editorCursor.foreground": semantic.cursor,
     "editorCursor.background": colors.black,
-    "editorStickyScroll.shadow": `${semantic.scrollbar}00`,
+    "editorStickyScroll.shadow": semantic.shadow,
     "editorStickyScroll.background": semantic.scrollbar,
     "editorStickyScrollHover.background": semantic.scrollbar,
 
@@ -167,14 +165,14 @@ export function genEditorColors({
     // 面板
     "panel.background": semantic.background,
     "panel.border": semantic.border,
-    "panelTitle.activeBorder": theme.blue,
+    "panelTitle.activeBorder": semantic.primary,
     "panelTitle.activeForeground": semantic.foreground,
     "panelTitle.inactiveForeground": `${semantic.inactiveForeground}`,
     "panelSection.border": semantic.border,
 
     // 徽章
-    "badge.background": colors.gray[6],
-    "badge.foreground": semantic.foreground,
+    "badge.background": semantic.buttonBackground,
+    "badge.foreground": semantic.buttonForeground,
 
     // 终端
     "terminal.foreground": colors.gray[1],
@@ -210,11 +208,10 @@ export function genEditorColors({
 
     // 标签页
     "editorGroupHeader.tabsBackground": semantic.background,
-    "tab.activeForeground": colors.white,
-    "tab.border": "#252526",
+    "tab.activeForeground": semantic.foreground,
+    "tab.border": "#00000000",
     "tab.activeBackground": semantic.background,
-    // "tab.activeBorder": ,
-    "tab.activeBorderTop": theme.blue,
+    "tab.activeBorder": theme.blue,
     "tab.inactiveBackground": semantic.background,
     "tab.inactiveForeground": `${semantic.inactiveForeground}`,
 
@@ -228,7 +225,7 @@ export function genEditorColors({
     "progressBar.background": theme.blue,
 
     // 窗口小部件
-    "editorWidget.foreground": colors.gray[1],
+    "editorWidget.foreground": semantic.inactiveForeground,
     "editorWidget.background": semantic.background,
     "editorWidget.resizeBorder": "#5F5F5F",
 
@@ -241,16 +238,16 @@ export function genEditorColors({
     "debugToolBar.border": "#474747",
 
     // 通知
-    "notifications.foreground": colors.gray[1],
+    "notifications.foreground": semantic.foreground,
     "notifications.background": semantic.background,
     "notificationToast.border": "#474747",
     "notificationsErrorIcon.foreground": status.error,
     "notificationsWarningIcon.foreground": status.warning,
     "notificationsInfoIcon.foreground": status.info,
     "notificationCenter.border": "#474747",
-    "notificationCenterHeader.foreground": colors.gray[1],
-    "notificationCenterHeader.background": "#303031",
-    "notifications.border": "#303031",
+    "notificationCenterHeader.foreground": semantic.foreground,
+    "notificationCenterHeader.background": semantic.background,
+    "notifications.border": semantic.border,
 
     // Git 装饰器
     "gitDecoration.addedResourceForeground": "#81b88b",
@@ -267,7 +264,7 @@ export function genEditorColors({
     "settings.headerForeground": semantic.foreground,
     "settings.focusedRowBackground": "#12121200", // 当前选中行的背景色
     "settings.rowHoverBackground": "#12121200", // 鼠标悬停时的背景色
-    "settings.modifiedItemIndicator": theme.blue,
+    "settings.modifiedItemIndicator": semantic.primary,
     "walkThrough.embeddedEditorBackground": "#00000050",
   };
 }

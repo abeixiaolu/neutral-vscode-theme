@@ -38,6 +38,11 @@
         "label": "Xiaolu Abei Soft",
         "uiTheme": "vs-dark",
         "path": "./themes/Xiaolu Abei Soft-color-theme.json"
+      },
+      {
+        "label": "Xiaolu Abei Light",
+        "uiTheme": "vs",
+        "path": "./themes/Xiaolu Abei Light-color-theme.json"
       }
     ]
   },

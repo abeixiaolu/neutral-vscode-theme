@@ -29,6 +29,15 @@ export const theme = {
   red: colors.red[0],
 };
 
+export const lightTheme = {
+  blue: colors.blue[5],
+  blueLight: colors.blue[4],
+  green: colors.green[5],
+  magenta: colors.magenta[5],
+  yellow: colors.yellow[5],
+  red: colors.red[5],
+};
+
 // 透明度变体
 export const alpha = {
   white10: `${colors.white}1a`,
@@ -51,18 +60,20 @@ export const status = {
 
 // 语义化颜色
 export const semantic = {
+  primary: theme.green,
   shadow: "#00000066",
-  border: "#ff000000",
+  border: "#ffffff11",
   foreground: "#d1cdc2",
+  buttonForeground: "#000",
   background: colors.gray[8],
   editorBackground: colors.gray[8],
   inactiveBackground: colors.gray[8],
   widgetBackground: colors.gray[7],
   scrollbar: colors.gray[7],
   activeBackground: colors.gray[7],
-  inactiveForeground: colors.gray[4],
-  buttonBackground: theme.blue,
-  buttonHoverBackground: theme.blueLight,
+  inactiveForeground: colors.gray[2],
+  buttonBackground: colors.green[1],
+  buttonHoverBackground: colors.green[0],
   comment: colors.gray[4],
   link: theme.blue,
   selection: alpha.selection,
@@ -80,6 +91,31 @@ export const softSemantic = Object.assign({}, semantic, {
   scrollbar: colors.gray[6],
   widgetBackground: colors.gray[6],
   activeBackground: colors.gray[6],
-  inactiveForeground: colors.gray[4],
+  inactiveForeground: colors.gray[2],
   comment: colors.gray[3],
 });
+
+export const lightSematic = {
+  primary: lightTheme.green,
+  shadow: "#33333333",
+  border: "#E6E5DF",
+  foreground: "#666",
+  background: "#F8F8F4",
+  editorBackground: "#F8F8F4",
+  inactiveBackground: "#F8F8F4",
+  widgetBackground: "#F1F0E9",
+  scrollbar: "#F1F0E9",
+  activeBackground: "#F1F0E9",
+  inactiveForeground: "#666666",
+  buttonBackground: colors.green[5],
+  buttonHoverBackground: colors.green[4],
+  buttonForeground: "#fff",
+  comment: colors.gray[2],
+  link: colors.green[4],
+  selection: alpha.selection,
+  cursor: "#000",
+  highlight: alpha.highlight,
+  highlight2: alpha.highlight2,
+  listHoverBackground: alpha.highlight,
+  listHoverForeground: colors.black,
+};
