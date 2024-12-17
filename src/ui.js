@@ -175,11 +175,11 @@ export function genEditorColors({ semantic, alpha, colors, theme, status }) {
     "badge.foreground": semantic.buttonForeground,
 
     // 终端
-    "terminal.foreground": colors.gray[1],
+    "terminal.foreground": semantic.foreground,
     "terminal.selectionBackground": `${colors.white}`,
     "terminal.border": "#80808059",
-    "terminalCursor.background": "#0087FF",
-    "terminalCursor.foreground": colors.white,
+    "terminalCursor.background": semantic.primary,
+    "terminalCursor.foreground": semantic.foreground,
 
     // 终端 ANSI 颜色
     "terminal.ansiBrightBlack": "#666666",
