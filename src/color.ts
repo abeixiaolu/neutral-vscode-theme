@@ -12,11 +12,11 @@ export const colors = {
     "#171717",
     "#0a0a0a",
   ],
-  blue: ["#839EC0", "#7790AF", "#6C839F", "#627791", "#576B83", "#475b83"],
-  green: ["#9BD4B2", "#88C39D", "#78B28A", "#69A178", "#5C9067", "#517F57"],
-  magenta: ["#CEB0D3", "#C098C9", "#B385C0", "#A673B7", "#9A62AE", "#8F52A6"],
-  yellow: ["#D4BA9B", "#C7A984", "#BB9970", "#AF8A5D", "#A37C4C", "#986E3D"],
-  red: ["#BF7A78", "#B36D6B", "#A7615F", "#9C5553", "#914A47", "#863F3C"],
+  blue: ["#94B5C0", "#85A6B2", "#769197", "#688490", "#5F7D88", "#587984"],
+  green: ["#8EBF9D", "#7FAD89", "#719B77", "#638A67", "#5D8769", "#588467"],
+  magenta: ["#9D94BF", "#8E85AD", "#77719B", "#67638A", "#615D87", "#586084"],
+  yellow: ["#BF9D94", "#AD8E85", "#9B7771", "#8A6763", "#87615D", "#846758"],
+  red: ["#BF9494", "#AD8585", "#9B7777", "#8A6767", "#875D5D", "#845858"],
 };
 
 // 主题特色颜色
@@ -99,7 +99,7 @@ export const lightSematic = {
   primary: lightTheme.green,
   shadow: "#33333333",
   border: "#E6E5DF",
-  foreground: "#666",
+  foreground: "#333",
   background: "#F8F8F4",
   editorBackground: "#F8F8F4",
   inactiveBackground: "#F8F8F4",
@@ -119,3 +119,9 @@ export const lightSematic = {
   listHoverBackground: alpha.highlight,
   listHoverForeground: colors.black,
 };
+
+export type Color = typeof colors;
+export type Theme = typeof theme;
+export type Alpha = typeof alpha;
+export type Semantic = typeof semantic;
+export type Status = typeof status;

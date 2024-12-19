@@ -11,8 +11,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "node scripts/build.js",
-    "dev": "nodemon --watch src --ext js --exec 'npm run build'",
+    "build": "esno scripts/build.ts",
+    "dev": "esno watch scripts/build.ts",
     "pack": "npm run build && vsce pack --no-dependencies",
     "publish": "npm run build && vsce publish --no-dependencies",
     "release": "bumpp && npm run publish"
@@ -47,8 +47,10 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^22.10.2",
     "@vscode/vsce": "^3.2.1",
     "bumpp": "^9.8.1",
-    "nodemon": "^3.1.0"
+    "esno": "^4.7.0",
+    "typescript": "^5.7.2"
   }
 }

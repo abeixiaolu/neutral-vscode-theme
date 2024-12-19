@@ -1,4 +1,12 @@
-export default function genTokenColors({ semantic, theme }) {
+import { Semantic, Theme } from "./color.js";
+
+export default function genTokenColors({
+  semantic,
+  theme,
+}: {
+  semantic: Semantic;
+  theme: Theme;
+}) {
   return [
     // 主要语法元素 - 使用 theme.primary (蓝色 #90aed3)
     {

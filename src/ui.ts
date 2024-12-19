@@ -1,4 +1,18 @@
-export function genEditorColors({ semantic, alpha, colors, theme, status }) {
+import { Alpha, Color, Semantic, Theme, Status } from "./color.js";
+
+export function genEditorColors({
+  semantic,
+  alpha,
+  colors,
+  theme,
+  status,
+}: {
+  semantic: Semantic;
+  alpha: Alpha;
+  colors: Color;
+  theme: Theme;
+  status: Status;
+}) {
   return {
     // 基础界面颜色
     foreground: semantic.foreground,
@@ -11,10 +25,10 @@ export function genEditorColors({ semantic, alpha, colors, theme, status }) {
     // 链接
     "textLink.foreground": semantic.link,
     // 活动栏 (左侧图标栏)
-    "activityBar.foreground": theme.foreground,
+    "activityBar.foreground": semantic.foreground,
     "activityBar.background": semantic.background,
     "activityBar.inactiveForeground": semantic.inactiveForeground,
-    "activityBarBadge.foreground": theme.foreground,
+    "activityBarBadge.foreground": semantic.foreground,
     "activityBarBadge.background": theme.blue,
 
     // 侧边栏
@@ -176,7 +190,7 @@ export function genEditorColors({ semantic, alpha, colors, theme, status }) {
 
     // 终端
     "terminal.foreground": semantic.foreground,
-    "terminal.selectionBackground": `${colors.white}`,
+    "terminal.selectionBackground": semantic.selection,
     "terminal.border": "#80808059",
     "terminalCursor.background": semantic.primary,
     "terminalCursor.foreground": semantic.foreground,
@@ -198,7 +212,6 @@ export function genEditorColors({ semantic, alpha, colors, theme, status }) {
     "terminal.ansiRed": theme.red,
     "terminal.ansiWhite": "#e5e5e5",
     "terminal.ansiYellow": theme.yellow,
-    "terminal.selectionBackground": semantic.selection,
 
     // 面包屑导航
     "breadcrumb.background": semantic.background,
