@@ -2,6 +2,7 @@
   "name": "xiaoluabei-vscode-theme",
   "displayName": "Xiaolu Abei",
   "description": "A dark theme with a focus on readability and minimalism.",
+  "icon": "icon.png",
   "version": "1.0.0",
   "publisher": "xiaoluabei",
   "type": "module",

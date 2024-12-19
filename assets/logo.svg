@@ -1,0 +1,33 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 整体图形居中，放大 10% -->
+  <g transform="translate(35, 35)">
+    <!-- 左边的心形 -->
+    <g transform="translate(0, 0) scale(1.1)">
+      <path d="M30 42.5 C30 37.5, 25 32.5, 20 32.5 C12.5 32.5, 12.5 42.5, 20 50 L30 60 L40 50 C47.5 42.5, 47.5 32.5, 40 32.5 C35 32.5, 30 37.5, 30 42.5"
+            fill="#FF69B4"/>
+    </g>
+    
+    <!-- 右边的心形 -->
+    <g transform="translate(60, 0) scale(1.1)">
+      <path d="M30 42.5 C30 37.5, 25 32.5, 20 32.5 C12.5 32.5, 12.5 42.5, 20 50 L30 60 L40 50 C47.5 42.5, 47.5 32.5, 40 32.5 C35 32.5, 30 37.5, 30 42.5"
+            fill="#4EC9B0"/>
+    </g>
+    
+    <!-- 代码括号装饰 - 确保与心形对齐 -->
+    <g transform="translate(0, 60) scale(1.1)">
+      <path d="M20 20 L30 30 L40 20" 
+            stroke="#FF69B4" 
+            fill="none"
+            stroke-width="6"
+            stroke-linecap="round"/>
+    </g>
+    
+    <g transform="translate(60, 60) scale(1.1)">
+      <path d="M20 20 L30 30 L40 20" 
+            stroke="#4EC9B0" 
+            fill="none"
+            stroke-width="6"
+            stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
