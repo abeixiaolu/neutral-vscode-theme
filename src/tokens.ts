@@ -42,6 +42,9 @@ export default function genTokenColors({
         "support.constant.color",
         "entity.name.type.class",
         "support.class",
+        // 添加以下 scope 来支持 TSX/Vue TSX 组件
+        "support.class.component",
+        "entity.name.type",
       ],
       settings: {
         foreground: theme.yellow,
@@ -54,7 +57,7 @@ export default function genTokenColors({
         "keyword.control",
         "storage.type",
         "support.type",
-        "entity.name.type",
+        // "entity.name.type",
         "support.class",
         "entity.name.namespace",
         "entity.other.inherited-class",
