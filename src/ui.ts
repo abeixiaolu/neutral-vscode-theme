@@ -28,8 +28,8 @@ export function genEditorColors({
     "activityBar.foreground": semantic.foreground,
     "activityBar.background": semantic.background,
     "activityBar.inactiveForeground": semantic.inactiveForeground,
-    "activityBarBadge.foreground": semantic.foreground,
-    "activityBarBadge.background": theme.blue,
+    "activityBarBadge.foreground": semantic.buttonForeground,
+    "activityBarBadge.background": semantic.buttonBackground,
 
     // 侧边栏
     "sideBar.background": semantic.background,
