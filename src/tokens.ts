@@ -54,10 +54,7 @@ export default function genTokenColors({
     // 关键字和控制流 - 使用 theme.secondary (绿色 #9bd4b2)
     {
       scope: [
-        "keyword.control",
-        "storage.type",
         "support.type",
-        // "entity.name.type",
         "support.class",
         "entity.name.namespace",
         "entity.other.inherited-class",
@@ -68,6 +65,14 @@ export default function genTokenColors({
       ],
       settings: {
         foreground: theme.green,
+      },
+    },
+
+    {
+      scope: ["keyword.control", "storage.type"],
+      settings: {
+        foreground: theme.green,
+        fontStyle: "italic",
       },
     },
 

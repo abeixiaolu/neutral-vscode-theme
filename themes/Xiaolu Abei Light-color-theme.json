@@ -234,8 +234,6 @@
     },
     {
       "scope": [
-        "keyword.control",
-        "storage.type",
         "support.type",
         "support.class",
         "entity.name.namespace",
@@ -247,6 +245,16 @@
       ],
       "settings": {
         "foreground": "#588467"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control",
+        "storage.type"
+      ],
+      "settings": {
+        "foreground": "#588467",
+        "fontStyle": "italic"
       }
     },
     {
