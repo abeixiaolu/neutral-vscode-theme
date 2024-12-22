@@ -224,7 +224,7 @@ export function genEditorColors({
     "tab.activeForeground": semantic.foreground,
     "tab.border": "#00000000",
     "tab.activeBackground": semantic.background,
-    "tab.activeBorder": theme.blue,
+    "tab.activeBorder": semantic.primary,
     "tab.inactiveBackground": semantic.background,
     "tab.inactiveForeground": `${semantic.inactiveForeground}`,
 

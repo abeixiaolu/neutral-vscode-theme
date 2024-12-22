@@ -153,7 +153,7 @@
     "tab.activeForeground": "#d1cdc2",
     "tab.border": "#00000000",
     "tab.activeBackground": "#171717",
-    "tab.activeBorder": "#94B5C0",
+    "tab.activeBorderTop": "#8EBF9D",
     "tab.inactiveBackground": "#171717",
     "tab.inactiveForeground": "#a3a3a3",
     "editorOverviewRuler.border": "#ffffff11",
