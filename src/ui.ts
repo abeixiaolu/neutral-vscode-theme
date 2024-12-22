@@ -263,15 +263,15 @@ export function genEditorColors({
     "activityBarBadge.background": semantic.buttonBackground,
 
     // Git 装饰器
-    "gitDecoration.addedResourceForeground": "#81b88b",
-    "gitDecoration.conflictingResourceForeground": "#6c6cc4",
-    "gitDecoration.deletedResourceForeground": "#c74e39",
+    "gitDecoration.addedResourceForeground": theme.green,
+    "gitDecoration.conflictingResourceForeground": theme.magenta,
+    "gitDecoration.deletedResourceForeground": theme.red,
     "gitDecoration.ignoredResourceForeground": "#8c8c8c",
-    "gitDecoration.modifiedResourceForeground": "#e2c08d",
-    "gitDecoration.stageDeletedResourceForeground": "#c74e39",
-    "gitDecoration.stageModifiedResourceForeground": "#e2c08d",
-    "gitDecoration.submoduleResourceForeground": "#8db9e2",
-    "gitDecoration.untrackedResourceForeground": "#73c991",
+    "gitDecoration.modifiedResourceForeground": theme.yellow,
+    "gitDecoration.stageDeletedResourceForeground": theme.red,
+    "gitDecoration.stageModifiedResourceForeground": theme.yellow,
+    "gitDecoration.submoduleResourceForeground": theme.blue,
+    "gitDecoration.untrackedResourceForeground": theme.green,
 
     // 其他配置
     "settings.headerForeground": semantic.foreground,
