@@ -24,12 +24,6 @@ export function genEditorColors({
     descriptionForeground: "#666",
     // 链接
     "textLink.foreground": semantic.link,
-    // 活动栏 (左侧图标栏)
-    "activityBar.foreground": semantic.foreground,
-    "activityBar.background": semantic.background,
-    "activityBar.inactiveForeground": semantic.inactiveForeground,
-    "activityBarBadge.foreground": semantic.buttonForeground,
-    "activityBarBadge.background": semantic.buttonBackground,
 
     // 侧边栏
     "sideBar.background": semantic.background,
@@ -261,6 +255,12 @@ export function genEditorColors({
     "notificationCenterHeader.foreground": semantic.foreground,
     "notificationCenterHeader.background": semantic.background,
     "notifications.border": semantic.border,
+    // 活动栏 (左侧图标栏)
+    "activityBar.foreground": semantic.foreground,
+    "activityBar.background": semantic.background,
+    "activityBar.inactiveForeground": semantic.inactiveForeground,
+    "activityBarBadge.foreground": semantic.buttonForeground,
+    "activityBarBadge.background": semantic.buttonBackground,
 
     // Git 装饰器
     "gitDecoration.addedResourceForeground": "#81b88b",
