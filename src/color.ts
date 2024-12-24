@@ -1,3 +1,72 @@
+/**
+ * 生成一个颜色数组,基于输入颜色递减饱和度和明度
+ * @param baseColor 基础颜色
+ * @returns 包含5个颜色的数组
+ */
+function generateColorGradient(baseColor: string): string[] {
+  // 将16进制颜色转换为HSL
+  const parseHex = (hex: string) => {
+    const r = parseInt(hex.slice(1, 3), 16) / 255;
+    const g = parseInt(hex.slice(3, 5), 16) / 255;
+    const b = parseInt(hex.slice(5, 7), 16) / 255;
+
+    const max = Math.max(r, g, b);
+    const min = Math.min(r, g, b);
+    let h = 0,
+      s = 0,
+      l = (max + min) / 2;
+
+    if (max !== min) {
+      const d = max - min;
+      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+      switch (max) {
+        case r:
+          h = (g - b) / d + (g < b ? 6 : 0);
+          break;
+        case g:
+          h = (b - r) / d + 2;
+          break;
+        case b:
+          h = (r - g) / d + 4;
+          break;
+      }
+      h /= 6;
+    }
+
+    return [h * 360, s * 100, l * 100];
+  };
+
+  // HSL转回16进制
+  const toHex = (h: number, s: number, l: number): string => {
+    const hue2rgb = (p: number, q: number, t: number) => {
+      if (t < 0) t += 1;
+      if (t > 1) t -= 1;
+      if (t < 1 / 6) return p + (q - p) * 6 * t;
+      if (t < 1 / 2) return q;
+      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+      return p;
+    };
+
+    s /= 100;
+    l /= 100;
+
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
+
+    const r = Math.round(hue2rgb(p, q, (h / 360 + 1 / 3) % 1) * 255);
+    const g = Math.round(hue2rgb(p, q, (h / 360) % 1) * 255);
+    const b = Math.round(hue2rgb(p, q, (h / 360 - 1 / 3) % 1) * 255);
+
+    return `#${[r, g, b].map((x) => x.toString(16).padStart(2, "0")).join("")}`;
+  };
+
+  const [h, s, l] = parseHex(baseColor);
+  return Array.from({ length: 5 }, (_, i) =>
+    toHex(h, Math.max(0, s - i * 5), Math.max(0, l - i * 5))
+  );
+}
+
 export const colors = {
   black: "#121212",
   white: "#ffffff",
@@ -12,12 +81,19 @@ export const colors = {
     "#171717",
     "#0a0a0a",
   ],
-  blue: ["#94B5C0", "#85A6B2", "#769197", "#688490", "#5F7D88", "#587984"],
-  cyan: ["#7dd0c1", "#71beb0", "#65ad9f", "#599c8e", "#4d8b7d", "#417a6c"],
-  green: ["#8EBF9D", "#7FAD89", "#719B77", "#638A67", "#5D8769", "#588467"],
-  magenta: ["#9D94BF", "#8E85AD", "#77719B", "#67638A", "#615D87", "#586084"],
-  yellow: ["#BF9D94", "#AD8E85", "#9B7771", "#8A6763", "#87615D", "#846758"],
-  red: ["#BF9494", "#AD8585", "#9B7777", "#8A6767", "#875D5D", "#845858"],
+  blue: generateColorGradient("#94B5C0"),
+  cyan: generateColorGradient("#7dd0c1"),
+  green: generateColorGradient("#8EBF9D"),
+  magenta: generateColorGradient("#9D94BF"),
+  yellow: generateColorGradient("#BF9D94"),
+  red: generateColorGradient("#cc8787"),
+
+  blueLight: generateColorGradient("#7eadce"),
+  cyanLight: generateColorGradient("#7ecebf"),
+  greenLight: generateColorGradient("#7ece7e"),
+  magentaLight: generateColorGradient("#7e7ece"),
+  yellowLight: generateColorGradient("#cea67e"),
+  redLight: generateColorGradient("#ce7e7e"),
 };
 
 // 主题特色颜色
@@ -31,12 +107,12 @@ export const theme = {
 };
 
 export const lightTheme = {
-  blue: colors.blue[5],
-  blueLight: colors.blue[4],
-  green: colors.green[5],
-  magenta: colors.magenta[5],
-  yellow: colors.yellow[5],
-  red: colors.red[5],
+  blue: colors.blueLight[4],
+  blueLight: colors.blueLight[3],
+  green: colors.greenLight[4],
+  magenta: colors.magentaLight[4],
+  yellow: colors.yellowLight[4],
+  red: colors.redLight[4],
 };
 
 // 透明度变体
@@ -56,7 +132,7 @@ export const status = {
   info: colors.blue[2],
   success: colors.green[2],
   modified: colors.blue[2],
-  deleted: colors.red[4],
+  deleted: colors.red[2],
 };
 
 // 语义化颜色
@@ -108,11 +184,11 @@ export const lightSematic = {
   scrollbar: "#F1F0E9",
   activeBackground: "#F1F0E9",
   inactiveForeground: "#666666",
-  buttonBackground: colors.green[5],
-  buttonHoverBackground: colors.green[4],
+  buttonBackground: colors.greenLight[4],
+  buttonHoverBackground: colors.greenLight[3],
   buttonForeground: "#fff",
   comment: colors.gray[2],
-  link: colors.green[4],
+  link: colors.greenLight[4],
   selection: `${lightTheme.green}40`,
   cursor: "#000",
   highlight: `${lightTheme.green}20`,
