@@ -156,6 +156,7 @@ export function createEditorTheme(colors: EditorColors) {
       scope: "keyword.operator",
       settings: {
         foreground: colors.operator,
+        fontStyle: "normal",
       },
     },
     {
