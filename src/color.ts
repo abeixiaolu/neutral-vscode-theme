@@ -159,6 +159,8 @@ export const semantic = {
   highlight2: `${theme.blue}30`,
   listHoverBackground: "#66666633",
   listHoverForeground: colors.white,
+  punctuation: colors.gray[3],
+  operator: colors.gray[2],
 };
 
 export const softSemantic = Object.assign({}, semantic, {
@@ -195,6 +197,8 @@ export const lightSematic = {
   highlight2: `${lightTheme.green}30`,
   listHoverBackground: alpha.highlight,
   listHoverForeground: colors.black,
+  punctuation: colors.gray[2],
+  operator: colors.gray[3],
 };
 
 export type Color = typeof colors;
