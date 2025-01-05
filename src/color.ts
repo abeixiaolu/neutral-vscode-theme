@@ -104,6 +104,7 @@ export const theme = {
   magenta: colors.magenta[0],
   yellow: colors.yellow[0],
   red: colors.red[0],
+  typeName: colors.cyan[0],
 };
 
 export const lightTheme = {
@@ -113,6 +114,7 @@ export const lightTheme = {
   magenta: colors.magentaLight[4],
   yellow: colors.yellowLight[4],
   red: colors.redLight[4],
+  typeName: colors.cyan[4],
 };
 
 // 透明度变体

@@ -20,6 +20,7 @@ export default function genTokenColors({
     string: theme.yellow,
     invalid: theme.red,
     bracketHighlight: semantic.punctuation,
+    typeName: theme.typeName,
     /* diffDeletedBg: "#f00",
     diffInsertedBg: "#f00",
     diffChangedBg: "#f00",
@@ -80,6 +81,11 @@ export type EditorColors = {
    */
   string: string;
   /**
+   * Color of type names
+   * @example interface HelloWorld { ... } class HelloWorld { ... } type HelloWorld = string
+   */
+  typeName?: string;
+  /**
    * Color of HTML tags
    * @example div, button
    */
@@ -119,6 +125,12 @@ export function createEditorTheme(colors: EditorColors) {
       scope: ["entity", "entity.name"],
       settings: {
         foreground: colors.function,
+      },
+    },
+    {
+      scope: ["	entity.name.type"],
+      settings: {
+        foreground: colors.typeName,
       },
     },
     {

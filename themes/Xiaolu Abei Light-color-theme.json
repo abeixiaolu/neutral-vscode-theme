@@ -223,6 +223,14 @@
     },
     {
       "scope": [
+        "\tentity.name.type"
+      ],
+      "settings": {
+        "foreground": "#549387"
+      }
+    },
+    {
+      "scope": [
         "variable.parameter.function",
         "meta.object.member"
       ],
