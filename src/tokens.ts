@@ -128,7 +128,7 @@ export function createEditorTheme(colors: EditorColors) {
       },
     },
     {
-      scope: ["	entity.name.type"],
+      scope: ["	entity.name.type", "support.class.component"],
       settings: {
         foreground: colors.typeName,
       },

@@ -223,7 +223,8 @@
     },
     {
       "scope": [
-        "\tentity.name.type"
+        "\tentity.name.type",
+        "support.class.component"
       ],
       "settings": {
         "foreground": "#7dd0c1"
