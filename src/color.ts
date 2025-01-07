@@ -82,39 +82,38 @@ export const colors = {
     "#0a0a0a",
   ],
   blue: generateColorGradient("#94B5C0"),
-  cyan: generateColorGradient("#7dd0c1"),
+  cyan: generateColorGradient("#6eb4b4"),
   green: generateColorGradient("#8EBF9D"),
   magenta: generateColorGradient("#9D94BF"),
-  yellow: generateColorGradient("#BF9D94"),
+  orange: generateColorGradient("#BF9D94"),
   red: generateColorGradient("#cc8787"),
 
   blueLight: generateColorGradient("#7eadce"),
   cyanLight: generateColorGradient("#7ecebf"),
   greenLight: generateColorGradient("#7ece7e"),
   magentaLight: generateColorGradient("#7e7ece"),
-  yellowLight: generateColorGradient("#cea67e"),
+  orangeLight: generateColorGradient("#cea67e"),
   redLight: generateColorGradient("#ce7e7e"),
 };
+console.log("colors: ", colors);
 
 // 主题特色颜色
 export const theme = {
-  blue: colors.blue[0],
-  blueLight: colors.blue[1],
-  green: colors.green[0],
-  magenta: colors.magenta[0],
-  yellow: colors.yellow[0],
-  red: colors.red[0],
-  typeName: colors.cyan[0],
+  blue: colors.blue[0], // #94B5C0
+  green: colors.green[0], //#8EBF9D
+  magenta: colors.magenta[0], //#9D94BF
+  orange: colors.orange[0], //#BF9D94
+  red: colors.red[0], //#cc8787
+  typeName: colors.cyan[0], //#6eb4b4
 };
 
 export const lightTheme = {
-  blue: colors.blueLight[4],
-  blueLight: colors.blueLight[3],
-  green: colors.greenLight[4],
-  magenta: colors.magentaLight[4],
-  yellow: colors.yellowLight[4],
-  red: colors.redLight[4],
-  typeName: colors.cyan[4],
+  blue: colors.blueLight[3], // #5a86a6
+  green: colors.greenLight[3], //#5aa65a
+  magenta: colors.magentaLight[3], //#5a5aa6
+  orange: colors.orangeLight[3], //#a6805a
+  red: colors.redLight[3], //#a65a5a
+  typeName: colors.cyanLight[3], //#5aa698
 };
 
 // 透明度变体
@@ -130,7 +129,7 @@ export const alpha = {
 // 状态颜色
 export const status = {
   error: colors.red[2],
-  warning: colors.yellow[2],
+  warning: colors.orange[2],
   info: colors.blue[2],
   success: colors.green[2],
   modified: colors.blue[2],
