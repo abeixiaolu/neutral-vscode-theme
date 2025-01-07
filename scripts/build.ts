@@ -35,7 +35,11 @@ async function build() {
       theme,
       status,
     }),
-    tokenColors: genTokenColors({ semantic: softSemantic, theme }),
+    tokenColors: genTokenColors({
+      semantic: softSemantic,
+      theme,
+      moreGreen: true,
+    }),
   };
   const lightTheme = {
     name: "Xiaolu Abei Light",

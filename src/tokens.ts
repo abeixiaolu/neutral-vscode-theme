@@ -3,11 +3,14 @@ import { Semantic, Theme } from "./color.js";
 export default function genTokenColors({
   semantic,
   theme,
+  moreGreen = false,
 }: {
   semantic: Semantic;
   theme: Theme;
+  moreGreen?: boolean;
 }) {
   const colors: EditorColors = {
+    tag: moreGreen ? theme.green : theme.magenta,
     comment: semantic.comment,
     foreground: semantic.foreground,
     function: theme.blue,
@@ -89,7 +92,7 @@ export type EditorColors = {
    * Color of HTML tags
    * @example div, button
    */
-  // tag: string;
+  tag: string;
   invalid?: string;
   bracketHighlight?: string;
   diffDeletedBg?: string;
@@ -142,7 +145,7 @@ export function createEditorTheme(colors: EditorColors) {
     {
       scope: "entity.name.tag",
       settings: {
-        foreground: colors.keyword,
+        foreground: colors.tag,
       },
     },
     {

@@ -95,7 +95,6 @@ export const colors = {
   orangeLight: generateColorGradient("#cea67e"),
   redLight: generateColorGradient("#ce7e7e"),
 };
-console.log("colors: ", colors);
 
 // 主题特色颜色
 export const theme = {
