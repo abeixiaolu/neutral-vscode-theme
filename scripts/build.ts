@@ -5,9 +5,6 @@ import { genEditorColors } from "../src/ui.js";
 import {
   semantic,
   softSemantic,
-  status,
-  alpha,
-  colors,
   theme,
   lightSematic,
   lightTheme as lightThemeColor,
@@ -21,7 +18,7 @@ async function build() {
     name: "Xiaolu Abei Dark",
     base: "vs-dark",
     semanticHighlighting: true,
-    colors: genEditorColors({ semantic, alpha, colors, theme, status }),
+    colors: genEditorColors({ semantic, theme, }),
     tokenColors: genTokenColors({ semantic, theme }),
   };
   const softTheme = {
@@ -30,10 +27,7 @@ async function build() {
     semanticHighlighting: true,
     colors: genEditorColors({
       semantic: softSemantic,
-      alpha,
-      colors,
       theme,
-      status,
     }),
     tokenColors: genTokenColors({
       semantic: softSemantic,
@@ -47,10 +41,7 @@ async function build() {
     semanticHighlighting: true,
     colors: genEditorColors({
       semantic: lightSematic,
-      alpha,
-      colors,
       theme: lightThemeColor,
-      status,
     }),
     tokenColors: genTokenColors({
       semantic: lightSematic,
