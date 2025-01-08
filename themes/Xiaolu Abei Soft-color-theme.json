@@ -228,7 +228,7 @@
     },
     {
       "scope": [
-        "\tentity.name.type",
+        "entity.name.type",
         "support.class.component"
       ],
       "settings": {

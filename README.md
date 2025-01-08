@@ -1,12 +1,12 @@
 # Minimalist Color Theme for VSCode
 
-<img width="1275" src="https://raw.githubusercontent.com/abeixiaolu/xiaoluabei-vscode-theme/master/assets/image.png" alt="screenshot" />
+<img width="1275" src="https://raw.githubusercontent.com/abeixiaolu/xiaoluabei-vscode-theme/master/assets/dark.png" alt="screenshot" />
 <div style="display:flex;justify-content:center">Dark</div>
 <br>
-<img width="1275" src="https://raw.githubusercontent.com/abeixiaolu/xiaoluabei-vscode-theme/master/assets/image.png" alt="screenshot" />
+<img width="1275" src="https://raw.githubusercontent.com/abeixiaolu/xiaoluabei-vscode-theme/master/assets/soft.png" alt="screenshot" />
 <div style="display:flex;justify-content:center">Soft</div>
 <br>
-<img width="1275" src="https://raw.githubusercontent.com/abeixiaolu/xiaoluabei-vscode-theme/master/assets/image.png" alt="screenshot" />
+<img width="1275" src="https://raw.githubusercontent.com/abeixiaolu/xiaoluabei-vscode-theme/master/assets/light.png" alt="screenshot" />
 <div style="display:flex;justify-content:center">Light</div>
 <br>
 <div style="display:flex;justify-content:center;align-items:center;flex-direction:column;">
