@@ -1,33 +1,26 @@
 {
+  "publisher": "xiaoluabei",
   "name": "xiaoluabei-vscode-theme",
   "displayName": "Xiaolu Abei",
-  "description": "A dark theme with a focus on readability and minimalism.",
-  "icon": "icon.png",
-  "version": "1.4.3",
-  "publisher": "xiaoluabei",
   "type": "module",
+  "version": "1.4.3",
+  "description": "A dark theme with a focus on readability and minimalism.",
   "author": {
     "name": "Xiaolu Abei",
     "email": "xiaoluabei@gmail.com"
   },
   "license": "MIT",
-  "scripts": {
-    "build": "esno scripts/build.ts",
-    "dev": "esno watch scripts/build.ts",
-    "pack": "npm run build && vsce pack --no-dependencies",
-    "publish": "npm run build && vsce publish --no-dependencies",
-    "release": "bumpp && npm run publish"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/abeixiaolu/xiaoluabei-vscode-theme.git"
   },
-  "engines": {
-    "vscode": "^1.43.0"
-  },
   "categories": [
     "Themes"
   ],
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.43.0"
+  },
   "contributes": {
     "themes": [
       {
@@ -47,10 +40,20 @@
       }
     ]
   },
+  "scripts": {
+    "build": "esno scripts/build.ts",
+    "dev": "esno watch scripts/build.ts",
+    "pack": "npm run build && vsce pack --no-dependencies",
+    "publish": "npm run build && vsce publish --no-dependencies",
+    "release": "bumpp && npm run publish",
+    "lint": "eslint . --fix"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^3.12.1",
     "@types/node": "^22.10.2",
     "@vscode/vsce": "^3.2.1",
     "bumpp": "^9.8.1",
+    "eslint": "^9.17.0",
     "esno": "^4.7.0",
     "typescript": "^5.7.2"
   }

@@ -1,13 +1,13 @@
-import { Semantic, Theme } from "./color.js";
+import type { Semantic, Theme } from './color.js'
 
 export default function genTokenColors({
   semantic,
   theme,
   moreGreen = false,
 }: {
-  semantic: Semantic;
-  theme: Theme;
-  moreGreen?: boolean;
+  semantic: Semantic
+  theme: Theme
+  moreGreen?: boolean
 }) {
   const colors: EditorColors = {
     tag: moreGreen ? theme.green : theme.magenta,
@@ -29,163 +29,163 @@ export default function genTokenColors({
     diffChangedBg: "#f00",
     diffIgnoredBg: "#f00",
     carriageReturn: "#f00", */
-  };
-  return createEditorTheme(colors);
+  }
+  return createEditorTheme(colors)
 }
 
-export type EditorColors = {
+export interface EditorColors {
   /**
    * Color of comments
    * @example // Hello World
    */
-  comment: string;
+  comment: string
   /**
    * Color of text
    * @example Hello World
    */
-  foreground: string;
+  foreground: string
   /**
    * Color of function names
    * @example helloWorld
    */
-  function: string;
+  function: string
   /**
    * Color of variable names
    * @example helloWorld
    */
-  variable: string;
+  variable: string
   /**
    * Color of language keywords
    * @example if, else, for, while, return, export, function
    */
-  keyword: string;
+  keyword: string
   /**
    * Color of numbers
    * @example 123
    */
-  number: string;
+  number: string
   /**
    * Color of operators
    * @example +, -, *, /, %, =, ==, ===, !=, !==, &&, ||, !
    */
-  operator: string;
+  operator: string
   /**
    * Color of regular expressions
    */
-  regexp: string;
+  regexp: string
   /**
    * Color of delimiters and brackets
    * @example (), [], {}, ",", .
    */
-  punctuation: string;
+  punctuation: string
   /**
    * Color of strings
    * @example "Hello World"
    */
-  string: string;
+  string: string
   /**
    * Color of type names
    * @example interface HelloWorld { ... } class HelloWorld { ... } type HelloWorld = string
    */
-  typeAndComp?: string;
+  typeAndComp?: string
   /**
    * Color of HTML tags
    * @example div, button
    */
-  tag: string;
-  invalid?: string;
-  bracketHighlight?: string;
-  diffDeletedBg?: string;
-  diffInsertedBg?: string;
-  diffChangedBg?: string;
-  diffIgnoredBg?: string;
-  carriageReturn?: string;
-};
+  tag: string
+  invalid?: string
+  bracketHighlight?: string
+  diffDeletedBg?: string
+  diffInsertedBg?: string
+  diffChangedBg?: string
+  diffIgnoredBg?: string
+  carriageReturn?: string
+}
 
 export function createEditorTheme(colors: EditorColors) {
   return [
     {
-      scope: ["comment", "punctuation.definition.comment", "string.comment"],
+      scope: ['comment', 'punctuation.definition.comment', 'string.comment'],
       settings: {
         foreground: colors.comment,
       },
     },
     {
       scope: [
-        "constant",
-        "entity.name.constant",
-        "variable.other.constant",
-        "variable.other.member",
-        "variable.other.enummember",
-        "variable.language",
-        "support.type.object.module",
+        'constant',
+        'entity.name.constant',
+        'variable.other.constant',
+        'variable.other.member',
+        'variable.other.enummember',
+        'variable.language',
+        'support.type.object.module',
       ],
       settings: {
         foreground: colors.variable,
       },
     },
     {
-      scope: ["entity", "entity.name"],
+      scope: ['entity', 'entity.name'],
       settings: {
         foreground: colors.function,
       },
     },
     {
-      scope: ["	entity.name.type", "support.class.component"],
+      scope: ['entity.name.type', 'support.class.component'],
       settings: {
         foreground: colors.typeAndComp,
       },
     },
     {
-      scope: ["variable.parameter.function", "meta.object.member"],
+      scope: ['variable.parameter.function', 'meta.object.member'],
       settings: {
         foreground: colors.variable,
       },
     },
     {
-      scope: "entity.name.tag",
+      scope: 'entity.name.tag',
       settings: {
         foreground: colors.tag,
       },
     },
     {
-      scope: "keyword",
+      scope: 'keyword',
       settings: {
         foreground: colors.keyword,
-        fontStyle: "italic",
+        fontStyle: 'italic',
       },
     },
     {
-      scope: "keyword.operator",
+      scope: 'keyword.operator',
       settings: {
         foreground: colors.operator,
-        fontStyle: "normal",
+        fontStyle: 'normal',
       },
     },
     {
-      scope: ["keyword.operator.word"],
+      scope: ['keyword.operator.word'],
       settings: {
         foreground: colors.keyword,
       },
     },
     {
-      scope: ["storage", "storage.type"],
+      scope: ['storage', 'storage.type'],
       settings: {
         foreground: colors.keyword,
-        fontStyle: "italic",
+        fontStyle: 'italic',
       },
     },
     {
-      scope: ["constant.numeric"],
+      scope: ['constant.numeric'],
       settings: {
         foreground: colors.number,
       },
     },
     {
       scope: [
-        "storage.modifier.package",
-        "storage.modifier.import",
-        "storage.type.java",
+        'storage.modifier.package',
+        'storage.modifier.import',
+        'storage.type.java',
       ],
       settings: {
         foreground: colors.variable,
@@ -193,9 +193,9 @@ export function createEditorTheme(colors: EditorColors) {
     },
     {
       scope: [
-        "string",
-        "punctuation.definition.string",
-        "string punctuation.section.embedded source",
+        'string',
+        'punctuation.definition.string',
+        'string punctuation.section.embedded source',
       ],
       settings: {
         foreground: colors.string,
@@ -208,170 +208,170 @@ export function createEditorTheme(colors: EditorColors) {
     //   },
     // },
     {
-      scope: "meta.property-name",
+      scope: 'meta.property-name',
       settings: {
         foreground: colors.foreground,
       },
     },
     {
-      scope: "variable",
+      scope: 'variable',
       settings: {
         foreground: colors.variable,
       },
     },
     {
-      scope: "variable.other",
+      scope: 'variable.other',
       settings: {
         foreground: colors.variable,
       },
     },
     {
-      scope: "invalid.broken",
+      scope: 'invalid.broken',
       settings: {
-        fontStyle: "italic",
+        fontStyle: 'italic',
         foreground: colors.invalid,
       },
     },
     {
-      scope: "invalid.deprecated",
+      scope: 'invalid.deprecated',
       settings: {
-        fontStyle: "italic",
+        fontStyle: 'italic',
         foreground: colors.invalid,
       },
     },
     {
-      scope: "invalid.illegal",
+      scope: 'invalid.illegal',
       settings: {
-        fontStyle: "italic",
+        fontStyle: 'italic',
         foreground: colors.invalid,
       },
     },
     {
-      scope: "invalid.unimplemented",
+      scope: 'invalid.unimplemented',
       settings: {
-        fontStyle: "italic",
+        fontStyle: 'italic',
         foreground: colors.invalid,
       },
     },
     {
-      scope: "carriage-return",
+      scope: 'carriage-return',
       settings: {
-        fontStyle: "italic underline",
+        fontStyle: 'italic underline',
         background: colors.keyword,
         foreground: colors.carriageReturn,
         // content: "^M",
       },
     },
     {
-      scope: "message.error",
+      scope: 'message.error',
       settings: {
         foreground: colors.invalid,
       },
     },
     {
-      scope: "string variable",
+      scope: 'string variable',
       settings: {
         foreground: colors.foreground,
       },
     },
     {
-      scope: ["source.regexp", "string.regexp"],
+      scope: ['source.regexp', 'string.regexp'],
       settings: {
         foreground: colors.regexp,
       },
     },
     {
       scope: [
-        "string.regexp.character-class",
-        "string.regexp constant.character.escape",
-        "string.regexp source.ruby.embedded",
-        "string.regexp string.regexp.arbitrary-repitition",
+        'string.regexp.character-class',
+        'string.regexp constant.character.escape',
+        'string.regexp source.ruby.embedded',
+        'string.regexp string.regexp.arbitrary-repitition',
       ],
       settings: {
         foreground: colors.regexp,
       },
     },
     {
-      scope: "string.regexp constant.character.escape",
+      scope: 'string.regexp constant.character.escape',
       settings: {
-        fontStyle: "bold",
+        fontStyle: 'bold',
         foreground: colors.keyword,
       },
     },
     {
-      scope: "support.constant",
+      scope: 'support.constant',
       settings: {
         foreground: colors.foreground,
       },
     },
     {
-      scope: "support.variable",
+      scope: 'support.variable',
       settings: {
         foreground: colors.foreground,
       },
     },
     {
-      scope: "meta.module-reference",
+      scope: 'meta.module-reference',
       settings: {
         foreground: colors.foreground,
       },
     },
     {
-      scope: "punctuation.definition.list.begin.markdown",
+      scope: 'punctuation.definition.list.begin.markdown',
       settings: {
         foreground: colors.variable,
       },
     },
     {
-      scope: ["markup.heading", "markup.heading entity.name"],
+      scope: ['markup.heading', 'markup.heading entity.name'],
       settings: {
-        fontStyle: "bold",
+        fontStyle: 'bold',
         foreground: colors.foreground,
       },
     },
     {
-      scope: "markup.quote",
+      scope: 'markup.quote',
       settings: {
         foreground: colors.keyword,
       },
     },
     {
-      scope: "markup.italic",
+      scope: 'markup.italic',
       settings: {
-        fontStyle: "italic",
+        fontStyle: 'italic',
         foreground: colors.variable,
       },
     },
     {
-      scope: "markup.bold",
+      scope: 'markup.bold',
       settings: {
-        fontStyle: "bold",
+        fontStyle: 'bold',
         foreground: colors.variable,
       },
     },
     {
-      scope: ["markup.underline"],
+      scope: ['markup.underline'],
       settings: {
-        fontStyle: "underline",
+        fontStyle: 'underline',
       },
     },
     {
-      scope: ["markup.strikethrough"],
+      scope: ['markup.strikethrough'],
       settings: {
-        fontStyle: "strikethrough",
+        fontStyle: 'strikethrough',
       },
     },
     {
-      scope: "markup.inline.raw",
+      scope: 'markup.inline.raw',
       settings: {
         foreground: colors.foreground,
       },
     },
     {
       scope: [
-        "markup.deleted",
-        "meta.diff.header.from-file",
-        "punctuation.definition.deleted",
+        'markup.deleted',
+        'meta.diff.header.from-file',
+        'punctuation.definition.deleted',
       ],
       settings: {
         background: colors.diffDeletedBg,
@@ -380,9 +380,9 @@ export function createEditorTheme(colors: EditorColors) {
     },
     {
       scope: [
-        "markup.inserted",
-        "meta.diff.header.to-file",
-        "punctuation.definition.inserted",
+        'markup.inserted',
+        'meta.diff.header.to-file',
+        'punctuation.definition.inserted',
       ],
       settings: {
         background: colors.diffInsertedBg,
@@ -390,84 +390,84 @@ export function createEditorTheme(colors: EditorColors) {
       },
     },
     {
-      scope: ["markup.changed", "punctuation.definition.changed"],
+      scope: ['markup.changed', 'punctuation.definition.changed'],
       settings: {
         background: colors.diffChangedBg,
         foreground: colors.variable,
       },
     },
     {
-      scope: ["markup.ignored", "markup.untracked"],
+      scope: ['markup.ignored', 'markup.untracked'],
       settings: {
         foreground: colors.diffIgnoredBg,
         background: colors.foreground,
       },
     },
     {
-      scope: "meta.diff.range",
+      scope: 'meta.diff.range',
       settings: {
         foreground: colors.function,
-        fontStyle: "bold",
+        fontStyle: 'bold',
       },
     },
     {
-      scope: "meta.diff.header",
+      scope: 'meta.diff.header',
       settings: {
         foreground: colors.foreground,
       },
     },
     {
-      scope: "meta.separator",
+      scope: 'meta.separator',
       settings: {
-        fontStyle: "bold",
+        fontStyle: 'bold',
         foreground: colors.foreground,
       },
     },
     {
-      scope: "meta.output",
+      scope: 'meta.output',
       settings: {
         foreground: colors.foreground,
       },
     },
     {
       scope: [
-        "brackethighlighter.tag",
-        "brackethighlighter.curly",
-        "brackethighlighter.round",
-        "brackethighlighter.square",
-        "brackethighlighter.angle",
-        "brackethighlighter.quote",
+        'brackethighlighter.tag',
+        'brackethighlighter.curly',
+        'brackethighlighter.round',
+        'brackethighlighter.square',
+        'brackethighlighter.angle',
+        'brackethighlighter.quote',
       ],
       settings: {
         foreground: colors.bracketHighlight,
       },
     },
     {
-      scope: "brackethighlighter.unmatched",
+      scope: 'brackethighlighter.unmatched',
       settings: {
         foreground: colors.invalid,
       },
     },
     {
-      scope: ["constant.other.reference.link", "string.other.link"],
+      scope: ['constant.other.reference.link', 'string.other.link'],
       settings: {
         foreground: colors.regexp,
-        fontStyle: "underline",
+        fontStyle: 'underline',
       },
     },
     {
-      scope: ["punctuation", "meta.brace.round"],
+      scope: ['punctuation', 'meta.brace.round'],
       settings: {
         foreground: colors.punctuation,
       },
     },
     {
-      scope: ["text.html"],
+      scope: ['text.html'],
       settings: {
         foreground: colors.foreground,
       },
     },
-  ];
+  ]
 }
 
 /* [
