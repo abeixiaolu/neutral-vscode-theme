@@ -107,6 +107,15 @@ export function genEditorColors({
     'editorStickyScroll.background': semantic.scrollBackground,
     'editorStickyScrollHover.background': semantic.scrollBackground,
 
+    // peekView
+    'peekViewTitle.background': semantic.background,
+    'peekViewEditor.background': semantic.background,
+    'peekViewResult.background': semantic.background,
+    'peekViewResult.selectionBackground': semantic.selection,
+    'peekViewResult.matchHighlightBackground': semantic.highlight,
+    'peekViewEditor.matchHighlightBackground': semantic.highlight,
+    'peekView.border': semantic.primary,
+
     // 编辑器选择与高亮
     'editor.selectionBackground': semantic.selection,
     'editor.inactiveSelectionBackground': semantic.selection,
@@ -213,16 +222,16 @@ export function genEditorColors({
     'tab.activeForeground': semantic.foreground,
     'tab.border': '#00000000',
     'tab.activeBackground': semantic.background,
-    'tab.activeBorderTop': semantic.primary,
+    'tab.activeBorder': semantic.primary,
     'tab.inactiveBackground': semantic.background,
     'tab.inactiveForeground': `${semantic.inactiveForeground}`,
 
     // 编辑器概览标尺
     'editorOverviewRuler.border': semantic.border,
     // 滚动条
-    'scrollbarSlider.background': semantic.scrollBackground,
-    'scrollbarSlider.hoverBackground': semantic.scrollBackground,
-    'scrollbarSlider.activeBackground': semantic.scrollBackground,
+    'scrollbarSlider.background': semantic.scrollbarSliderBg,
+    'scrollbarSlider.hoverBackground': semantic.scrollbarSliderBg,
+    'scrollbarSlider.activeBackground': semantic.scrollbarSliderBg,
     // 进度条
     'progressBar.background': theme.blue,
 
