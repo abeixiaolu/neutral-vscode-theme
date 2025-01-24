@@ -9,8 +9,8 @@ import {
   softSemantic,
   theme,
 } from '../src/color.js'
-import genTokenColors from '../src/tokens.js'
-import { genEditorColors } from '../src/ui.js'
+import genTokens from '../src/tokens.js'
+import genEditors from '../src/ui.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -19,18 +19,18 @@ async function build() {
     name: 'Xiaolu Abei Dark',
     base: 'vs-dark',
     semanticHighlighting: true,
-    colors: genEditorColors({ semantic, theme }),
-    tokenColors: genTokenColors({ semantic, theme }),
+    colors: genEditors({ semantic, theme }),
+    tokenColors: genTokens({ semantic, theme }),
   }
   const softTheme = {
     name: 'Xiaolu Abei Soft',
     base: 'vs-dark',
     semanticHighlighting: true,
-    colors: genEditorColors({
+    colors: genEditors({
       semantic: softSemantic,
       theme,
     }),
-    tokenColors: genTokenColors({
+    tokenColors: genTokens({
       semantic: softSemantic,
       theme,
       moreGreen: true,
@@ -40,11 +40,11 @@ async function build() {
     name: 'Xiaolu Abei Light',
     base: 'vs',
     semanticHighlighting: true,
-    colors: genEditorColors({
+    colors: genEditors({
       semantic: lightSematic,
       theme: lightThemeColor,
     }),
-    tokenColors: genTokenColors({
+    tokenColors: genTokens({
       semantic: lightSematic,
       theme: lightThemeColor,
     }),

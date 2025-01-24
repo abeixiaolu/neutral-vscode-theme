@@ -1,6 +1,6 @@
 import type { Semantic, Theme } from './color.js'
 
-export default function genTokenColors({
+export default function genTokens({
   semantic,
   theme,
   moreGreen = false,

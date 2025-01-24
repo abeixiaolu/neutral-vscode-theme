@@ -1,6 +1,6 @@
 import type { Semantic, Theme } from './color.js'
 
-export function genEditorColors({
+export default function genEditors({
   semantic,
   theme,
 }: {
