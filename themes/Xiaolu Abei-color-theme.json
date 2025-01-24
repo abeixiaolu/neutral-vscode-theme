@@ -261,7 +261,7 @@
       "scope": "keyword",
       "settings": {
         "foreground": "#9d94bf",
-        "fontStyle": "italic"
+        "fontStyle": "normal"
       }
     },
     {
@@ -286,7 +286,7 @@
       ],
       "settings": {
         "foreground": "#9d94bf",
-        "fontStyle": "italic"
+        "fontStyle": "normal"
       }
     },
     {

@@ -4,10 +4,12 @@ export default function genTokens({
   semantic,
   theme,
   moreGreen = false,
+  fontStyle = 'normal',
 }: {
   semantic: Semantic
   theme: Theme
   moreGreen?: boolean
+  fontStyle?: string
 }) {
   const colors: EditorColors = {
     tag: moreGreen ? theme.green : theme.magenta,
@@ -30,7 +32,7 @@ export default function genTokens({
     diffIgnoredBg: "#f00",
     carriageReturn: "#f00", */
   }
-  return createEditorTheme(colors)
+  return createEditorTheme(colors, fontStyle)
 }
 
 export interface EditorColors {
@@ -102,7 +104,7 @@ export interface EditorColors {
   carriageReturn?: string
 }
 
-export function createEditorTheme(colors: EditorColors) {
+export function createEditorTheme(colors: EditorColors, fontStyle: string) {
   return [
     {
       scope: ['comment', 'punctuation.definition.comment', 'string.comment'],
@@ -152,7 +154,7 @@ export function createEditorTheme(colors: EditorColors) {
       scope: 'keyword',
       settings: {
         foreground: colors.keyword,
-        fontStyle: 'italic',
+        fontStyle,
       },
     },
     {
@@ -172,7 +174,7 @@ export function createEditorTheme(colors: EditorColors) {
       scope: ['storage', 'storage.type'],
       settings: {
         foreground: colors.keyword,
-        fontStyle: 'italic',
+        fontStyle,
       },
     },
     {

@@ -1,5 +1,5 @@
 {
-  "name": "Xiaolu Abei Light",
+  "name": "Xiaolu Abei Light Italic",
   "base": "vs",
   "semanticHighlighting": true,
   "colors": {
@@ -261,7 +261,7 @@
       "scope": "keyword",
       "settings": {
         "foreground": "#5a5aa6",
-        "fontStyle": "normal"
+        "fontStyle": "italic"
       }
     },
     {
@@ -286,7 +286,7 @@
       ],
       "settings": {
         "foreground": "#5a5aa6",
-        "fontStyle": "normal"
+        "fontStyle": "italic"
       }
     },
     {

@@ -1,5 +1,5 @@
 {
-  "name": "Xiaolu Abei Soft",
+  "name": "Xiaolu Abei Soft Italic",
   "base": "vs-dark",
   "semanticHighlighting": true,
   "colors": {
@@ -254,14 +254,14 @@
     {
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#8ebf9d"
+        "foreground": "#9d94bf"
       }
     },
     {
       "scope": "keyword",
       "settings": {
         "foreground": "#9d94bf",
-        "fontStyle": "normal"
+        "fontStyle": "italic"
       }
     },
     {
@@ -286,7 +286,7 @@
       ],
       "settings": {
         "foreground": "#9d94bf",
-        "fontStyle": "normal"
+        "fontStyle": "italic"
       }
     },
     {

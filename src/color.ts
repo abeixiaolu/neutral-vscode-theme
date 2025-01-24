@@ -59,7 +59,7 @@ export const status = {
 }
 
 // 语义化颜色
-export const semantic = {
+export const darkSemantic = {
   primary: theme.green,
   primaryHover: colors.green[1],
   shadow: '#00000066',
@@ -83,7 +83,7 @@ export const semantic = {
   operator: colors.gray[2],
 }
 
-export const softSemantic = Object.assign({}, semantic, {
+export const darkSoftSemantic = Object.assign({}, darkSemantic, {
   background: colors.gray[7],
   widgetBackground: colors.gray[6],
   scrollBackground: colors.gray[6],
@@ -93,31 +93,39 @@ export const softSemantic = Object.assign({}, semantic, {
   comment: colors.gray[3],
 })
 
-export const lightSematic = {
-  primary: lightTheme.blue,
-  primaryHover: colors.blueLight[2],
+export const lightSoftSemantic = {
+  primary: lightTheme.green,
+  primaryHover: colors.greenLight[2],
   shadow: '#3333',
   border: '#E6E5DF',
   foreground: '#555555',
   buttonForeground: '#fff',
   cursor: '#000',
   comment: colors.gray[2],
-  listInactiveSelectionFg: lightTheme.blue,
+  listInactiveSelectionFg: lightTheme.green,
   background: '#F8F8F0',
   widgetBackground: '#e8e8e0',
   scrollBackground: '#f4f4ea',
   scrollbarSliderBg: '#f2f2e8',
   activeBackground: '#d8d8d0',
   inactiveForeground: '#666666',
-  listHoverBackground: `${lightTheme.blue}20`,
-  selection: `${lightTheme.blue}20`,
-  highlight: `${lightTheme.blue}20`,
-  highlight2: `${lightTheme.blue}30`,
+  listHoverBackground: `${lightTheme.green}20`,
+  selection: `${lightTheme.green}20`,
+  highlight: `${lightTheme.green}20`,
+  highlight2: `${lightTheme.green}30`,
   punctuation: colors.gray[2],
   operator: colors.gray[3],
 }
 
+export const lightSemantic = Object.assign({}, lightSoftSemantic, {
+  background: '#ffffff',
+  widgetBackground: '#f4f4f4',
+  scrollBackground: '#f8f8f8',
+  scrollbarSliderBg: '#f8f8f8',
+  activeBackground: '#eaeaea',
+})
+
 export type Color = typeof colors
 export type Theme = typeof theme
-export type Semantic = typeof semantic
+export type Semantic = typeof darkSemantic
 export type Status = typeof status
