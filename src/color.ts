@@ -37,6 +37,7 @@ export const theme = {
   orange: colors.orange[0], // #BF9D94
   red: colors.red[0], // #cc8787
   cyan: colors.cyan[0], // #6eb4b4
+  foreground: '#d1cdc2',
 }
 
 export const lightTheme = {
@@ -46,6 +47,7 @@ export const lightTheme = {
   orange: colors.orangeLight[3], // #a6805a
   red: colors.redLight[3], // #a65a5a
   cyan: colors.cyanLight[3], // #5aa698
+  foreground: '#555555',
 }
 
 // 状态颜色
@@ -64,14 +66,15 @@ export const darkSemantic = {
   primaryHover: colors.green[1],
   shadow: '#00000066',
   border: '#ffffff11',
-  foreground: '#d1cdc2',
+  foreground: theme.foreground,
   buttonForeground: '#000',
   cursor: colors.gray[1],
-  comment: colors.gray[4],
+  comment: colors.gray[3],
   listInactiveSelectionFg: theme.green,
   listHoverBackground: '#5555',
   background: colors.gray[8],
-  inactiveForeground: colors.gray[2],
+  inactiveForeground: colors.gray[3],
+  ghostForeground: `${theme.green}88`,
   widgetBackground: colors.gray[7],
   scrollBackground: colors.gray[7],
   scrollbarSliderBg: colors.gray[6],
@@ -79,7 +82,7 @@ export const darkSemantic = {
   selection: `${theme.green}20`,
   highlight: `${theme.green}20`,
   highlight2: `${theme.green}30`,
-  punctuation: colors.gray[3],
+  punctuation: theme.foreground,
   operator: colors.gray[2],
 }
 
@@ -89,7 +92,7 @@ export const darkSoftSemantic = Object.assign({}, darkSemantic, {
   scrollBackground: colors.gray[6],
   activeBackground: colors.gray[5],
   scrollbarSliderBg: colors.gray[5],
-  inactiveForeground: colors.gray[2],
+  inactiveForeground: colors.gray[3],
   comment: colors.gray[3],
 })
 
@@ -98,7 +101,7 @@ export const lightSoftSemantic = {
   primaryHover: colors.greenLight[2],
   shadow: '#3333',
   border: '#E6E5DF',
-  foreground: '#555555',
+  foreground: lightTheme.foreground,
   buttonForeground: '#fff',
   cursor: '#000',
   comment: colors.gray[2],
@@ -109,11 +112,12 @@ export const lightSoftSemantic = {
   scrollbarSliderBg: '#f2f2e8',
   activeBackground: '#d8d8d0',
   inactiveForeground: '#666666',
+  ghostForeground: `${lightTheme.green}aa`,
   listHoverBackground: `${lightTheme.green}20`,
   selection: `${lightTheme.green}20`,
   highlight: `${lightTheme.green}20`,
   highlight2: `${lightTheme.green}30`,
-  punctuation: colors.gray[2],
+  punctuation: lightTheme.foreground,
   operator: colors.gray[3],
 }
 

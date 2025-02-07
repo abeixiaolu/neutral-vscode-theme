@@ -3,7 +3,10 @@
   "base": "vs",
   "semanticHighlighting": true,
   "colors": {
+    "editorGhostText.foreground": "#569056aa",
+    "editorGhostText.border": "#569056aa",
     "foreground": "#555555",
+    "editorSuggestWidget.foreground": "#f00",
     "focusBorder": "#ffffff00",
     "widget.shadow": "#3333",
     "scrollbar.shadow": "#3333",
@@ -559,7 +562,7 @@
         "brackethighlighter.quote"
       ],
       "settings": {
-        "foreground": "#a3a3a3"
+        "foreground": "#555555"
       }
     },
     {
@@ -584,7 +587,7 @@
         "meta.brace.round"
       ],
       "settings": {
-        "foreground": "#a3a3a3"
+        "foreground": "#555555"
       }
     },
     {

@@ -33,7 +33,7 @@ async function build() {
     base: 'vs-dark',
     semanticHighlighting: true,
     colors: genEditors({ semantic: darkSoftSemantic, theme }),
-    tokenColors: genTokens({ semantic: darkSoftSemantic, theme, moreGreen: true }),
+    tokenColors: genTokens({ semantic: darkSoftSemantic, theme }),
   }
   const darkSoftItalic = {
     ...darkSoft,
