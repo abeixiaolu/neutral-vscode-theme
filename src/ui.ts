@@ -10,9 +10,8 @@ export default function genEditors({
   return {
     // 基础界面颜色
     'editorGhostText.foreground': semantic.ghostForeground,
-    'editorGhostText.border': semantic.ghostForeground,
+    // 'editorGhostText.border': semantic.ghostForeground,
     'foreground': semantic.foreground,
-    'editorSuggestWidget.foreground': '#f00',
     'focusBorder': '#ffffff00',
     'widget.shadow': semantic.shadow,
     'scrollbar.shadow': semantic.shadow,
