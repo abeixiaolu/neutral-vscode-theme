@@ -26,7 +26,7 @@
       {
         "label": "Xiaolu Abei Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Xiaolu Abei-color-theme.json"
+        "path": "./themes/Xiaolu Abei Dark-color-theme.json"
       },
       {
         "label": "Xiaolu Abei Dark Italic",
@@ -34,14 +34,14 @@
         "path": "./themes/Xiaolu Abei Dark Italic-color-theme.json"
       },
       {
-        "label": "Xiaolu Abei Soft",
+        "label": "Xiaolu Abei Dark Soft",
         "uiTheme": "vs-dark",
-        "path": "./themes/Xiaolu Abei Soft-color-theme.json"
+        "path": "./themes/Xiaolu Abei Dark Soft-color-theme.json"
       },
       {
-        "label": "Xiaolu Abei Soft Italic",
+        "label": "Xiaolu Abei Dark Soft Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/Xiaolu Abei Soft Italic-color-theme.json"
+        "path": "./themes/Xiaolu Abei Dark Soft Italic-color-theme.json"
       },
       {
         "label": "Xiaolu Abei Light",

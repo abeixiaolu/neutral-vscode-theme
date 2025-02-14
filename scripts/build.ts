@@ -29,7 +29,7 @@ async function build() {
     tokenColors: genTokens({ semantic: darkSemantic, theme, fontStyle: 'italic' }),
   }
   const darkSoft = {
-    name: 'Xiaolu Abei Soft',
+    name: 'Xiaolu Abei Dark Soft',
     base: 'vs-dark',
     semanticHighlighting: true,
     colors: genEditors({ semantic: darkSoftSemantic, theme }),
@@ -37,11 +37,11 @@ async function build() {
   }
   const darkSoftItalic = {
     ...darkSoft,
-    name: 'Xiaolu Abei Soft Italic',
+    name: 'Xiaolu Abei Dark Soft Italic',
     tokenColors: genTokens({ semantic: darkSoftSemantic, theme, fontStyle: 'italic' }),
   }
   const lightSoft = {
-    name: 'Xiaolu Abei Light',
+    name: 'Xiaolu Abei Light Soft',
     base: 'vs',
     semanticHighlighting: true,
     colors: genEditors({ semantic: lightSoftSemantic, theme: lightThemeColor }),
@@ -68,11 +68,11 @@ async function build() {
   }
 
   const outDir = path.resolve(__dirname, '../themes')
-  const outDarkFile = path.join(outDir, 'Xiaolu Abei-color-theme.json')
+  const outDarkFile = path.join(outDir, 'Xiaolu Abei Dark-color-theme.json')
   const outDarkItalicFile = path.join(outDir, 'Xiaolu Abei Dark Italic-color-theme.json')
 
-  const outDarkSoftFile = path.join(outDir, 'Xiaolu Abei Soft-color-theme.json')
-  const outDarkSoftItalicFile = path.join(outDir, 'Xiaolu Abei Soft Italic-color-theme.json')
+  const outDarkSoftFile = path.join(outDir, 'Xiaolu Abei Dark Soft-color-theme.json')
+  const outDarkSoftItalicFile = path.join(outDir, 'Xiaolu Abei Dark Soft Italic-color-theme.json')
 
   const outLightFile = path.join(outDir, 'Xiaolu Abei Light-color-theme.json')
   const outLightItalicFile = path.join(outDir, 'Xiaolu Abei Light Italic-color-theme.json')

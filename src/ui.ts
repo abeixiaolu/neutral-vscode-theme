@@ -109,6 +109,16 @@ export default function genEditors({
     'editorStickyScroll.background': semantic.scrollBackground,
     'editorStickyScrollHover.background': semantic.scrollBackground,
 
+    // 命令面板
+    'quickInput.background': semantic.background,
+    'pickerGroup.border': semantic.border,
+    'pickerGroup.foreground': semantic.primary,
+    'quickInput.foreground': semantic.inactiveForeground,
+    'quickInputList.focusBackground': semantic.listHoverBackground,
+    'quickInputList.focusForeground': semantic.primary,
+    'quickInputList.focusIconForeground': semantic.primary,
+    'quickInputTitle.background': semantic.background,
+
     // peekView
     'peekViewTitle.background': semantic.background,
     'peekViewEditor.background': semantic.background,
@@ -241,10 +251,6 @@ export default function genEditors({
     'editorWidget.foreground': semantic.inactiveForeground,
     'editorWidget.background': semantic.background,
     'editorWidget.resizeBorder': '#5F5F5F',
-
-    // 选择器组
-    'pickerGroup.border': semantic.border,
-    'pickerGroup.foreground': semantic.primary,
 
     // 调试工具栏
     'debugToolBar.background': semantic.background,

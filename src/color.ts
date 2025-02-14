@@ -31,22 +31,22 @@ export const colors = {
 
 // 主题特色颜色
 export const theme = {
-  blue: colors.blue[0], // #94B5C0
-  green: colors.green[0], // #8EBF9D
-  magenta: colors.magenta[0], // #9D94BF
-  orange: colors.orange[0], // #BF9D94
-  red: colors.red[0], // #cc8787
-  cyan: colors.cyan[0], // #6eb4b4
+  blue: '#94B5C0',
+  green: '#8EBF9D',
+  magenta: '#9D94BF',
+  orange: '#BF9D94',
+  red: '#cc8787',
+  cyan: '#6eb4b4',
   foreground: '#d1cdc2',
 }
 
 export const lightTheme = {
-  blue: colors.blueLight[3], // #5a86a6
-  green: colors.greenLight[4], // #5aa65a
-  magenta: colors.magentaLight[3], // #5a5aa6
-  orange: colors.orangeLight[3], // #a6805a
-  red: colors.redLight[3], // #a65a5a
-  cyan: colors.cyanLight[3], // #5aa698
+  blue: '#5a86a6',
+  green: '#5aa65a',
+  magenta: '#5a5aa6',
+  orange: '#a6805a',
+  red: '#a65a5a',
+  cyan: '#5aa698',
   foreground: '#555555',
 }
 
@@ -72,13 +72,13 @@ export const darkSemantic = {
   comment: colors.gray[3],
   listInactiveSelectionFg: theme.green,
   listHoverBackground: '#5555',
-  background: colors.gray[8],
   inactiveForeground: colors.gray[3],
   ghostForeground: `${theme.green}88`,
-  widgetBackground: colors.gray[7],
-  scrollBackground: colors.gray[7],
-  scrollbarSliderBg: colors.gray[6],
-  activeBackground: colors.gray[6],
+  background: '#080808',
+  widgetBackground: '#121212',
+  scrollBackground: '#121212',
+  scrollbarSliderBg: '#181818',
+  activeBackground: '#181818',
   selection: `${theme.foreground}20`,
   highlight: `${theme.foreground}20`,
   highlight2: `${theme.foreground}30`,
@@ -87,11 +87,11 @@ export const darkSemantic = {
 }
 
 export const darkSoftSemantic = Object.assign({}, darkSemantic, {
-  background: colors.gray[7],
-  widgetBackground: colors.gray[6],
-  scrollBackground: colors.gray[6],
-  activeBackground: colors.gray[5],
-  scrollbarSliderBg: colors.gray[5],
+  background: '#181818',
+  widgetBackground: '#222222',
+  scrollBackground: '#222222',
+  activeBackground: '#282828',
+  scrollbarSliderBg: '#282828',
   inactiveForeground: colors.gray[3],
   comment: colors.gray[3],
 })
