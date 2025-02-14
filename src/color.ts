@@ -41,12 +41,12 @@ export const theme = {
 }
 
 export const lightTheme = {
-  blue: '#5a86a6',
-  green: '#5aa65a',
-  magenta: '#5a5aa6',
-  orange: '#a6805a',
-  red: '#a65a5a',
-  cyan: '#5aa698',
+  blue: '#477BA8',
+  green: '#49A86B',
+  magenta: '#7955A7',
+  orange: '#A87852',
+  red: '#A85866',
+  cyan: '#40A8A6',
   foreground: '#555555',
 }
 
