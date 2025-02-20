@@ -95,7 +95,7 @@
     "editor.hoverHighlightBackground": "#d1cdc220",
     "editor.wordHighlightStrongBackground": "#d1cdc220",
     "editor.wordHighlightBackground": "#d1cdc220",
-    "editor.lineHighlightBackground": "#d1cdc220",
+    "editor.lineHighlightBackground": "#8881",
     "editor.lineHighlightBorder": "#00000000",
     "editorLineNumber.activeForeground": "#d1cdc2",
     "editorWhitespace.foreground": "#d1cdc220",

@@ -144,7 +144,7 @@ export default function genEditors({
     'editor.wordHighlightBackground': semantic.highlight,
 
     // 编辑器行相关
-    'editor.lineHighlightBackground': semantic.highlight,
+    'editor.lineHighlightBackground': '#8881',
     'editor.lineHighlightBorder': '#00000000',
     'editorLineNumber.activeForeground': semantic.foreground,
     'editorWhitespace.foreground': semantic.highlight,
