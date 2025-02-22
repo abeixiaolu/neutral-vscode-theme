@@ -8,6 +8,8 @@ export default function genEditors({
   theme: Theme
 }) {
   return {
+    // 状态栏缩放按钮（放大镜图标）的背景色
+    'statusBarItem.prominentBackground': '#5552',
     // 基础界面颜色
     'editorGhostText.foreground': semantic.ghostForeground,
     // 'editorGhostText.border': semantic.ghostForeground,
@@ -232,8 +234,8 @@ export default function genEditors({
     // 标签页
     'editorGroupHeader.tabsBackground': semantic.background,
     'tab.activeForeground': semantic.foreground,
-    // 'tab.border': '#00000000',
-    'tab.activeBackground': '#5553',
+    'tab.border': '#00000000',
+    'tab.activeBackground': '#5551',
     'tab.activeBorderTop': semantic.primary,
     'tab.inactiveBackground': semantic.background,
     'tab.inactiveForeground': semantic.inactiveForeground,

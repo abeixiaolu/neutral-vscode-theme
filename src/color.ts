@@ -62,8 +62,8 @@ export const status = {
 
 // 语义化颜色
 export const darkSemantic = {
-  primary: theme.green,
-  primaryHover: colors.green[1],
+  primary: theme.blue,
+  primaryHover: colors.blue[1],
   shadow: '#00000066',
   border: '#ffffff11',
   foreground: theme.foreground,
@@ -97,23 +97,23 @@ export const darkSoftSemantic = Object.assign({}, darkSemantic, {
 })
 
 export const lightSoftSemantic = {
-  primary: lightTheme.green,
-  primaryHover: colors.greenLight[2],
+  primary: lightTheme.blue,
+  primaryHover: colors.blueLight[2],
   shadow: '#3333',
   border: '#E6E5DF',
   foreground: lightTheme.foreground,
   buttonForeground: '#fff',
   cursor: '#000',
   comment: colors.gray[2],
-  listInactiveSelectionFg: lightTheme.green,
+  listInactiveSelectionFg: lightTheme.blue,
   background: '#F8F8F0',
   widgetBackground: '#e8e8e0',
   scrollBackground: '#f4f4ea',
   scrollbarSliderBg: '#f2f2e8',
   activeBackground: '#d8d8d0',
   inactiveForeground: '#666666',
-  ghostForeground: `${lightTheme.green}aa`,
-  listHoverBackground: `${lightTheme.green}20`,
+  ghostForeground: `${lightTheme.blue}aa`,
+  listHoverBackground: `${lightTheme.blue}20`,
   selection: `${lightTheme.foreground}20`,
   highlight: `${lightTheme.foreground}20`,
   highlight2: `${lightTheme.foreground}30`,
