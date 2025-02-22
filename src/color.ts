@@ -42,10 +42,10 @@ export const theme = {
 
 export const lightTheme = {
   blue: '#477BA8',
-  green: '#49A86B',
+  green: '#287743',
   magenta: '#7955A7',
   orange: '#A87852',
-  red: '#A85866',
+  red: '#b9475a',
   cyan: '#40A8A6',
   foreground: '#555555',
 }
@@ -87,9 +87,9 @@ export const darkSemantic = {
 }
 
 export const darkSoftSemantic = Object.assign({}, darkSemantic, {
-  background: '#181818',
-  widgetBackground: '#222222',
-  scrollBackground: '#222222',
+  background: '#222222',
+  widgetBackground: '#262626',
+  scrollBackground: '#262626',
   activeBackground: '#282828',
   scrollbarSliderBg: '#282828',
   inactiveForeground: colors.gray[3],

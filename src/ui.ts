@@ -33,7 +33,7 @@ export default function genEditors({
     // "sideBar.dropBackground": "#f00",
 
     // 列表样式
-    'list.foreground': semantic.foreground,
+    'list.foreground': semantic.ghostForeground,
     'list.focusForeground': semantic.foreground,
     'list.focusBackground': semantic.listHoverBackground,
     'list.hoverBackground': semantic.listHoverBackground,
@@ -232,11 +232,11 @@ export default function genEditors({
     // 标签页
     'editorGroupHeader.tabsBackground': semantic.background,
     'tab.activeForeground': semantic.foreground,
-    'tab.border': '#00000000',
-    'tab.activeBackground': semantic.background,
-    'tab.activeBorder': semantic.primary,
+    // 'tab.border': '#00000000',
+    'tab.activeBackground': '#5553',
+    'tab.activeBorderTop': semantic.primary,
     'tab.inactiveBackground': semantic.background,
-    'tab.inactiveForeground': `${semantic.inactiveForeground}`,
+    'tab.inactiveForeground': semantic.inactiveForeground,
 
     // 编辑器概览标尺
     'editorOverviewRuler.border': semantic.border,

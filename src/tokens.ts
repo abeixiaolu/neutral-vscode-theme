@@ -3,16 +3,14 @@ import type { Semantic, Theme } from './color.js'
 export default function genTokens({
   semantic,
   theme,
-  moreGreen = false,
   fontStyle = 'normal',
 }: {
   semantic: Semantic
   theme: Theme
-  moreGreen?: boolean
   fontStyle?: string
 }) {
   const colors: EditorColors = {
-    tag: moreGreen ? theme.green : theme.magenta,
+    tag: theme.green,
     comment: semantic.comment,
     foreground: semantic.foreground,
     function: theme.blue,
@@ -165,7 +163,7 @@ export function createEditorTheme(colors: EditorColors, fontStyle: string) {
       },
     },
     {
-      scope: ['keyword.operator.word'],
+      scope: ['keyword.operator.word', 'support.type.property-name.json'],
       settings: {
         foreground: colors.keyword,
       },
