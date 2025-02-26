@@ -184,8 +184,8 @@ export default function genEditors({
     'editorCodeLens.foreground': semantic.comment,
 
     // 差异编辑器
-    'diffEditor.insertedTextBackground': `${theme.green}15`,
-    'diffEditor.removedTextBackground': `${theme.red}88`,
+    'diffEditor.insertedTextBackground': `${theme.green}50`,
+    'diffEditor.removedTextBackground': `${theme.red}50`,
     'diffEditor.border': '#00000000',
 
     // 面板
