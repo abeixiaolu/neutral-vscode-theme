@@ -3,6 +3,7 @@ import path from 'node:path'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 import {
+  darkGreenSemantic,
   darkSemantic,
   darkSoftSemantic,
   lightSemantic,
@@ -28,6 +29,19 @@ async function build() {
     name: 'Xiaolu Abei Dark Italic',
     tokenColors: genTokens({ semantic: darkSemantic, theme, fontStyle: 'italic' }),
   }
+
+  const darkGreen = {
+    ...dark,
+    name: 'Xiaolu Abei Dark Green',
+    colors: genEditors({ semantic: darkGreenSemantic, theme }),
+    tokenColors: genTokens({ semantic: darkGreenSemantic, theme }),
+  }
+  const darkGreenItalic = {
+    ...darkGreen,
+    name: 'Xiaolu Abei Dark Green Italic',
+    tokenColors: genTokens({ semantic: darkGreenSemantic, theme, fontStyle: 'italic' }),
+  }
+
   const darkSoft = {
     name: 'Xiaolu Abei Dark Soft',
     base: 'vs-dark',
@@ -71,6 +85,9 @@ async function build() {
   const outDarkFile = path.join(outDir, 'Xiaolu Abei Dark-color-theme.json')
   const outDarkItalicFile = path.join(outDir, 'Xiaolu Abei Dark Italic-color-theme.json')
 
+  const outDarkGreenFile = path.join(outDir, 'Xiaolu Abei Dark Green-color-theme.json')
+  const outDarkGreenItalicFile = path.join(outDir, 'Xiaolu Abei Dark Green Italic-color-theme.json')
+
   const outDarkSoftFile = path.join(outDir, 'Xiaolu Abei Dark Soft-color-theme.json')
   const outDarkSoftItalicFile = path.join(outDir, 'Xiaolu Abei Dark Soft Italic-color-theme.json')
 
@@ -84,6 +101,8 @@ async function build() {
     await fs.mkdir(outDir, { recursive: true })
     await fs.writeFile(outDarkFile, JSON.stringify(dark, null, 2), 'utf-8')
     await fs.writeFile(outDarkItalicFile, JSON.stringify(darkItalic, null, 2), 'utf-8')
+    await fs.writeFile(outDarkGreenFile, JSON.stringify(darkGreen, null, 2), 'utf-8')
+    await fs.writeFile(outDarkGreenItalicFile, JSON.stringify(darkGreenItalic, null, 2), 'utf-8')
     await fs.writeFile(outDarkSoftFile, JSON.stringify(darkSoft, null, 2), 'utf-8')
     await fs.writeFile(outDarkSoftItalicFile, JSON.stringify(darkSoftItalic, null, 2), 'utf-8')
     await fs.writeFile(outLightSoftFile, JSON.stringify(lightSoft, null, 2), 'utf-8')

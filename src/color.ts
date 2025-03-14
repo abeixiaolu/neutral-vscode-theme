@@ -96,6 +96,16 @@ export const darkSoftSemantic = Object.assign({}, darkSemantic, {
   comment: colors.gray[3],
 })
 
+export const darkGreenSemantic = Object.assign({}, darkSemantic, {
+  background: '#121414',
+  widgetBackground: '#181d1a',
+  scrollBackground: '#181d1a',
+  scrollbarSliderBg: '#202422',
+  activeBackground: '#202422',
+  primary: theme.green,
+  primaryHover: colors.green[1],
+})
+
 export const lightSoftSemantic = {
   primary: lightTheme.blue,
   primaryHover: colors.blueLight[2],

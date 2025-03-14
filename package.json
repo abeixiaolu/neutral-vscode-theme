@@ -29,6 +29,11 @@
         "path": "./themes/Xiaolu Abei Dark-color-theme.json"
       },
       {
+        "label": "Xiaolu Abei Dark Green",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Xiaolu Abei Dark Green-color-theme.json"
+      },
+      {
         "label": "Xiaolu Abei Dark Italic",
         "uiTheme": "vs-dark",
         "path": "./themes/Xiaolu Abei Dark Italic-color-theme.json"
