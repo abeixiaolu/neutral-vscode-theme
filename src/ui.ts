@@ -35,7 +35,6 @@ export default function genEditors({
     // "sideBar.dropBackground": "#f00",
 
     // 列表样式
-    'list.foreground': semantic.ghostForeground,
     'list.focusForeground': semantic.foreground,
     'list.focusBackground': semantic.listHoverBackground,
     'list.hoverBackground': semantic.listHoverBackground,
@@ -91,7 +90,6 @@ export default function genEditors({
     // 输入框 和 下拉框
     'input.background': semantic.widgetBackground,
     'input.border': semantic.border,
-    'input.focusBorder': '#f00',
     'input.foreground': semantic.foreground,
     'inputOption.activeBackground': semantic.highlight2,
     'inputOption.activeBorder': '#00000000',
@@ -144,9 +142,10 @@ export default function genEditors({
     'editor.hoverHighlightBackground': semantic.highlight,
     'editor.wordHighlightStrongBackground': semantic.highlight,
     'editor.wordHighlightBackground': semantic.highlight,
+    'editor.rangeHighlightBackground': semantic.lineHighlightBackground,
 
     // 编辑器行相关
-    'editor.lineHighlightBackground': '#8881',
+    'editor.lineHighlightBackground': semantic.lineHighlightBackground,
     'editor.lineHighlightBorder': '#00000000',
     'editorLineNumber.activeForeground': semantic.foreground,
     'editorWhitespace.foreground': semantic.highlight,

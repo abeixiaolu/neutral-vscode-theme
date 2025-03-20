@@ -84,6 +84,7 @@ export const darkSemantic = {
   highlight2: `${theme.foreground}30`,
   punctuation: theme.foreground,
   operator: colors.gray[2],
+  lineHighlightBackground: '#8881',
 }
 
 export const darkSoftSemantic = Object.assign({}, darkSemantic, {
@@ -123,15 +124,21 @@ export const lightSoftSemantic = {
   activeBackground: '#d8d8d0',
   inactiveForeground: '#666666',
   ghostForeground: `${lightTheme.blue}aa`,
-  listHoverBackground: `${lightTheme.blue}20`,
+  listHoverBackground: `${lightTheme.blue}28`,
   selection: `${lightTheme.foreground}20`,
   highlight: `${lightTheme.foreground}20`,
   highlight2: `${lightTheme.foreground}30`,
   punctuation: lightTheme.foreground,
   operator: colors.gray[3],
+  lineHighlightBackground: '#3331',
 }
 
 export const lightSemantic = Object.assign({}, lightSoftSemantic, {
+  primary: lightTheme.green,
+  primaryHover: colors.greenLight[2],
+  listInactiveSelectionFg: lightTheme.green,
+  ghostForeground: `${lightTheme.green}aa`,
+  listHoverBackground: `${lightTheme.green}28`,
   background: '#ffffff',
   widgetBackground: '#f4f4f4',
   scrollBackground: '#f8f8f8',
