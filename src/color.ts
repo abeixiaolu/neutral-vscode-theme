@@ -122,7 +122,7 @@ export const lightSoftSemantic = {
   scrollBackground: '#f4f4ea',
   scrollbarSliderBg: '#f2f2e8',
   activeBackground: '#d8d8d0',
-  inactiveForeground: '#666666',
+  inactiveForeground: '#666a',
   ghostForeground: `${lightTheme.blue}aa`,
   listHoverBackground: `${lightTheme.blue}28`,
   selection: `${lightTheme.foreground}20`,
