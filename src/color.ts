@@ -146,6 +146,19 @@ export const lightSemantic = Object.assign({}, lightSoftSemantic, {
   activeBackground: '#eaeaea',
 })
 
+export const lightGreenSemantic = Object.assign({}, lightSoftSemantic, {
+  primary: lightTheme.green,
+  primaryHover: colors.greenLight[2],
+  listInactiveSelectionFg: lightTheme.green,
+  ghostForeground: `${lightTheme.green}aa`,
+  listHoverBackground: `${lightTheme.green}28`,
+  background: '#f8fff8',
+  widgetBackground: '#e8f0e8',
+  scrollBackground: '#f4faf4',
+  scrollbarSliderBg: '#f2f8f2',
+  activeBackground: '#d8e0d8',
+})
+
 export type Color = typeof colors
 export type Theme = typeof theme
 export type Semantic = typeof darkSemantic

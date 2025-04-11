@@ -67,6 +67,16 @@
         "label": "Xiaolu Abei Light Soft Italic",
         "uiTheme": "vs",
         "path": "./themes/Xiaolu Abei Light Soft Italic-color-theme.json"
+      },
+      {
+        "label": "Xiaolu Abei Light Green",
+        "uiTheme": "vs",
+        "path": "./themes/Xiaolu Abei Light Green-color-theme.json"
+      },
+      {
+        "label": "Xiaolu Abei Light Green Italic",
+        "uiTheme": "vs",
+        "path": "./themes/Xiaolu Abei Light Green Italic-color-theme.json"
       }
     ]
   },

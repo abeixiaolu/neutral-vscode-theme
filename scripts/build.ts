@@ -6,6 +6,7 @@ import {
   darkGreenSemantic,
   darkSemantic,
   darkSoftSemantic,
+  lightGreenSemantic,
   lightSemantic,
   lightSoftSemantic,
   lightTheme as lightThemeColor,
@@ -81,6 +82,20 @@ async function build() {
     tokenColors: genTokens({ semantic: lightSemantic, theme: lightThemeColor, fontStyle: 'italic' }),
   }
 
+  const lightGreen = {
+    name: 'Xiaolu Abei Light Green',
+    base: 'vs',
+    semanticHighlighting: true,
+    colors: genEditors({ semantic: lightGreenSemantic, theme: lightThemeColor }),
+    tokenColors: genTokens({ semantic: lightGreenSemantic, theme: lightThemeColor }),
+  }
+
+  const lightGreenItalic = {
+    ...lightGreen,
+    name: 'Xiaolu Abei Light Green Italic',
+    tokenColors: genTokens({ semantic: lightGreenSemantic, theme: lightThemeColor, fontStyle: 'italic' }),
+  }
+
   const outDir = path.resolve(__dirname, '../themes')
   const outDarkFile = path.join(outDir, 'Xiaolu Abei Dark-color-theme.json')
   const outDarkItalicFile = path.join(outDir, 'Xiaolu Abei Dark Italic-color-theme.json')
@@ -97,6 +112,9 @@ async function build() {
   const outLightSoftFile = path.join(outDir, 'Xiaolu Abei Light Soft-color-theme.json')
   const outLightSoftItalicFile = path.join(outDir, 'Xiaolu Abei Light Soft Italic-color-theme.json')
 
+  const outLightGreenFile = path.join(outDir, 'Xiaolu Abei Light Green-color-theme.json')
+  const outLightGreenItalicFile = path.join(outDir, 'Xiaolu Abei Light Green Italic-color-theme.json')
+
   try {
     await fs.mkdir(outDir, { recursive: true })
     await fs.writeFile(outDarkFile, JSON.stringify(dark, null, 2), 'utf-8')
@@ -109,6 +127,8 @@ async function build() {
     await fs.writeFile(outLightSoftItalicFile, JSON.stringify(lightSoftItalic, null, 2), 'utf-8')
     await fs.writeFile(outLightFile, JSON.stringify(light, null, 2), 'utf-8')
     await fs.writeFile(outLightItalicFile, JSON.stringify(lightItalic, null, 2), 'utf-8')
+    await fs.writeFile(outLightGreenFile, JSON.stringify(lightGreen, null, 2), 'utf-8')
+    await fs.writeFile(outLightGreenItalicFile, JSON.stringify(lightGreenItalic, null, 2), 'utf-8')
     console.log('Theme file generated successfully!')
   }
   catch (err) {
