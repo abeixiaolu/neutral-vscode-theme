@@ -24,6 +24,7 @@ export default function genTokens({
     invalid: theme.red,
     bracketHighlight: semantic.punctuation,
     typeAndComp: theme.cyan,
+    property: theme.orange,
     /* diffDeletedBg: "#f00",
     diffInsertedBg: "#f00",
     diffChangedBg: "#f00",
@@ -94,6 +95,7 @@ export interface EditorColors {
    */
   tag: string
   invalid?: string
+  property?: string
   bracketHighlight?: string
   diffDeletedBg?: string
   diffInsertedBg?: string
@@ -104,6 +106,12 @@ export interface EditorColors {
 
 export function createEditorTheme(colors: EditorColors, fontStyle: string) {
   return [
+    {
+      scope: ['variable.other.property'],
+      settings: {
+        foreground: colors.property,
+      },
+    },
     {
       scope: ['comment', 'punctuation.definition.comment', 'string.comment'],
       settings: {

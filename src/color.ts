@@ -33,10 +33,12 @@ export const colors = {
 export const theme = {
   blue: '#94B5C0',
   green: '#8EBF9D',
-  magenta: '#9D94BF',
-  orange: '#BF9D94',
-  red: '#cc8787',
+  magenta: '#8d97bf',
   cyan: '#6eb4b4',
+  red: '#cc8787',
+  orange: '#BF9D94',
+  pink: '#bf8d97',
+  yellow: '#bf9d8d',
   foreground: '#d1cdc2',
 }
 
@@ -44,9 +46,11 @@ export const lightTheme = {
   blue: '#477BA8',
   green: '#287743',
   magenta: '#7955A7',
+  cyan: '#40A8A6',
   orange: '#A87852',
   red: '#b9475a',
-  cyan: '#40A8A6',
+  yellow: '#bf9d8d',
+  pink: '#bf8d97',
   foreground: '#555555',
 }
 

@@ -209,6 +209,14 @@
   "tokenColors": [
     {
       "scope": [
+        "variable.other.property"
+      ],
+      "settings": {
+        "foreground": "#A87852"
+      }
+    },
+    {
+      "scope": [
         "comment",
         "punctuation.definition.comment",
         "string.comment"

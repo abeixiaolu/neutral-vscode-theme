@@ -140,13 +140,13 @@
     "terminal.ansiBrightBlue": "#94B5C0",
     "terminal.ansiBrightCyan": "#6eb4b4",
     "terminal.ansiBrightGreen": "#8EBF9D",
-    "terminal.ansiBrightMagenta": "#9D94BF",
+    "terminal.ansiBrightMagenta": "#8d97bf",
     "terminal.ansiBrightRed": "#cc8787",
     "terminal.ansiBrightYellow": "#BF9D94",
     "terminal.ansiCyan": "#6eb4b4",
     "terminal.ansiBlue": "#94B5C0",
     "terminal.ansiGreen": "#8EBF9D",
-    "terminal.ansiMagenta": "#9D94BF",
+    "terminal.ansiMagenta": "#8d97bf",
     "terminal.ansiRed": "#cc8787",
     "terminal.ansiYellow": "#BF9D94",
     "terminal.ansiBrightWhite": "#e5e5e5",
@@ -192,7 +192,7 @@
     "activityBarBadge.foreground": "#000",
     "activityBarBadge.background": "#94B5C0",
     "gitDecoration.addedResourceForeground": "#8EBF9D",
-    "gitDecoration.conflictingResourceForeground": "#9D94BF",
+    "gitDecoration.conflictingResourceForeground": "#8d97bf",
     "gitDecoration.deletedResourceForeground": "#cc8787",
     "gitDecoration.ignoredResourceForeground": "#8c8c8c",
     "gitDecoration.modifiedResourceForeground": "#BF9D94",
@@ -207,6 +207,14 @@
     "walkThrough.embeddedEditorBackground": "#00000050"
   },
   "tokenColors": [
+    {
+      "scope": [
+        "variable.other.property"
+      ],
+      "settings": {
+        "foreground": "#BF9D94"
+      }
+    },
     {
       "scope": [
         "comment",
@@ -267,7 +275,7 @@
     {
       "scope": "keyword",
       "settings": {
-        "foreground": "#9D94BF",
+        "foreground": "#8d97bf",
         "fontStyle": "italic"
       }
     },
@@ -284,7 +292,7 @@
         "support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#9D94BF"
+        "foreground": "#8d97bf"
       }
     },
     {
@@ -293,7 +301,7 @@
         "storage.type"
       ],
       "settings": {
-        "foreground": "#9D94BF",
+        "foreground": "#8d97bf",
         "fontStyle": "italic"
       }
     },
@@ -375,7 +383,7 @@
       "scope": "carriage-return",
       "settings": {
         "fontStyle": "italic underline",
-        "background": "#9D94BF"
+        "background": "#8d97bf"
       }
     },
     {
@@ -414,7 +422,7 @@
       "scope": "string.regexp constant.character.escape",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#9D94BF"
+        "foreground": "#8d97bf"
       }
     },
     {
@@ -454,7 +462,7 @@
     {
       "scope": "markup.quote",
       "settings": {
-        "foreground": "#9D94BF"
+        "foreground": "#8d97bf"
       }
     },
     {
@@ -510,7 +518,7 @@
         "punctuation.definition.inserted"
       ],
       "settings": {
-        "foreground": "#9D94BF"
+        "foreground": "#8d97bf"
       }
     },
     {
