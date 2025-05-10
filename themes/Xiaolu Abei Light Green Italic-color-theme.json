@@ -208,6 +208,12 @@
   },
   "tokenColors": [
     {
+      "scope": "support",
+      "settings": {
+        "foreground": "#A87852"
+      }
+    },
+    {
       "scope": [
         "variable.other.property"
       ],

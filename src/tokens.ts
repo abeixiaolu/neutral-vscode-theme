@@ -109,6 +109,12 @@ export interface EditorColors {
 export function createEditorTheme(colors: EditorColors, fontStyle: string) {
   return [
     {
+      scope: 'support',
+      settings: {
+        foreground: colors.property,
+      },
+    },
+    {
       scope: ['variable.other.property'],
       settings: {
         foreground: colors.property,
@@ -224,12 +230,6 @@ export function createEditorTheme(colors: EditorColors, fontStyle: string) {
         foreground: colors.string,
       },
     },
-    // {
-    //   scope: "support",
-    //   settings: {
-    //     foreground: colors.foreground,
-    //   },
-    // },
     {
       scope: 'meta.property-name',
       settings: {
