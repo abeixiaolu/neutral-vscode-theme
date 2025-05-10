@@ -28,17 +28,16 @@ export const colors = {
   orangeLight: generateColorGradient('#cea67e'),
   redLight: generateColorGradient('#ce7e7e'),
 }
-
 // 主题特色颜色
 export const theme = {
-  blue: '#94B5C0',
+  red: '#cc8787',
   green: '#8EBF9D',
+  yellow: '#bf9d8d',
+  blue: '#94B5C0',
   magenta: '#8d97bf',
   cyan: '#6eb4b4',
-  red: '#cc8787',
-  orange: '#BF9D94',
   pink: '#bf8d97',
-  yellow: '#bf9d8d',
+  orange: '#BF9D94',
   foreground: '#d1cdc2',
 }
 
@@ -101,13 +100,23 @@ export const darkSoftSemantic = Object.assign({}, darkSemantic, {
   comment: colors.gray[3],
 })
 
+export const darkGreenTheme = {
+  red: '#D88385',
+  green: '#80C19A',
+  yellow: '#c8b37a',
+  blue: '#8BB6C2',
+  magenta: '#8190ca',
+  cyan: '#54B6B5',
+  orange: '#C69B8A',
+}
+
 export const darkGreenSemantic = Object.assign({}, darkSemantic, {
   background: '#121414',
   widgetBackground: '#181d1a',
   scrollBackground: '#181d1a',
   scrollbarSliderBg: '#202422',
   activeBackground: '#202422',
-  primary: theme.green,
+  primary: darkGreenTheme.green,
   primaryHover: colors.green[1],
 })
 

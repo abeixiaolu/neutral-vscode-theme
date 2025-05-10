@@ -289,7 +289,17 @@
     {
       "scope": [
         "keyword.operator.word",
-        "support.type.property-name.json"
+        "support.type.property-name.json",
+        "punctuation.definition.template-expression",
+        "constant.language.boolean",
+        "constant.language.null",
+        "constant.language.undefined",
+        "constant.language.NaN",
+        "constant.language.Infinity",
+        "constant.language.eval",
+        "constant.language.arguments",
+        "constant.language.this",
+        "constant.language.super"
       ],
       "settings": {
         "foreground": "#7955A7"

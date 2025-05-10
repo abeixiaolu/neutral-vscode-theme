@@ -4,6 +4,7 @@ import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 import {
   darkGreenSemantic,
+  darkGreenTheme,
   darkSemantic,
   darkSoftSemantic,
   lightGreenSemantic,
@@ -34,8 +35,24 @@ async function build() {
   const darkGreen = {
     ...dark,
     name: 'Xiaolu Abei Dark Green',
-    colors: genEditors({ semantic: darkGreenSemantic, theme }),
-    tokenColors: genTokens({ semantic: darkGreenSemantic, theme }),
+    colors: genEditors({ semantic: darkGreenSemantic, theme: darkGreenTheme as any }),
+    tokenColors: genTokens({ semantic: darkGreenSemantic, theme: darkGreenTheme as any, outerColors: {
+      tag: darkGreenTheme.blue,
+      comment: darkGreenSemantic.comment,
+      foreground: darkGreenSemantic.foreground,
+      function: darkGreenTheme.blue,
+      variable: darkGreenTheme.orange,
+      keyword: darkGreenTheme.green,
+      number: darkGreenTheme.red,
+      operator: darkGreenSemantic.foreground,
+      regexp: darkGreenTheme.blue,
+      punctuation: '#81879D',
+      string: darkGreenTheme.red,
+      invalid: darkGreenTheme.red,
+      bracketHighlight: '#81879D',
+      typeAndComp: darkGreenTheme.cyan,
+      property: darkGreenTheme.yellow,
+    } }),
   }
   const darkGreenItalic = {
     ...darkGreen,
