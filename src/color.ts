@@ -30,26 +30,42 @@ export const colors = {
 }
 // 主题特色颜色
 export const theme = {
-  red: '#cc8787',
-  green: '#8EBF9D',
-  yellow: '#bf9d8d',
-  blue: '#94B5C0',
-  magenta: '#8d97bf',
-  cyan: '#6eb4b4',
-  pink: '#bf8d97',
-  orange: '#BF9D94',
+  red: '#D88385',
+  green: '#80C19A',
+  yellow: '#c8b37a',
+  blue: '#8BB6C2',
+  magenta: '#8190ca',
+  cyan: '#54B6B5',
+  orange: '#C69B8A',
+
+  redLight: '#C27171',
+  greenLight: '#71C271',
+  yellowLight: '#C29971',
+  blueLight: '#71A0C2',
+  magentaLight: '#7171C2',
+  cyanLight: '#71C2B3',
+  orangeLight: '#c29a70',
+
   foreground: '#d1cdc2',
 }
 
 export const lightTheme = {
-  blue: '#477BA8',
-  green: '#287743',
-  magenta: '#7955A7',
-  cyan: '#40A8A6',
-  orange: '#A87852',
-  red: '#b9475a',
-  yellow: '#bf9d8d',
-  pink: '#bf8d97',
+  red: '#995254',
+  green: '#40924F',
+  yellow: '#a19549',
+  blue: '#4C7993',
+  magenta: '#565694',
+  cyan: '#409285',
+  orange: '#8e5e4d',
+
+  redLight: '#b56464',
+  greenLight: '#64b564',
+  yellowLight: '#b7ab5f',
+  blueLight: '#6494b5',
+  magentaLight: '#6464b5',
+  cyanLight: '#64b5a6',
+  orangeLight: '#a8725e',
+
   foreground: '#555555',
 }
 
@@ -77,7 +93,7 @@ export const darkSemantic = {
   listHoverBackground: '#5555',
   inactiveForeground: colors.gray[3],
   ghostForeground: `${theme.blue}88`,
-  background: '#080808',
+  background: '#121212',
   widgetBackground: '#121212',
   scrollBackground: '#121212',
   scrollbarSliderBg: '#181818',
@@ -100,23 +116,13 @@ export const darkSoftSemantic = Object.assign({}, darkSemantic, {
   comment: colors.gray[3],
 })
 
-export const darkGreenTheme = {
-  red: '#D88385',
-  green: '#80C19A',
-  yellow: '#c8b37a',
-  blue: '#8BB6C2',
-  magenta: '#8190ca',
-  cyan: '#54B6B5',
-  orange: '#C69B8A',
-}
-
 export const darkGreenSemantic = Object.assign({}, darkSemantic, {
   background: '#121414',
   widgetBackground: '#181d1a',
   scrollBackground: '#181d1a',
   scrollbarSliderBg: '#202422',
   activeBackground: '#202422',
-  primary: darkGreenTheme.green,
+  primary: theme.green,
   primaryHover: colors.green[1],
 })
 
