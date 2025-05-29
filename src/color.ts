@@ -46,25 +46,25 @@ export const theme = {
   cyanLight: '#71C2B3',
   orangeLight: '#c29a70',
 
-  foreground: '#d1cdc2',
+  foreground: '#a5adce',
 }
 
 export const lightTheme = {
-  red: '#995254',
-  green: '#40924F',
-  yellow: '#a19549',
-  blue: '#4C7993',
-  magenta: '#565694',
-  cyan: '#409285',
-  orange: '#8e5e4d',
+  red: '#ac393d',
+  green: '#39ac4e',
+  yellow: '#ac9d39',
+  blue: '#3982ac',
+  magenta: '#3939ac',
+  cyan: '#39ac99',
+  orange: '#ac5839',
 
-  redLight: '#b56464',
-  greenLight: '#64b564',
-  yellowLight: '#b7ab5f',
-  blueLight: '#6494b5',
-  magentaLight: '#6464b5',
-  cyanLight: '#64b5a6',
-  orangeLight: '#a8725e',
+  redLight: '#bf4044',
+  greenLight: '#40bf57',
+  yellowLight: '#bfae40',
+  blueLight: '#4091bf',
+  magentaLight: '#4040bf',
+  cyanLight: '#40bfaa',
+  orangeLight: '#bf6240',
 
   foreground: '#555555',
 }
