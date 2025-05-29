@@ -46,12 +46,12 @@ export const theme = {
   cyanLight: '#71C2B3',
   orangeLight: '#c29a70',
 
-  foreground: '#a5adce',
+  foreground: '#bbbbb8',
 }
 
 export const lightTheme = {
   red: '#ac393d',
-  green: '#39ac4e',
+  green: '#69ac39',
   yellow: '#ac9d39',
   blue: '#3982ac',
   magenta: '#3939ac',
@@ -59,14 +59,14 @@ export const lightTheme = {
   orange: '#ac5839',
 
   redLight: '#bf4044',
-  greenLight: '#40bf57',
+  greenLight: '#75bf40',
   yellowLight: '#bfae40',
   blueLight: '#4091bf',
   magentaLight: '#4040bf',
   cyanLight: '#40bfaa',
   orangeLight: '#bf6240',
 
-  foreground: '#555555',
+  foreground: '#51576D',
 }
 
 // 状态颜色
@@ -92,7 +92,7 @@ export const darkSemantic = {
   listInactiveSelectionFg: theme.blue,
   listHoverBackground: '#5555',
   inactiveForeground: colors.gray[3],
-  ghostForeground: `${theme.blue}88`,
+  ghostForeground: `${theme.foreground}88`,
   background: '#121212',
   widgetBackground: '#121212',
   scrollBackground: '#121212',
@@ -128,7 +128,7 @@ export const darkGreenSemantic = Object.assign({}, darkSemantic, {
 
 export const lightSoftSemantic = {
   primary: lightTheme.blue,
-  primaryHover: colors.blueLight[2],
+  primaryHover: lightTheme.blueLight,
   shadow: '#3333',
   border: '#E6E5DF',
   foreground: lightTheme.foreground,
@@ -142,7 +142,7 @@ export const lightSoftSemantic = {
   scrollbarSliderBg: '#f2f2e8',
   activeBackground: '#d8d8d0',
   inactiveForeground: '#666a',
-  ghostForeground: `${lightTheme.blue}aa`,
+  ghostForeground: `${lightTheme.foreground}55`,
   listHoverBackground: `${lightTheme.blue}28`,
   selection: `${lightTheme.foreground}20`,
   highlight: `${lightTheme.foreground}20`,
@@ -153,11 +153,10 @@ export const lightSoftSemantic = {
 }
 
 export const lightSemantic = Object.assign({}, lightSoftSemantic, {
-  primary: lightTheme.green,
-  primaryHover: colors.greenLight[2],
-  listInactiveSelectionFg: lightTheme.green,
-  ghostForeground: `${lightTheme.green}aa`,
-  listHoverBackground: `${lightTheme.green}28`,
+  primary: lightTheme.cyan,
+  primaryHover: colors.cyanLight,
+  listInactiveSelectionFg: lightTheme.cyan,
+  listHoverBackground: `${lightTheme.cyan}28`,
   background: '#ffffff',
   widgetBackground: '#f4f4f4',
   scrollBackground: '#f8f8f8',
@@ -166,11 +165,10 @@ export const lightSemantic = Object.assign({}, lightSoftSemantic, {
 })
 
 export const lightGreenSemantic = Object.assign({}, lightSoftSemantic, {
-  primary: lightTheme.green,
-  primaryHover: colors.greenLight[2],
-  listInactiveSelectionFg: lightTheme.green,
-  ghostForeground: `${lightTheme.green}aa`,
-  listHoverBackground: `${lightTheme.green}28`,
+  primary: lightTheme.cyan,
+  primaryHover: colors.cyanLight,
+  listInactiveSelectionFg: lightTheme.cyan,
+  listHoverBackground: `${lightTheme.cyan}28`,
   background: '#f8fff8',
   widgetBackground: '#e8f0e8',
   scrollBackground: '#f4faf4',
