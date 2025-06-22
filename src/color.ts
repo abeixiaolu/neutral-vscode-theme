@@ -20,21 +20,21 @@ export const theme = {
 }
 
 export const lightTheme = {
-  red: '#ac393d',
-  green: '#69ac39',
-  yellow: '#ac9d39',
-  blue: '#3982ac',
+  red: '#992447',
+  green: '#24993e',
+  yellow: '#9f7217',
+  blue: '#248099',
   magenta: '#3939ac',
-  cyan: '#39ac99',
+  cyan: '#249985',
   orange: '#ac5839',
 
-  redLight: '#bf4044',
-  greenLight: '#75bf40',
-  yellowLight: '#bfae40',
-  blueLight: '#4091bf',
-  magentaLight: '#4040bf',
-  cyanLight: '#40bfaa',
-  orangeLight: '#bf6240',
+  redLight: '#a5274d',
+  greenLight: '#27a542',
+  yellowLight: '#ad7c1a',
+  blueLight: '#278aa5',
+  magentaLight: '#3d3db8',
+  cyanLight: '#27a590',
+  orangeLight: '#b85e3d',
 
   foreground: '#51576D',
 }
