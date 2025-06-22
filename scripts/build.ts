@@ -55,6 +55,7 @@ async function build() {
     name: 'Xiaolu Abei Dark Soft Italic',
     tokenColors: genTokens({ semantic: darkSoftSemantic, theme, fontStyle: 'italic' }),
   }
+
   const lightSoft = {
     name: 'Xiaolu Abei Light Soft',
     base: 'vs',

@@ -1,33 +1,3 @@
-import { generateColorGradient } from './utils.js'
-
-export const colors = {
-  black: '#121212',
-  white: '#ffffff',
-  gray: [
-    '#e5e5e5',
-    '#d4d4d4',
-    '#a3a3a3',
-    '#737373',
-    '#525252',
-    '#404040',
-    '#262626',
-    '#171717',
-    '#0a0a0a',
-  ],
-  blue: generateColorGradient('#94B5C0'),
-  cyan: generateColorGradient('#6eb4b4'),
-  green: generateColorGradient('#8EBF9D'),
-  magenta: generateColorGradient('#9D94BF'),
-  orange: generateColorGradient('#BF9D94'),
-  red: generateColorGradient('#cc8787'),
-
-  blueLight: generateColorGradient('#7eadce'),
-  cyanLight: generateColorGradient('#7ecebf'),
-  greenLight: generateColorGradient('#7ece7e'),
-  magentaLight: generateColorGradient('#7e7ece'),
-  orangeLight: generateColorGradient('#cea67e'),
-  redLight: generateColorGradient('#ce7e7e'),
-}
 // 主题特色颜色
 export const theme = {
   red: '#D88385',
@@ -68,115 +38,111 @@ export const lightTheme = {
 
   foreground: '#51576D',
 }
-
-// 状态颜色
-export const status = {
-  error: colors.red[2],
-  warning: colors.orange[2],
-  info: colors.blue[2],
-  success: colors.green[2],
-  modified: colors.blue[2],
-  deleted: colors.red[2],
-}
-
 // 语义化颜色
 export const darkSemantic = {
   primary: theme.blue,
-  primaryHover: colors.blue[1],
-  shadow: '#00000066',
-  border: '#ffffff11',
-  foreground: theme.foreground,
-  buttonForeground: '#000',
-  cursor: colors.gray[1],
-  comment: colors.gray[3],
+  primaryHover: theme.blueLight,
   listInactiveSelectionFg: theme.blue,
-  listHoverBackground: '#5555',
-  inactiveForeground: colors.gray[3],
+  shadow: `${theme.foreground}10`,
+  border: `${theme.foreground}08`,
+  foreground: theme.foreground,
+  cursor: theme.foreground,
+  comment: `${theme.foreground}55`,
+  inactiveForeground: `${theme.foreground}66`,
   ghostForeground: `${theme.foreground}88`,
-  background: '#121212',
-  widgetBackground: '#121212',
-  scrollBackground: '#121212',
-  scrollbarSliderBg: '#181818',
-  activeBackground: '#181818',
+  listHoverBackground: `${theme.foreground}08`,
   selection: `${theme.foreground}20`,
   highlight: `${theme.foreground}20`,
   highlight2: `${theme.foreground}30`,
+  lineHighlightBackground: `${theme.foreground}20`,
+  error: theme.red,
+  warning: theme.orange,
+  info: theme.blue,
+  success: theme.green,
+  modified: theme.blue,
+  deleted: theme.redLight,
+  buttonForeground: '#0d0d0d',
+  background: '#0d0d0d',
+  widgetBackground: '#1a1a1a',
+  scrollBackground: '#1a1a1a',
+  scrollbarSliderBg: '#202020',
+  activeBackground: '#202020',
   punctuation: theme.foreground,
-  operator: colors.gray[2],
-  lineHighlightBackground: '#8881',
 }
 
 export const darkSoftSemantic = Object.assign({}, darkSemantic, {
-  background: '#222222',
+  buttonForeground: '#1a1a1a',
+  background: '#1a1a1a',
   widgetBackground: '#262626',
   scrollBackground: '#262626',
-  activeBackground: '#282828',
-  scrollbarSliderBg: '#282828',
-  inactiveForeground: colors.gray[3],
-  comment: colors.gray[3],
+  scrollbarSliderBg: '#333333',
+  activeBackground: '#333333',
 })
 
 export const darkGreenSemantic = Object.assign({}, darkSemantic, {
-  background: '#121414',
-  widgetBackground: '#181d1a',
-  scrollBackground: '#181d1a',
-  scrollbarSliderBg: '#202422',
-  activeBackground: '#202422',
+  buttonForeground: '#0b0f0c',
+  background: '#0b0f0c',
+  widgetBackground: '#121714',
+  scrollBackground: '#121714',
+  scrollbarSliderBg: '#161d19',
+  activeBackground: '#161d19',
   primary: theme.green,
-  primaryHover: colors.green[1],
+  primaryHover: theme.greenLight,
 })
 
-export const lightSoftSemantic = {
+export const lightSemantic = {
   primary: lightTheme.blue,
   primaryHover: lightTheme.blueLight,
-  shadow: '#3333',
-  border: '#E6E5DF',
-  foreground: lightTheme.foreground,
-  buttonForeground: '#fff',
-  cursor: '#000',
-  comment: colors.gray[2],
   listInactiveSelectionFg: lightTheme.blue,
-  background: '#F8F8F0',
-  widgetBackground: '#e8e8e0',
-  scrollBackground: '#f4f4ea',
-  scrollbarSliderBg: '#f2f2e8',
-  activeBackground: '#d8d8d0',
-  inactiveForeground: '#666a',
+  listHoverBackground: `${lightTheme.blue}20`,
+  foreground: lightTheme.foreground,
+  cursor: lightTheme.foreground,
+  shadow: `${lightTheme.foreground}16`,
+  border: `${lightTheme.foreground}16`,
+  comment: `${lightTheme.foreground}60`,
   ghostForeground: `${lightTheme.foreground}55`,
-  listHoverBackground: `${lightTheme.blue}28`,
   selection: `${lightTheme.foreground}20`,
   highlight: `${lightTheme.foreground}20`,
   highlight2: `${lightTheme.foreground}30`,
   punctuation: lightTheme.foreground,
-  operator: colors.gray[3],
-  lineHighlightBackground: '#3331',
+  inactiveForeground: `${lightTheme.foreground}80`,
+  lineHighlightBackground: `${lightTheme.foreground}10`,
+
+  error: lightTheme.red,
+  warning: lightTheme.orange,
+  info: lightTheme.blue,
+  success: lightTheme.green,
+  modified: lightTheme.blue,
+  deleted: lightTheme.redLight,
+
+  buttonForeground: '#ffffff',
+  background: '#ffffff',
+  widgetBackground: '#f2f2f2',
+  scrollBackground: '#f2f2f2',
+  scrollbarSliderBg: '#ededed',
+  activeBackground: '#ededed',
 }
 
-export const lightSemantic = Object.assign({}, lightSoftSemantic, {
-  primary: lightTheme.cyan,
-  primaryHover: colors.cyanLight,
-  listInactiveSelectionFg: lightTheme.cyan,
-  listHoverBackground: `${lightTheme.cyan}28`,
-  background: '#ffffff',
-  widgetBackground: '#f4f4f4',
-  scrollBackground: '#f8f8f8',
-  scrollbarSliderBg: '#f8f8f8',
-  activeBackground: '#eaeaea',
+export const lightSoftSemantic = Object.assign({}, lightSemantic, {
+  // 95
+  buttonForeground: '#f6f4ee',
+  background: '#f6f4ee',
+  // 93
+  widgetBackground: '#f3f0e8',
+  scrollBackground: '#f3f0e8',
+  // 90
+  scrollbarSliderBg: '#ede9de',
+  activeBackground: '#ede9de',
 })
 
-export const lightGreenSemantic = Object.assign({}, lightSoftSemantic, {
-  primary: lightTheme.cyan,
-  primaryHover: colors.cyanLight,
-  listInactiveSelectionFg: lightTheme.cyan,
-  listHoverBackground: `${lightTheme.cyan}28`,
-  background: '#f8fff8',
-  widgetBackground: '#e8f0e8',
-  scrollBackground: '#f4faf4',
-  scrollbarSliderBg: '#f2f8f2',
-  activeBackground: '#d8e0d8',
+export const lightGreenSemantic = Object.assign({}, lightSemantic, {
+  buttonForeground: '#eff6ee',
+  background: '#eff6ee',
+  widgetBackground: '#e9f3e8',
+  scrollBackground: '#e9f3e8',
+  scrollbarSliderBg: '#dfedde',
+  activeBackground: '#dfedde',
 })
 
-export type Color = typeof colors
 export type Theme = typeof theme
 export type Semantic = typeof darkSemantic
-export type Status = typeof status
