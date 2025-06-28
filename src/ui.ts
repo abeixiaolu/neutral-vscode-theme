@@ -39,7 +39,7 @@ export default function genEditors({
     'list.focusBackground': semantic.listHoverBackground,
     'list.hoverBackground': semantic.listHoverBackground,
     'list.inactiveSelectionBackground': semantic.listHoverBackground,
-    'list.inactiveSelectionForeground': semantic.listInactiveSelectionFg,
+    'list.inactiveSelectionForeground': semantic.primary,
     'list.activeSelectionBackground': semantic.listHoverBackground,
     'list.activeSelectionForeground': semantic.primary,
     'list.highlightForeground': semantic.primary,

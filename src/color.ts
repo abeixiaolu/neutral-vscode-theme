@@ -8,13 +8,13 @@ export const theme = {
   cyan: '#54B6B5',
   orange: '#C69B8A',
 
-  redLight: '#C27171',
-  greenLight: '#71C271',
-  yellowLight: '#C29971',
-  blueLight: '#71A0C2',
-  magentaLight: '#7171C2',
-  cyanLight: '#71C2B3',
-  orangeLight: '#c29a70',
+  redLight: '#de9698',
+  greenLight: '#95cbab',
+  yellowLight: '#d0bf90',
+  blueLight: '#9bc0ca',
+  magentaLight: '#93a0d2',
+  cyanLight: '#65bdbc',
+  orangeLight: '#ceaa9c',
 
   foreground: '#bbbbb8',
 }
@@ -42,7 +42,6 @@ export const lightTheme = {
 export const darkSemantic = {
   primary: theme.blue,
   primaryHover: theme.blueLight,
-  listInactiveSelectionFg: theme.blue,
   shadow: `${theme.foreground}10`,
   border: `${theme.foreground}08`,
   foreground: theme.foreground,
@@ -50,7 +49,7 @@ export const darkSemantic = {
   comment: `${theme.foreground}55`,
   inactiveForeground: `${theme.foreground}66`,
   ghostForeground: `${theme.foreground}88`,
-  listHoverBackground: `${theme.foreground}08`,
+  listHoverBackground: `${theme.foreground}10`,
   selection: `${theme.foreground}20`,
   highlight: `${theme.foreground}20`,
   highlight2: `${theme.foreground}30`,
@@ -93,8 +92,7 @@ export const darkGreenSemantic = Object.assign({}, darkSemantic, {
 export const lightSemantic = {
   primary: lightTheme.blue,
   primaryHover: lightTheme.blueLight,
-  listInactiveSelectionFg: lightTheme.blue,
-  listHoverBackground: `${lightTheme.blue}20`,
+  listHoverBackground: `${lightTheme.foreground}10`,
   foreground: lightTheme.foreground,
   cursor: lightTheme.foreground,
   shadow: `${lightTheme.foreground}16`,
