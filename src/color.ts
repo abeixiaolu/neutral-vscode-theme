@@ -20,24 +20,45 @@ export const theme = {
 }
 
 export const lightTheme = {
-  red: '#992447',
-  green: '#24993e',
-  yellow: '#9f7217',
-  blue: '#248099',
-  magenta: '#3939ac',
-  cyan: '#249985',
-  orange: '#ac5839',
+  red: '#C96A6C', // 明亮但不过分刺眼，和暗色主题色相一致
+  green: '#4FA97B', // 明亮有辨识度
+  yellow: '#BFA23A', // 明亮且易区分
+  blue: '#4A97B8', // 明亮且有对比度
+  magenta: '#6B7FC7', // 明亮且柔和
+  cyan: '#2B9A9A', // 明亮且有辨识度
+  orange: '#C48A3A', // 明亮且不刺眼
 
-  redLight: '#a5274d',
-  greenLight: '#27a542',
-  yellowLight: '#ad7c1a',
-  blueLight: '#278aa5',
-  magentaLight: '#3d3db8',
-  cyanLight: '#27a590',
-  orangeLight: '#b85e3d',
+  redLight: '#E09A9C', // 明亮的浅红色
+  greenLight: '#7FC6A0', // 明亮的浅绿色
+  yellowLight: '#E0C76A', // 明亮的浅黄色
+  blueLight: '#8AB6DE', // 明亮的浅蓝色
+  magentaLight: '#A0B0E0', // 明亮的浅紫色
+  cyanLight: '#5FC6C6', // 明亮的浅青色
+  orangeLight: '#E0B06A', // 明亮的浅橙色
 
-  foreground: '#51576D',
+  foreground: '#515760', // 深灰，保证可读性
 }
+
+export const lightTheme2 = {
+  red: '#B86A6C', // 降低亮度后的柔和红色
+  green: '#368A6A', // 降低亮度后的绿色
+  yellow: '#9E8430', // 降低亮度后的黄色
+  blue: '#2F6F97', // 降低亮度后的蓝色
+  magenta: '#495A99', // 降低亮度后的紫色
+  cyan: '#187878', // 降低亮度后的青色
+  orange: '#A06B2A', // 降低亮度后的橙色
+
+  redLight: '#C98A8C', // 降低亮度后的浅红色
+  greenLight: '#5FA88A', // 降低亮度后的浅绿色
+  yellowLight: '#BBAA6A', // 降低亮度后的浅黄色
+  blueLight: '#5A8BAA', // 降低亮度后的浅蓝色
+  magentaLight: '#7A8CB8', // 降低亮度后的浅紫色
+  cyanLight: '#3A9A9A', // 降低亮度后的浅青色
+  orangeLight: '#B88A5A', // 降低亮度后的浅橙色
+
+  foreground: '#515760', // 略深的灰色，适合亮色背景
+}
+
 // 语义化颜色
 export const darkSemantic = {
   primary: theme.blue,
@@ -112,6 +133,38 @@ export const lightSemantic = {
   success: lightTheme.green,
   modified: lightTheme.blue,
   deleted: lightTheme.redLight,
+
+  buttonForeground: '#ffffff',
+  background: '#ffffff',
+  widgetBackground: '#f2f2f2',
+  scrollBackground: '#f2f2f2',
+  scrollbarSliderBg: '#ededed',
+  activeBackground: '#ededed',
+}
+
+export const lightSemanticHard = {
+  primary: lightTheme2.blue,
+  primaryHover: lightTheme2.blueLight,
+  listHoverBackground: `${lightTheme2.foreground}10`,
+  foreground: lightTheme2.foreground,
+  cursor: lightTheme2.foreground,
+  shadow: `${lightTheme2.foreground}16`,
+  border: `${lightTheme2.foreground}16`,
+  comment: `${lightTheme2.foreground}60`,
+  ghostForeground: `${lightTheme2.foreground}55`,
+  selection: `${lightTheme2.foreground}20`,
+  highlight: `${lightTheme2.foreground}20`,
+  highlight2: `${lightTheme2.foreground}30`,
+  punctuation: lightTheme2.foreground,
+  inactiveForeground: `${lightTheme2.foreground}80`,
+  lineHighlightBackground: `${lightTheme2.foreground}10`,
+
+  error: lightTheme2.red,
+  warning: lightTheme2.orange,
+  info: lightTheme2.blue,
+  success: lightTheme2.green,
+  modified: lightTheme2.blue,
+  deleted: lightTheme2.redLight,
 
   buttonForeground: '#ffffff',
   background: '#ffffff',

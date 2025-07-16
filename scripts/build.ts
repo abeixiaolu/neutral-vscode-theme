@@ -8,8 +8,10 @@ import {
   darkSoftSemantic,
   lightGreenSemantic,
   lightSemantic,
+  lightSemanticHard,
   lightSoftSemantic,
   lightTheme as lightThemeColor,
+  lightTheme2 as lightThemeColor2,
   theme,
 } from '../src/color.js'
 import genTokens from '../src/tokens.js'
@@ -76,6 +78,13 @@ async function build() {
     colors: genEditors({ semantic: lightSemantic, theme: lightThemeColor }),
     tokenColors: genTokens({ semantic: lightSemantic, theme: lightThemeColor }),
   }
+  const lightHard = {
+    name: 'Xiaolu Abei Light Hard',
+    base: 'vs',
+    semanticHighlighting: true,
+    colors: genEditors({ semantic: lightSemanticHard, theme: lightThemeColor2 }),
+    tokenColors: genTokens({ semantic: lightSemanticHard, theme: lightThemeColor2 }),
+  }
 
   const lightItalic = {
     ...light,
@@ -116,6 +125,8 @@ async function build() {
   const outLightGreenFile = path.join(outDir, 'Xiaolu Abei Light Green-color-theme.json')
   const outLightGreenItalicFile = path.join(outDir, 'Xiaolu Abei Light Green Italic-color-theme.json')
 
+  const outLightHardFile = path.join(outDir, 'Xiaolu Abei Light Hard-color-theme.json')
+
   try {
     await fs.mkdir(outDir, { recursive: true })
     await fs.writeFile(outDarkFile, JSON.stringify(dark, null, 2), 'utf-8')
@@ -130,6 +141,7 @@ async function build() {
     await fs.writeFile(outLightItalicFile, JSON.stringify(lightItalic, null, 2), 'utf-8')
     await fs.writeFile(outLightGreenFile, JSON.stringify(lightGreen, null, 2), 'utf-8')
     await fs.writeFile(outLightGreenItalicFile, JSON.stringify(lightGreenItalic, null, 2), 'utf-8')
+    await fs.writeFile(outLightHardFile, JSON.stringify(lightHard, null, 2), 'utf-8')
     console.log('Theme file generated successfully!')
   }
   catch (err) {
