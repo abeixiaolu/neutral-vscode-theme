@@ -7,36 +7,19 @@ export const theme = {
   magenta: '#8190ca',
   cyan: '#54B6B5',
   orange: '#C69B8A',
-
-  redLight: '#de9698',
-  greenLight: '#95cbab',
-  yellowLight: '#d0bf90',
-  blueLight: '#9bc0ca',
-  magentaLight: '#93a0d2',
-  cyanLight: '#65bdbc',
-  orangeLight: '#ceaa9c',
-
   foreground: '#bbbbb8',
 }
 
 export const lightTheme = {
-  red: '#C96A6C', // 明亮但不过分刺眼，和暗色主题色相一致
-  green: '#4FA97B', // 明亮有辨识度
-  yellow: '#BFA23A', // 明亮且易区分
-  blue: '#4A97B8', // 明亮且有对比度
-  magenta: '#6B7FC7', // 明亮且柔和
-  cyan: '#2B9A9A', // 明亮且有辨识度
-  orange: '#C48A3A', // 明亮且不刺眼
+  red: '#bd3f3f',
+  green: '#2b9815',
+  yellow: '#b69c18',
+  blue: '#188ca9',
+  magenta: '#4655c8',
+  cyan: '#1b91b8',
+  orange: '#ab6b18',
 
-  redLight: '#E09A9C', // 明亮的浅红色
-  greenLight: '#7FC6A0', // 明亮的浅绿色
-  yellowLight: '#E0C76A', // 明亮的浅黄色
-  blueLight: '#8AB6DE', // 明亮的浅蓝色
-  magentaLight: '#A0B0E0', // 明亮的浅紫色
-  cyanLight: '#5FC6C6', // 明亮的浅青色
-  orangeLight: '#E0B06A', // 明亮的浅橙色
-
-  foreground: '#515760', // 深灰，保证可读性
+  foreground: '#515760',
 }
 
 export const lightTheme2 = {
@@ -62,7 +45,7 @@ export const lightTheme2 = {
 // 语义化颜色
 export const darkSemantic = {
   primary: theme.blue,
-  primaryHover: theme.blueLight,
+  primaryHover: `${theme.blue}BB`,
   shadow: `${theme.foreground}10`,
   border: `${theme.foreground}08`,
   foreground: theme.foreground,
@@ -80,7 +63,7 @@ export const darkSemantic = {
   info: theme.blue,
   success: theme.green,
   modified: theme.blue,
-  deleted: theme.redLight,
+  deleted: theme.red,
   buttonForeground: '#0d0d0d',
   background: '#0d0d0d',
   widgetBackground: '#1a1a1a',
@@ -107,12 +90,12 @@ export const darkGreenSemantic = Object.assign({}, darkSemantic, {
   scrollbarSliderBg: '#161d19',
   activeBackground: '#161d19',
   primary: theme.green,
-  primaryHover: theme.greenLight,
+  primaryHover: `${theme.green}BB`,
 })
 
 export const lightSemantic = {
   primary: lightTheme.blue,
-  primaryHover: lightTheme.blueLight,
+  primaryHover: `${lightTheme.blue}BB`,
   listHoverBackground: `${lightTheme.foreground}10`,
   foreground: lightTheme.foreground,
   cursor: lightTheme.foreground,
@@ -132,7 +115,7 @@ export const lightSemantic = {
   info: lightTheme.blue,
   success: lightTheme.green,
   modified: lightTheme.blue,
-  deleted: lightTheme.redLight,
+  deleted: lightTheme.red,
 
   buttonForeground: '#ffffff',
   background: '#ffffff',
@@ -164,7 +147,7 @@ export const lightSemanticHard = {
   info: lightTheme2.blue,
   success: lightTheme2.green,
   modified: lightTheme2.blue,
-  deleted: lightTheme2.redLight,
+  deleted: lightTheme2.red,
 
   buttonForeground: '#ffffff',
   background: '#ffffff',

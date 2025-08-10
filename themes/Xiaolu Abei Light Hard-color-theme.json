@@ -138,19 +138,19 @@
     "terminalCursor.background": "#2F6F97",
     "terminalCursor.foreground": "#515760",
     "terminal.ansiRed": "#B86A6C",
-    "terminal.ansiGreen": "#368A6A",
+    "terminal.ansiGreen": "#f00000",
     "terminal.ansiYellow": "#9E8430",
     "terminal.ansiBlue": "#2F6F97",
     "terminal.ansiMagenta": "#495A99",
     "terminal.ansiCyan": "#187878",
     "terminal.ansiWhite": "#e5e5e5",
     "terminal.ansiBlack": "#333",
-    "terminal.ansiBrightRed": "#C98A8C",
-    "terminal.ansiBrightGreen": "#5FA88A",
-    "terminal.ansiBrightYellow": "#BBAA6A",
-    "terminal.ansiBrightBlue": "#5A8BAA",
-    "terminal.ansiBrightMagenta": "#7A8CB8",
-    "terminal.ansiBrightCyan": "#3A9A9A",
+    "terminal.ansiBrightRed": "#B86A6C",
+    "terminal.ansiBrightGreen": "#368A6A",
+    "terminal.ansiBrightYellow": "#9E8430",
+    "terminal.ansiBrightBlue": "#2F6F97",
+    "terminal.ansiBrightMagenta": "#495A99",
+    "terminal.ansiBrightCyan": "#187878",
     "terminal.ansiBrightWhite": "#e5e5e5",
     "terminal.ansiBrightBlack": "#666666",
     "breadcrumb.background": "#ffffff",
@@ -260,7 +260,7 @@
         "support.class.component"
       ],
       "settings": {
-        "foreground": "#495A99"
+        "foreground": "#187878"
       }
     },
     {

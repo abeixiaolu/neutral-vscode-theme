@@ -13,7 +13,7 @@
     "sash.hoverBorder": "#80C19A",
     "descriptionForeground": "#777",
     "textLink.foreground": "#80C19A",
-    "textLink.activeForeground": "#95cbab",
+    "textLink.activeForeground": "#80C19ABB",
     "sideBar.background": "#0b0f0c",
     "sideBar.foreground": "#bbbbb8",
     "sideBar.border": "#bbbbb808",
@@ -45,7 +45,7 @@
     "titleBar.activeForeground": "#bbbbb8",
     "button.background": "#80C19A",
     "button.foreground": "#0b0f0c",
-    "button.hoverBackground": "#95cbab",
+    "button.hoverBackground": "#80C19ABB",
     "button.secondaryForeground": "#bbbbb8",
     "button.secondaryBackground": "#121714",
     "button.secondaryHoverBackground": "#161d19",
@@ -138,19 +138,19 @@
     "terminalCursor.background": "#80C19A",
     "terminalCursor.foreground": "#bbbbb8",
     "terminal.ansiRed": "#D88385",
-    "terminal.ansiGreen": "#80C19A",
+    "terminal.ansiGreen": "#f00000",
     "terminal.ansiYellow": "#c8b37a",
     "terminal.ansiBlue": "#8BB6C2",
     "terminal.ansiMagenta": "#8190ca",
     "terminal.ansiCyan": "#54B6B5",
     "terminal.ansiWhite": "#e5e5e5",
     "terminal.ansiBlack": "#333",
-    "terminal.ansiBrightRed": "#de9698",
-    "terminal.ansiBrightGreen": "#95cbab",
-    "terminal.ansiBrightYellow": "#d0bf90",
-    "terminal.ansiBrightBlue": "#9bc0ca",
-    "terminal.ansiBrightMagenta": "#93a0d2",
-    "terminal.ansiBrightCyan": "#65bdbc",
+    "terminal.ansiBrightRed": "#D88385",
+    "terminal.ansiBrightGreen": "#80C19A",
+    "terminal.ansiBrightYellow": "#c8b37a",
+    "terminal.ansiBrightBlue": "#8BB6C2",
+    "terminal.ansiBrightMagenta": "#8190ca",
+    "terminal.ansiBrightCyan": "#54B6B5",
     "terminal.ansiBrightWhite": "#e5e5e5",
     "terminal.ansiBrightBlack": "#666666",
     "breadcrumb.background": "#0b0f0c",
@@ -260,7 +260,7 @@
         "support.class.component"
       ],
       "settings": {
-        "foreground": "#8190ca"
+        "foreground": "#54B6B5"
       }
     },
     {

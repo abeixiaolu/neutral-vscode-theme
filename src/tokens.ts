@@ -25,7 +25,7 @@ export default function genTokens({
     string: theme.red,
     invalid: theme.red,
     bracketHighlight: '#81879D',
-    typeAndComp: theme.magenta,
+    typeAndComp: theme.cyan,
     property: theme.yellow,
     /* diffDeletedBg: "#f00",
     diffInsertedBg: "#f00",
