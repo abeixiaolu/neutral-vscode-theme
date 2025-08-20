@@ -208,7 +208,7 @@ export default function genEditors({
 
     // 终端 ANSI 颜色
     'terminal.ansiRed': theme.red,
-    'terminal.ansiGreen': '#f00000',
+    'terminal.ansiGreen': theme.green,
     'terminal.ansiYellow': theme.yellow,
     'terminal.ansiBlue': theme.blue,
     'terminal.ansiMagenta': theme.magenta,
