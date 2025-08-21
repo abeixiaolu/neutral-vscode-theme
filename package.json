@@ -30,59 +30,14 @@
         "path": "./themes/Xiaolu Abei Dark-color-theme.json"
       },
       {
-        "label": "Xiaolu Abei Dark Green",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Xiaolu Abei Dark Green-color-theme.json"
-      },
-      {
-        "label": "Xiaolu Abei Dark Italic",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Xiaolu Abei Dark Italic-color-theme.json"
-      },
-      {
-        "label": "Xiaolu Abei Dark Soft",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Xiaolu Abei Dark Soft-color-theme.json"
-      },
-      {
-        "label": "Xiaolu Abei Dark Soft Italic",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Xiaolu Abei Dark Soft Italic-color-theme.json"
-      },
-      {
         "label": "Xiaolu Abei Light",
         "uiTheme": "vs",
         "path": "./themes/Xiaolu Abei Light-color-theme.json"
       },
       {
-        "label": "Xiaolu Abei Light Italic",
-        "uiTheme": "vs",
-        "path": "./themes/Xiaolu Abei Light Italic-color-theme.json"
-      },
-      {
         "label": "Xiaolu Abei Light Soft",
         "uiTheme": "vs",
         "path": "./themes/Xiaolu Abei Light Soft-color-theme.json"
-      },
-      {
-        "label": "Xiaolu Abei Light Soft Italic",
-        "uiTheme": "vs",
-        "path": "./themes/Xiaolu Abei Light Soft Italic-color-theme.json"
-      },
-      {
-        "label": "Xiaolu Abei Light Green",
-        "uiTheme": "vs",
-        "path": "./themes/Xiaolu Abei Light Green-color-theme.json"
-      },
-      {
-        "label": "Xiaolu Abei Light Green Italic",
-        "uiTheme": "vs",
-        "path": "./themes/Xiaolu Abei Light Green Italic-color-theme.json"
-      },
-      {
-        "label": "Xiaolu Abei Light Hard",
-        "uiTheme": "vs",
-        "path": "./themes/Xiaolu Abei Light Hard-color-theme.json"
       }
     ]
   },

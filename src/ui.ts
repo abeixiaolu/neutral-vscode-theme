@@ -43,7 +43,7 @@ export default function genEditors({
     'list.activeSelectionBackground': semantic.listHoverBackground,
     'list.activeSelectionForeground': semantic.primary,
     'list.highlightForeground': semantic.primary,
-
+    'list.focusOutline': semantic.primary,
     // 列表过滤器
     'listFilterWidget.background': '#653723',
     'listFilterWidget.outline': '#00000000',
@@ -235,8 +235,8 @@ export default function genEditors({
     'editorGroupHeader.tabsBackground': semantic.background,
     'tab.activeForeground': semantic.foreground,
     'tab.border': '#00000000',
-    'tab.activeBackground': '#5551',
-    'tab.activeBorderTop': semantic.primary,
+    'tab.activeBackground': semantic.listHoverBackground,
+    'tab.activeBorderTop': '#00000000',
     'tab.inactiveBackground': semantic.background,
     'tab.inactiveForeground': semantic.inactiveForeground,
 

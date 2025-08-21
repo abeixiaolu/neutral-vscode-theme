@@ -10,10 +10,10 @@
     "widget.shadow": "#51576016",
     "scrollbar.shadow": "#51576016",
     "selection.background": "#51576020",
-    "sash.hoverBorder": "#188ca9",
+    "sash.hoverBorder": "#1b91b8",
     "descriptionForeground": "#777",
-    "textLink.foreground": "#188ca9",
-    "textLink.activeForeground": "#188ca9BB",
+    "textLink.foreground": "#1b91b8",
+    "textLink.activeForeground": "#1b91b8BB",
     "sideBar.background": "#ffffff",
     "sideBar.foreground": "#515760",
     "sideBar.border": "#51576016",
@@ -24,10 +24,11 @@
     "list.focusBackground": "#51576010",
     "list.hoverBackground": "#51576010",
     "list.inactiveSelectionBackground": "#51576010",
-    "list.inactiveSelectionForeground": "#188ca9",
+    "list.inactiveSelectionForeground": "#1b91b8",
     "list.activeSelectionBackground": "#51576010",
-    "list.activeSelectionForeground": "#188ca9",
-    "list.highlightForeground": "#188ca9",
+    "list.activeSelectionForeground": "#1b91b8",
+    "list.highlightForeground": "#1b91b8",
+    "list.focusOutline": "#1b91b8",
     "listFilterWidget.background": "#653723",
     "listFilterWidget.outline": "#00000000",
     "listFilterWidget.noMatchesOutline": "#be10",
@@ -38,14 +39,14 @@
     "statusBar.debuggingForeground": "#515760",
     "statusBar.noFolderBackground": "#68217a",
     "statusBar.noFolderForeground": "#515760",
-    "statusBarItem.remoteBackground": "#188ca9",
+    "statusBarItem.remoteBackground": "#1b91b8",
     "statusBarItem.remoteForeground": "#ffffff",
     "statusBarItem.activeBackground": "#FFFFFF25",
     "titleBar.activeBackground": "#ffffff",
     "titleBar.activeForeground": "#515760",
-    "button.background": "#188ca9",
+    "button.background": "#1b91b8",
     "button.foreground": "#ffffff",
-    "button.hoverBackground": "#188ca9BB",
+    "button.hoverBackground": "#1b91b8BB",
     "button.secondaryForeground": "#515760",
     "button.secondaryBackground": "#f2f2f2",
     "button.secondaryHoverBackground": "#ededed",
@@ -68,11 +69,11 @@
     "editorStickyScrollHover.background": "#f2f2f2",
     "quickInput.background": "#ffffff",
     "pickerGroup.border": "#51576016",
-    "pickerGroup.foreground": "#188ca9",
+    "pickerGroup.foreground": "#1b91b8",
     "quickInput.foreground": "#51576080",
     "quickInputList.focusBackground": "#51576010",
-    "quickInputList.focusForeground": "#188ca9",
-    "quickInputList.focusIconForeground": "#188ca9",
+    "quickInputList.focusForeground": "#1b91b8",
+    "quickInputList.focusIconForeground": "#1b91b8",
     "quickInputTitle.background": "#ffffff",
     "peekViewTitle.background": "#ffffff",
     "peekViewEditor.background": "#ffffff",
@@ -80,7 +81,7 @@
     "peekViewResult.selectionBackground": "#51576020",
     "peekViewResult.matchHighlightBackground": "#51576020",
     "peekViewEditor.matchHighlightBackground": "#51576020",
-    "peekView.border": "#188ca9",
+    "peekView.border": "#1b91b8",
     "editor.selectionBackground": "#51576020",
     "editor.inactiveSelectionBackground": "#51576020",
     "editor.selectionHighlightBackground": "#51576020",
@@ -103,7 +104,7 @@
     "editorIndentGuide.activeBackground1": "#51576030",
     "editorRuler.foreground": "#51576030",
     "editorBracketMatch.background": "#51576030",
-    "editorBracketMatch.border": "#188ca9",
+    "editorBracketMatch.border": "#1b91b8",
     "editor.foldBackground": "#51576020",
     "editorError.foreground": "#bd3f3f",
     "editorError.background": "#bd3f3f33",
@@ -126,19 +127,19 @@
     "diffEditor.border": "#00000000",
     "panel.background": "#ffffff",
     "panel.border": "#51576016",
-    "panelTitle.activeBorder": "#188ca9",
+    "panelTitle.activeBorder": "#1b91b8",
     "panelTitle.activeForeground": "#515760",
     "panelTitle.inactiveForeground": "#51576080",
     "panelSection.border": "#51576016",
-    "badge.background": "#188ca9",
+    "badge.background": "#1b91b8",
     "badge.foreground": "#ffffff",
     "terminal.foreground": "#515760",
     "terminal.selectionBackground": "#51576020",
     "terminal.border": "#80808059",
-    "terminalCursor.background": "#188ca9",
+    "terminalCursor.background": "#1b91b8",
     "terminalCursor.foreground": "#515760",
     "terminal.ansiRed": "#bd3f3f",
-    "terminal.ansiGreen": "#f00000",
+    "terminal.ansiGreen": "#2b9815",
     "terminal.ansiYellow": "#b69c18",
     "terminal.ansiBlue": "#188ca9",
     "terminal.ansiMagenta": "#4655c8",
@@ -160,8 +161,8 @@
     "editorGroupHeader.tabsBackground": "#ffffff",
     "tab.activeForeground": "#515760",
     "tab.border": "#00000000",
-    "tab.activeBackground": "#5551",
-    "tab.activeBorderTop": "#188ca9",
+    "tab.activeBackground": "#51576010",
+    "tab.activeBorderTop": "#00000000",
     "tab.inactiveBackground": "#ffffff",
     "tab.inactiveForeground": "#51576080",
     "editorOverviewRuler.border": "#51576016",
@@ -187,10 +188,10 @@
     "activityBar.foreground": "#515760",
     "activityBar.background": "#ffffff",
     "activityBar.inactiveForeground": "#51576080",
-    "activityBar.activeBorder": "#188ca9",
-    "activityBarTop.activeBorder": "#188ca9",
+    "activityBar.activeBorder": "#1b91b8",
+    "activityBarTop.activeBorder": "#1b91b8",
     "activityBarBadge.foreground": "#ffffff",
-    "activityBarBadge.background": "#188ca9",
+    "activityBarBadge.background": "#1b91b8",
     "gitDecoration.addedResourceForeground": "#2b9815",
     "gitDecoration.conflictingResourceForeground": "#4655c8",
     "gitDecoration.deletedResourceForeground": "#bd3f3f",
@@ -203,7 +204,7 @@
     "settings.headerForeground": "#515760",
     "settings.focusedRowBackground": "#12121200",
     "settings.rowHoverBackground": "#12121200",
-    "settings.modifiedItemIndicator": "#188ca9",
+    "settings.modifiedItemIndicator": "#1b91b8",
     "walkThrough.embeddedEditorBackground": "#00000050"
   },
   "tokenColors": [
@@ -257,7 +258,8 @@
     {
       "scope": [
         "entity.name.type",
-        "support.class.component"
+        "support.class.component",
+        "support.class.component.tsx"
       ],
       "settings": {
         "foreground": "#1b91b8"
@@ -273,9 +275,12 @@
       }
     },
     {
-      "scope": "entity.name.tag",
+      "scope": [
+        "entity.name.tag",
+        "entity.name.tag.tsx"
+      ],
       "settings": {
-        "foreground": "#188ca9"
+        "foreground": "#4655c8"
       }
     },
     {
@@ -615,7 +620,7 @@
         "meta.brace.round"
       ],
       "settings": {
-        "foreground": "#81879D"
+        "foreground": "#999"
       }
     },
     {

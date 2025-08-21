@@ -9,10 +9,10 @@ export default function genTokens({
   semantic: Semantic
   theme: Theme
   fontStyle?: string
-  outerColors?: EditorColors
+  outerColors?: Partial<EditorColors>
 }) {
   const colors: EditorColors = Object.assign({
-    tag: theme.blue,
+    tag: theme.magenta,
     comment: semantic.comment,
     foreground: semantic.foreground,
     function: theme.blue,
@@ -21,7 +21,7 @@ export default function genTokens({
     number: theme.red,
     operator: semantic.foreground,
     regexp: theme.blue,
-    punctuation: '#81879D',
+    punctuation: '#555',
     string: theme.red,
     invalid: theme.red,
     bracketHighlight: '#81879D',
@@ -147,7 +147,7 @@ export function createEditorTheme(colors: EditorColors, fontStyle: string) {
       },
     },
     {
-      scope: ['entity.name.type', 'support.class.component'],
+      scope: ['entity.name.type', 'support.class.component', 'support.class.component.tsx'],
       settings: {
         foreground: colors.typeAndComp,
       },
@@ -159,7 +159,7 @@ export function createEditorTheme(colors: EditorColors, fontStyle: string) {
       },
     },
     {
-      scope: 'entity.name.tag',
+      scope: ['entity.name.tag', 'entity.name.tag.tsx'],
       settings: {
         foreground: colors.tag,
       },
