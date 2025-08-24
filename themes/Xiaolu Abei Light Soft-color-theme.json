@@ -280,7 +280,7 @@
         "entity.name.tag.tsx"
       ],
       "settings": {
-        "foreground": "#4655c8"
+        "foreground": "#2b9815"
       }
     },
     {
@@ -293,7 +293,7 @@
     {
       "scope": "keyword.operator",
       "settings": {
-        "foreground": "#515760"
+        "foreground": "#51576088"
       }
     },
     {
@@ -617,7 +617,7 @@
     {
       "scope": [
         "punctuation",
-        "meta.brace.round"
+        "meta.brace"
       ],
       "settings": {
         "foreground": "#999"

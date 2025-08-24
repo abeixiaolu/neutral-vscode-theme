@@ -24,8 +24,8 @@ export const lightTheme = {
 
 // 语义化颜色
 export const darkSemantic = {
-  primary: theme.green,
-  primaryHover: `${theme.green}BB`,
+  primary: theme.blue,
+  primaryHover: `${theme.blue}BB`,
   shadow: `${theme.foreground}10`,
   border: `${theme.foreground}28`,
   foreground: theme.foreground,
@@ -44,13 +44,13 @@ export const darkSemantic = {
   success: theme.green,
   modified: theme.blue,
   deleted: theme.red,
-  buttonForeground: '#0d0d0d',
-  background: '#070707',
-  widgetBackground: '#151515',
-  scrollBackground: '#101010',
-  scrollbarSliderBg: '#181818',
-  activeBackground: '#181818',
   punctuation: theme.foreground,
+  background: '#1e201f',
+  widgetBackground: '#272a28', // mix(background, blue, 20%)
+  scrollBackground: '#272a28', // mix(background, blue, 30%)
+  scrollbarSliderBg: '#272a28', // mix(background, blue, 40%)
+  activeBackground: '#272a28', // same as scrollbarSlider for consistency
+  buttonForeground: '#1e201f', // 深色文字以保证在亮色按钮上的可读性
 }
 
 export const lightSemantic = {

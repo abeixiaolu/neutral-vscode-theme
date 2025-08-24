@@ -12,16 +12,16 @@ export default function genTokens({
   outerColors?: Partial<EditorColors>
 }) {
   const colors: EditorColors = Object.assign({
-    tag: theme.magenta,
+    tag: theme.green,
     comment: semantic.comment,
     foreground: semantic.foreground,
     function: theme.blue,
     variable: theme.orange,
     keyword: theme.green,
     number: theme.red,
-    operator: semantic.foreground,
+    operator: `${semantic.foreground}88`,
     regexp: theme.blue,
-    punctuation: '#555',
+    punctuation: `${semantic.foreground}88`,
     string: theme.red,
     invalid: theme.red,
     bracketHighlight: '#81879D',
@@ -478,7 +478,7 @@ export function createEditorTheme(colors: EditorColors, fontStyle: string) {
       },
     },
     {
-      scope: ['punctuation', 'meta.brace.round'],
+      scope: ['punctuation', 'meta.brace'],
       settings: {
         foreground: colors.punctuation,
       },
