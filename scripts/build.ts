@@ -16,30 +16,30 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 async function build() {
   const dark = {
-    name: 'Xiaolu Abei Dark',
+    name: 'Neutral Dark',
     base: 'vs-dark',
     semanticHighlighting: true,
     colors: genEditors({ semantic: darkSemantic, theme }),
     tokenColors: genTokens({ semantic: darkSemantic, theme }),
   }
   const lightSoft = {
-    name: 'Xiaolu Abei Light Soft',
+    name: 'Neutral Light Soft',
     base: 'vs',
     semanticHighlighting: true,
     colors: genEditors({ semantic: lightSoftSemantic, theme: lightTheme }),
     tokenColors: genTokens({ semantic: lightSoftSemantic, theme: lightTheme, outerColors: { punctuation: '#999' } }),
   }
   const light = {
-    name: 'Xiaolu Abei Light',
+    name: 'Neutral Light',
     base: 'vs',
     semanticHighlighting: true,
     colors: genEditors({ semantic: lightSemantic, theme: lightTheme }),
     tokenColors: genTokens({ semantic: lightSemantic, theme: lightTheme, outerColors: { punctuation: '#999' } }),
   }
   const outDir = path.resolve(__dirname, '../themes')
-  const outDarkFile = path.join(outDir, 'Xiaolu Abei Dark-color-theme.json')
-  const outLightFile = path.join(outDir, 'Xiaolu Abei Light-color-theme.json')
-  const outLightSoftFile = path.join(outDir, 'Xiaolu Abei Light Soft-color-theme.json')
+  const outDarkFile = path.join(outDir, 'Neutral Dark-color-theme.json')
+  const outLightFile = path.join(outDir, 'Neutral Light-color-theme.json')
+  const outLightSoftFile = path.join(outDir, 'Neutral Light Soft-color-theme.json')
 
   try {
     await fs.mkdir(outDir, { recursive: true })

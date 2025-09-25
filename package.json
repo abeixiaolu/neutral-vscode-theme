@@ -1,13 +1,13 @@
 {
-  "publisher": "abei",
+  "publisher": "xiaoluabei",
   "preview": true,
-  "name": "xiaoluabei-vscode-theme",
-  "displayName": "Xiaolu Abei Theme",
+  "name": "neutral-vscode-theme",
+  "displayName": "Neutral Theme",
   "type": "module",
   "version": "2.8.4",
   "description": "A dark theme with a focus on readability and minimalism.",
   "author": {
-    "name": "Xiaolu Abei",
+    "name": "abei",
     "email": "xiaoluabei@gmail.com"
   },
   "license": "MIT",
@@ -25,19 +25,19 @@
   "contributes": {
     "themes": [
       {
-        "label": "Xiaolu Abei Dark",
+        "label": "Neutral Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Xiaolu Abei Dark-color-theme.json"
+        "path": "./themes/Neutral Dark-color-theme.json"
       },
       {
-        "label": "Xiaolu Abei Light",
+        "label": "Neutral Light",
         "uiTheme": "vs",
-        "path": "./themes/Xiaolu Abei Light-color-theme.json"
+        "path": "./themes/Neutral Light-color-theme.json"
       },
       {
-        "label": "Xiaolu Abei Light Soft",
+        "label": "Neutral Light Soft",
         "uiTheme": "vs",
-        "path": "./themes/Xiaolu Abei Light Soft-color-theme.json"
+        "path": "./themes/Neutral Light Soft-color-theme.json"
       }
     ]
   },
