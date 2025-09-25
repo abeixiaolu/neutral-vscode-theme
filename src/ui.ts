@@ -233,10 +233,10 @@ export default function genEditors({
 
     // 标签页
     'editorGroupHeader.tabsBackground': semantic.background,
-    'tab.activeForeground': semantic.foreground,
+    'tab.activeForeground': semantic.primary,
     'tab.border': '#00000000',
-    'tab.activeBackground': semantic.listHoverBackground,
-    'tab.activeBorderTop': '#00000000',
+    'tab.activeBorder': '#00000000',
+    'tab.activeBackground': semantic.background,
     'tab.inactiveBackground': semantic.background,
     'tab.inactiveForeground': semantic.inactiveForeground,
 
