@@ -26,7 +26,7 @@ export default function genEditors({
 
     // 侧边栏
     'sideBar.background': semantic.background,
-    'sideBar.foreground': semantic.foreground,
+    'sideBar.foreground': `${semantic.foreground}bb`,
     'sideBar.border': semantic.border,
     'sideBarSectionHeader.background': '#00000000',
     'sideBarSectionHeader.foreground': semantic.foreground,
@@ -39,7 +39,7 @@ export default function genEditors({
     'list.focusBackground': semantic.listHoverBackground,
     'list.hoverBackground': semantic.listHoverBackground,
     'list.inactiveSelectionBackground': semantic.listHoverBackground,
-    'list.inactiveSelectionForeground': semantic.primary,
+    'list.inactiveSelectionForeground': semantic.foreground,
     'list.activeSelectionBackground': semantic.listHoverBackground,
     'list.activeSelectionForeground': semantic.primary,
     'list.highlightForeground': semantic.primary,
@@ -233,8 +233,8 @@ export default function genEditors({
 
     // 标签页
     'editorGroupHeader.tabsBackground': semantic.background,
-    'tab.activeForeground': semantic.primary,
-    'tab.border': '#00000000',
+    'tab.activeForeground': semantic.foreground,
+    // 'tab.border': '#00000008',
     'tab.activeBorder': '#00000000',
     'tab.activeBackground': semantic.background,
     'tab.inactiveBackground': semantic.background,
@@ -288,6 +288,7 @@ export default function genEditors({
     'gitDecoration.stageModifiedResourceForeground': theme.orange,
     'gitDecoration.submoduleResourceForeground': theme.blue,
     'gitDecoration.untrackedResourceForeground': theme.green,
+    'git.blame.editorDecorationForeground': `${theme.foreground}50`,
 
     // 其他配置
     'settings.headerForeground': semantic.foreground,
