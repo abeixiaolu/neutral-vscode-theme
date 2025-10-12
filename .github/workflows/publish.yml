@@ -2,42 +2,44 @@ name: Publish Extension
 
 on:
   push:
-    branches:
-      - main
-
-permissions:
-  contents: write
-
-concurrency:
-  group: publish-extension
-  cancel-in-progress: false
+    tags:
+      - v*
 
 jobs:
-  publish:
+  publish-extension:
+    permissions:
+      id-token: write
+      contents: write
+      actions: write
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          persist-credentials: true
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
 
-      - name: Setup Node.js
+      - name: Set node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: lts/*
           cache: pnpm
 
-      - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Publish to VS Code Marketplace
+      - run: npx changelogithub --no-group
+        continue-on-error: true
         env:
-          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - run: pnpm install
+
+      - name: Generate .vsix file
+        run: pnpm package
+
+      - name: Publish Extension
+        run: npx vsxpub --no-dependencies --exclude ovsx
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: pnpm run release
+          VSCE_PAT: ${{secrets.VSCE_PAT}}
