@@ -46,7 +46,7 @@
     "dev": "esno watch scripts/build.ts",
     "pack": "npm run build && vsce pack --no-dependencies",
     "publish": "npm run build && vsce publish --no-dependencies",
-    "release": "bumpp --yes && npm run publish",
+    "release": "bumpp --all",
     "package": "vsce package --no-dependencies",
     "lint": "eslint . --fix"
   },
