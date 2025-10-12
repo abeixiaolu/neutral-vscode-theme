@@ -1,16 +1,20 @@
-# Minimalist Color Theme for VSCode
+<h1 align="center">Neutral Theme for VS Code</h1>
+
+<p align="center">
+<a href="https://marketplace.visualstudio.com/items?itemName=xiaoluabei.neutral-vscode-theme" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/xiaoluabei.neutral-vscode-theme.svg?color=80C19A&label=Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+</p>
 
 <img width="1275" src="https://raw.githubusercontent.com/abeixiaolu/xiaoluabei-vscode-theme/master/assets/dark.png" alt="screenshot" />
-<div style="display:flex;justify-content:center">Dark</div>
+<p align="center">Dark</p>
 <br>
 <img width="1275" src="https://raw.githubusercontent.com/abeixiaolu/xiaoluabei-vscode-theme/master/assets/soft.png" alt="screenshot" />
-<div style="display:flex;justify-content:center">Soft</div>
+<p align="center">Soft</p>
 <br>
 <img width="1275" src="https://raw.githubusercontent.com/abeixiaolu/xiaoluabei-vscode-theme/master/assets/light.png" alt="screenshot" />
-<div style="display:flex;justify-content:center">Light</div>
+<p align="center">Light</p>
 <br>
-<div style="display:flex;justify-content:center;align-items:center;flex-direction:column;">
-  <samp>Product Icons | <a href="https://github.com/antfu/vscode-icons-carbon">Carbon</a></samp>
-  <samp>Font | <a href="https://philpl.gumroad.com/l/dank-mono">Dank Mono</a></samp>
-  <samp>File Icons | <a href="https://marketplace.cursorapi.com/items?itemName=Yummygum.city-lights-icon-vsc">City Lights Icon package</a></samp>
-</div>
+<p align="center">
+  <a href="https://github.com/antfu/vscode-icons-carbon">Carbon</a> |
+  <a href="https://philpl.gumroad.com/l/dank-mono">Dank Mono</a> |
+  <a href="https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons">file-icons</a>
+</p>
