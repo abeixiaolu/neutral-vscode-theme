@@ -25,7 +25,7 @@ export default function genEditors({
     'textLink.activeForeground': semantic.primaryHover,
 
     // 侧边栏
-    'sideBar.background': semantic.background,
+    'sideBar.background': semantic.panelBackground,
     'sideBar.foreground': `${semantic.foreground}bb`,
     'sideBar.border': semantic.border,
     'sideBarSectionHeader.background': '#00000000',
@@ -113,7 +113,7 @@ export default function genEditors({
     'quickInput.background': semantic.background,
     'pickerGroup.border': semantic.border,
     'pickerGroup.foreground': semantic.primary,
-    'quickInput.foreground': semantic.inactiveForeground,
+    'quickInput.foreground': semantic.foreground,
     'quickInputList.focusBackground': semantic.listHoverBackground,
     'quickInputList.focusForeground': semantic.primary,
     'quickInputList.focusIconForeground': semantic.primary,
@@ -188,7 +188,7 @@ export default function genEditors({
     'diffEditor.border': '#00000000',
 
     // 面板
-    'panel.background': semantic.background,
+    'panel.background': semantic.panelBackground,
     'panel.border': semantic.border,
     'panelTitle.activeBorder': semantic.primary,
     'panelTitle.activeForeground': semantic.foreground,
@@ -232,12 +232,12 @@ export default function genEditors({
     'breadcrumb.activeSelectionForeground': semantic.foreground,
 
     // 标签页
-    'editorGroupHeader.tabsBackground': semantic.background,
+    'editorGroupHeader.tabsBackground': semantic.panelBackground,
     'tab.activeForeground': semantic.foreground,
     // 'tab.border': '#00000008',
-    'tab.activeBorder': '#00000000',
+    'tab.activeBorderTop': semantic.primary,
     'tab.activeBackground': semantic.background,
-    'tab.inactiveBackground': semantic.background,
+    'tab.inactiveBackground': semantic.panelBackground,
     'tab.inactiveForeground': semantic.inactiveForeground,
 
     // 编辑器概览标尺
@@ -271,12 +271,13 @@ export default function genEditors({
     'notifications.border': semantic.border,
     // 活动栏 (左侧图标栏)
     'activityBar.foreground': semantic.foreground,
-    'activityBar.background': semantic.background,
+    'activityBar.background': semantic.panelBackground,
     'activityBar.inactiveForeground': semantic.inactiveForeground,
     'activityBar.activeBorder': semantic.primary,
     'activityBarTop.activeBorder': semantic.primary,
     'activityBarBadge.foreground': semantic.buttonForeground,
     'activityBarBadge.background': semantic.primary,
+    'activityBar.border': semantic.border,
 
     // Git 装饰器
     'gitDecoration.addedResourceForeground': theme.green,

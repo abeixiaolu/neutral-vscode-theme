@@ -7,7 +7,7 @@ export const theme = {
   magenta: '#8190ca',
   cyan: '#54B6B5',
   orange: '#C69B8A',
-  foreground: '#e7e7eb',
+  foreground: '#d1d5db',
 }
 
 export const lightTheme = {
@@ -18,7 +18,7 @@ export const lightTheme = {
   magenta: '#4655c8',
   cyan: '#1b91b8',
   orange: '#ab6b18',
-  foreground: '#515760',
+  foreground: '#272824',
 }
 
 // 语义化颜色
@@ -26,7 +26,7 @@ export const darkSemantic = {
   primary: theme.green,
   primaryHover: `${theme.green}BB`,
   shadow: `${theme.foreground}10`,
-  border: `${theme.foreground}08`,
+  border: `${theme.foreground}16`,
   foreground: theme.foreground,
   cursor: theme.foreground,
   comment: `${theme.foreground}55`,
@@ -44,12 +44,13 @@ export const darkSemantic = {
   modified: theme.blue,
   deleted: theme.red,
   punctuation: theme.foreground,
-  background: '#131313',
-  buttonForeground: '#131313',
-  widgetBackground: '#181818',
-  scrollBackground: '#181818',
-  scrollbarSliderBg: '#181818',
-  activeBackground: '#181818',
+  background: '#1a1a1a',
+  buttonForeground: '#202020',
+  widgetBackground: '#262626',
+  scrollBackground: '#262626',
+  scrollbarSliderBg: '#fff4',
+  activeBackground: '#262626',
+  panelBackground: '#151515',
 }
 
 export const lightSemantic = {
@@ -80,17 +81,18 @@ export const lightSemantic = {
   buttonForeground: '#ffffff',
   widgetBackground: '#f5f5f5',
   scrollBackground: '#f5f5f5',
-  scrollbarSliderBg: '#f5f5f5',
+  scrollbarSliderBg: '#00000030',
   activeBackground: '#f5f5f5',
+  panelBackground: '#ffffff',
 }
 
 export const lightSoftSemantic = Object.assign({}, lightSemantic, {
-  background: '#fbfaf5',
-  buttonForeground: '#fbfaf5',
-  widgetBackground: '#f8f7f0',
-  scrollBackground: '#f8f7f0',
-  scrollbarSliderBg: '#f8f7f0',
-  activeBackground: '#f8f7f0',
+  background: '#FCF9F5',
+  buttonForeground: '#FCF9F5',
+  widgetBackground: '#FCF9F5',
+  scrollBackground: '#FCF9F5',
+  activeBackground: '#FCF9F5',
+  panelBackground: '#FCF9F5',
 })
 
 export type Theme = typeof theme
