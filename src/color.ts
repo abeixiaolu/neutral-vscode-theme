@@ -44,7 +44,7 @@ export const darkSemantic = {
   modified: theme.blue,
   deleted: theme.red,
   punctuation: theme.foreground,
-  background: '#1a1a1a',
+  background: '#121212',
   buttonForeground: '#202020',
   widgetBackground: '#262626',
   scrollBackground: '#262626',
