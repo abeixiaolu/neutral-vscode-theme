@@ -44,13 +44,14 @@ export const darkSemantic = {
   modified: theme.blue,
   deleted: theme.red,
   punctuation: theme.foreground,
-  background: '#121212',
-  buttonForeground: '#202020',
-  widgetBackground: '#262626',
-  scrollBackground: '#262626',
-  scrollbarSliderBg: '#fff4',
-  activeBackground: '#262626',
-  panelBackground: '#151515',
+  // #0c0b0e,#101010,#211d20,#f8553a,#ffb800,#8d8d8d,#3c3c3c
+  background: '#0c0b0e',
+  buttonForeground: '#211d20',
+  widgetBackground: '#181818',
+  scrollBackground: '#101010',
+  scrollbarSliderBg: '#181818',
+  activeBackground: '#202020',
+  panelBackground: '#101010',
 }
 
 export const lightSemantic = {
